@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('add/remove elements works', async ({ page }) => {
-  await page.goto('https://the-internet.herok/lksdhflkjshdvckjg');
+  await page.goto('https://the-internet.herokuapp.com/add_remove_elements/lksdhflkjshdvckjg');
 
   const addBtn = page.getByRole('button', { name: 'Add Element' });
 
