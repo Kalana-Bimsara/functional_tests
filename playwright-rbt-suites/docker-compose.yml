@@ -1,0 +1,14 @@
+services:
+  tests-all:
+    build: .
+    image: rbt-playwright-suites
+    container_name: suites-all
+    command: ["npm","run","test:normal"]
+    shm_size: "1gb"
+
+  tests-rbt:
+    build: .
+    image: rbt-playwright-suites
+    container_name: rbt-suites-rbt
+    command: ["npm","run","test:rbt"]
+    shm_size: "1gb"

@@ -1,0 +1,19 @@
+{
+  "name": "playwright-rbt-suites",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Playwright JS with separate RBT and Full suites + Docker (uses *.test.js pattern)",
+  "scripts": {
+    "install:browsers": "npx playwright install --with-deps",
+    "test": "npx playwright test -c playwright.config.all.js",
+    "test:normal": "npx playwright test tests/normal -c playwright.config.all.js",
+    "test:rbt": "npx playwright test -c playwright.config.rbt.js",
+    "test:ui": "npx playwright test -c playwright.config.all.js --ui",
+    "docker:build": "docker build -t rbt-playwright-suites .",
+    "docker:test:all": "docker compose run --rm tests-all",
+    "docker:test:rbt": "docker compose run --rm tests-rbt"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  }
+}
