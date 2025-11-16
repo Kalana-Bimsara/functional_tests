@@ -1,0 +1,11 @@
+{
+"MongoDB": {
+"host": "localhost"
+},
+
+"QA":{
+    "BASE_URL": "http://13.232.101.236/",
+    "PASSWORD": "123456"
+
+}
+}

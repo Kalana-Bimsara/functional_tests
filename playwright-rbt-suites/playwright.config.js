@@ -1,4 +1,6 @@
+require('dotenv').config();
 const { defineConfig, devices } = require('@playwright/test');
+
 
 const shared = {
   timeout: 30 * 1000,
@@ -16,8 +18,14 @@ const shared = {
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
+    }
+    // {
+    //   name: 'chrome',    // REAL GOOGLE CHROME
+    //   use: {
+    //     channel: 'chrome'
+    //   }
+    // }
   ],
 };
 
-module.exports = { shared };
+module.exports = defineConfig(shared);
