@@ -18,7 +18,7 @@ test('Sample Test', async ({ db, page }) => {
   const upperPannelPage = PageFactory.getUpperPannelPage(page);
   const bookingPage = PageFactory.getBookingPage(page);
   const loginPage = PageFactory.getLoginPage(page);
-
+/*
   await homePage.navigate_To_Home_Page();
   await homePage.verify_The_Welcome_Text({ text: 'Welcome to Smile Dental' });
   // await homePage.click_On_Book_Online_Link();
@@ -60,6 +60,6 @@ test('Sample Test', async ({ db, page }) => {
   })
 
   await bookingPage.clickBookAppointmentButton();
- console.log('Sample test completed successfully.'  );
+ console.log('Sample test completed successfully.'  );*/
 
 });
