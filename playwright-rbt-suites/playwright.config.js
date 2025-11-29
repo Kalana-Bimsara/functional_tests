@@ -18,13 +18,13 @@ const shared = {
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'chrome',    // REAL GOOGLE CHROME
+      use: {
+        channel: 'chrome'
+      }
     }
-    // {
-    //   name: 'chrome',    // REAL GOOGLE CHROME
-    //   use: {
-    //     channel: 'chrome'
-    //   }
-    // }
   ],
 };
 

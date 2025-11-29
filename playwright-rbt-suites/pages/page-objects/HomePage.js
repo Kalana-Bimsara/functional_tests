@@ -86,7 +86,7 @@ class HomePage {
     return this.container.getByRole('link', { name: label, exact: true }).first();
   }
 
-  async verifyVisible(labels) {
+  async verifyFooterVisible(labels) {
     for (const label of labels) {
       await expect(this.link(label)).toBeVisible();
     }

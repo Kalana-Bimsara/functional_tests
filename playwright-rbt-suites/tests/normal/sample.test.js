@@ -1,9 +1,9 @@
-const {  expect } = require('@playwright/test');
+const { expect } = require('@playwright/test');
 import { PageFactory } from '../../pages/PageFactory';
 import EnvConfig from '../../resources/ConfigEnvironment.json';
 const { test } = require('../../resources/dbFixture');
 
-test('Sample Test', async ({ db,page }) => {
+test('Sample Test', async ({ db, page }) => {
 
   const user = await db.collection('usermodels').findOne({ username: 'kalanabim7' });
   expect(user).not.toBeNull();
@@ -23,7 +23,7 @@ test('Sample Test', async ({ db,page }) => {
   await homePage.verify_The_Welcome_Text({ text: 'Welcome to Smile Dental' });
   // await homePage.click_On_Book_Online_Link();
   await homePage.verify_Navigation_panel(['Home', 'About Us', 'Services', 'Prices', 'Our Team', 'Contact']);
-  await homePage.verifyVisible(['Home', 'About Us', 'Services', 'Prices', 'Our Team', 'Contact']);
+  await homePage.verifyFooterVisible(['Home', 'About Us', 'Services', 'Prices', 'Our Team', 'Contact']);
   await upperPannelPage.navigateToOurTeamPage();
   await OurTeamPage.verifyDoctorContactdetails([
     'Dr Lahiru Rajakaruna',
@@ -35,21 +35,31 @@ test('Sample Test', async ({ db,page }) => {
   ]);
 
   await homePage.click_On_Book_Now_Link();
-  // await loginPage.enterLoginDetails({ username: 'kalanabim7', password });
-  // await loginPage.clickLoginButton();
-  // await homePage.click_On_Book_Now_Link();
+  await loginPage.enterLoginDetails({ username: 'kalanabim7', password });
+  await loginPage.clickLoginButton();
+  await homePage.click_On_Book_Now_Link();
 
 
-  // await bookingPage.verifyBookAnAppoinmentModel([
-  //   'Book an Appointment',
-  //   'Patient Name',
-  //   'Mobile Number',
-  //   'Email Address',
-  //   'Doctor',
-  //   'service',         // lower-case to match label
-  //   'Select a Date',   // actual label text
-  // ]);
+  await bookingPage.verifyBookAnAppoinmentModel([
+    'Book an Appointment',
+    'Patient Name',
+    'Mobile Number',
+    'Email Address',
+    'Doctor',
+    'service',         // lower-case to match label
+    'Select a Date',   // actual label text
+  ]);
+  await bookingPage.enterDetailsToBookAnAppointment({
+    patientName: 'John Doe',
+    mobileNumber: '1234567890',
+    emailAddress: ' kalana@yopmail.com',
+    doctor: 'yoshitha',
+    service: 'ECG',
+    appointmentDate: 'Sun Nov 30 2025'
 
+  })
 
+  await bookingPage.clickBookAppointmentButton();
+ console.log('Sample test completed successfully.'  );
 
 });

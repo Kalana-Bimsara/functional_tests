@@ -5,7 +5,7 @@ class BookingPage {
 
   constructor(page) {
     this.page = page;
-    
+
     this.textPatientName = page.locator('//input[@id="patientName"]');
     this.textMobileNumber = page.locator('//input[@id="mobileNumber"]');
     this.textEmailAddress = page.locator('//input[@id="emailAddress"]');
@@ -13,7 +13,7 @@ class BookingPage {
     this.selectService = page.locator('//select[@id="service"]');
     this.selectAppointmentDate = page.locator('//select[@id="appointmentDate"]');
     this.btnBookAppointment = page.locator('//button[@type="submit" and  contains(normalize-space(),"Book Appointment")]');
-    this.btnClose =page.locator('//button[@type="button" and  contains(normalize-space(),"Close")]');
+    this.btnClose = page.locator('//button[@type="button" and  contains(normalize-space(),"Close")]');
     this.modal = page.locator('#appointmentModal').first();
 
 
@@ -26,7 +26,7 @@ class BookingPage {
   }
 
   async verifyBookAnAppoinmentModel(texts) {
-    await expect(this.modal).toBeVisible({timeout: 7000});
+    await expect(this.modal).toBeVisible({ timeout: 7000 });
     for (const text of texts) {
       await expect(
         this.modal,
@@ -42,6 +42,21 @@ class BookingPage {
     await expect(this.selectAppointmentDate).toBeVisible();
     await expect(this.btnBookAppointment).toBeVisible();
     await expect(this.btnClose).toBeVisible();
+  }
+
+
+  async enterDetailsToBookAnAppointment({ patientName, mobileNumber, emailAddress, doctor, service, appointmentDate }) {
+    await expect(this.modal).toBeVisible({ timeout: 7000 });
+    await this.textPatientName.fill(patientName);
+    await this.textMobileNumber.fill(mobileNumber);
+    await this.textEmailAddress.fill(emailAddress);
+    await this.selectDoctor.selectOption(doctor);
+    await this.selectService.selectOption(service);
+    await this.selectAppointmentDate.selectOption(appointmentDate);
+  }
+
+  async clickBookAppointmentButton() {
+    await this.btnBookAppointment.click();
   }
 
 }
