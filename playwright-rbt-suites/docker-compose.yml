@@ -1,14 +1,21 @@
+
 services:
   tests-all:
     build: .
     image: rbt-playwright-suites
     container_name: suites-all
-    command: ["npm","run","test:normal"]
+    command: ["npm", "run", "test:normal"]
     shm_size: "1gb"
+    environment:
+      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
 
   tests-rbt:
     build: .
     image: rbt-playwright-suites
     container_name: rbt-suites-rbt
-    command: ["npm","run","test:rbt"]
+    command: ["npm", "run", "test:rbt"]
     shm_size: "1gb"
+    environment:
+      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
