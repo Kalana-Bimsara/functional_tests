@@ -9,7 +9,7 @@ test('Sample Test', async ({ db, page }) => {
   expect(user).not.toBeNull();
 
   // you can still use page as usual
-  await page.goto(process.env.BASE_URL);
+  await page.goto(EnvConfig.QA.BASE_URL);
 
   const password = EnvConfig.QA.PASSWORD;
 
