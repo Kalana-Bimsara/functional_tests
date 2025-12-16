@@ -20,7 +20,6 @@ test('Sample Test', async ({ db, page }) => {
   const loginPage = PageFactory.getLoginPage(page);
 
 
-/*
   await homePage.navigate_To_Home_Page();
   await homePage.verify_The_Welcome_Text({ text: 'Welcome to Smile Dental' });
   // await homePage.click_On_Book_Online_Link();
@@ -37,7 +36,7 @@ test('Sample Test', async ({ db, page }) => {
   ]);
 
   await homePage.click_On_Book_Now_Link();
-  await loginPage.enterLoginDetails({ username: 'kalanabim7', password });
+  await loginPage.enterLoginDetails({ username: 'kalanabim777', password });
   await loginPage.clickLoginButton();
   await homePage.click_On_Book_Now_Link();
 
@@ -55,13 +54,13 @@ test('Sample Test', async ({ db, page }) => {
     patientName: 'John Doe',
     mobileNumber: '1234567890',
     emailAddress: ' kalana@yopmail.com',
-    doctor: 'yoshitha',
-    service: 'ECG',
+    doctor: 'sfdsdf',
+    service: 'beheth denawa',
     appointmentDate: 'Sun Nov 30 2025'
 
   })
 
   await bookingPage.clickBookAppointmentButton();
- console.log('Sample test completed successfully.'  );*/
+ console.log('Sample test completed successfully.'  );
 
 });

@@ -33,6 +33,9 @@ class HomePage {
     this.imgInstagram = page.locator('//img[@src="instra.png"]');
     const scope = root ?? page.locator('header, nav[role="navigation"], #navbarNav').first();
     this.container = scope.locator('ul.navbar-nav').first();
+    this.aboutSection = page.locator('//section[@id="about"]');
+
+
 
 
   }
@@ -91,6 +94,101 @@ class HomePage {
       await expect(this.link(label)).toBeVisible();
     }
   }
+
+  async verifyAboutSectionTexts({ texts = [] }) {
+    const expectedTexts = Array.isArray(texts) ? texts : [texts];
+
+    if (expectedTexts.length === 0) {
+      console.log('[SKIP] No texts provided for About section');
+      return;
+    }
+
+    console.log('[INFO] Verifying About section texts');
+
+    // Get ALL visible text once
+    const sectionText = (await this.aboutSection.innerText())
+      .replace(/\s+/g, ' ')   // normalize whitespace
+      .trim();
+
+    for (const text of expectedTexts) {
+      const normalizedExpected = text.replace(/\s+/g, ' ').trim();
+      const isPresent = sectionText.includes(normalizedExpected);
+
+      console.log(`[VERIFY] "${text}" → ${isPresent}`);
+
+      expect(
+        isPresent,
+        `❌ Text "${text}" NOT found inside About section`
+      ).toBeTruthy();
+    }
+
+    console.log('[INFO] About section verification completed');
+  }
+
+  async verifyTeethWhiteningService({ header, body }) {
+    console.log('[INFO] Verifying Teeth Whitening service');
+
+    if (header) {
+      await expect(
+        this.headerTeethWhitening(header),
+        `❌ Teeth Whitening header "${header}" not visible`
+      ).toBeVisible();
+    }
+
+    if (body) {
+      await expect(
+        this.bodyTeethWhitening(body),
+        `❌ Teeth Whitening body text not visible`
+      ).toBeVisible();
+    }
+
+    console.log('[PASS] Teeth Whitening service verified');
+  }
+
+  async verifyDentalImplantsService({ header, body }) {
+    console.log('[INFO] Verifying Dental Implants service');
+
+    if (header) {
+      await expect(
+        this.headerDentalImplants(header),
+        `❌ Dental Implants header "${header}" not visible`
+      ).toBeVisible();
+    }
+
+    if (body) {
+      await expect(
+        this.bodyDentalImplants(body),
+        `❌ Dental Implants body text not visible`
+      ).toBeVisible();
+    }
+
+    console.log('[PASS] Dental Implants service verified');
+  }
+
+
+  async verifyCosmeticBracesService({ header, body }) {
+    console.log('[INFO] Verifying Braces & Invisalign service');
+
+    if (header) {
+      await expect(
+        this.headerCosmeticBraces(header),
+        `❌ Braces & Invisalign header "${header}" not visible`
+      ).toBeVisible();
+    }
+
+    if (body) {
+      await expect(
+        this.bodyCosmeticBraces(body),
+        `❌ Braces & Invisalign body text not visible`
+      ).toBeVisible();
+    }
+
+    console.log('[PASS] Braces & Invisalign service verified');
+  }
+
+
+
+
 
 }
 
