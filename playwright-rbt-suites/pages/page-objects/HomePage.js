@@ -21,8 +21,6 @@ class HomePage {
     this.divInvalideMessageEmail = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Email is required")]');
     this.divInvalideMessageMessage = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Message is required")]');
     this.divInvalideMessageEmailtype = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Enter a valid email address")]');
-
-
     this.headerTeethWhitening = (header) => page.locator(`//img[@src="whitening.webp"]/../h5[contains(normalize-space(),"${header}")]`);
     this.bodyTeethWhitening = (body) => page.locator(`//img[@src="whitening.webp"]/../p[contains(normalize-space(),"${body}")]`);
     this.headerDentalImplants = (header) => page.locator(`//img[@src="implants.webp"]/../h5[contains(normalize-space(),"${header}")]`);
@@ -30,6 +28,7 @@ class HomePage {
     this.headerCosmeticBraces = (header) => page.locator(`//img[@src="braces & Invisalign.webp"]/../h5[contains(normalize-space(),"${header}")]`);
     this.bodyCosmeticBraces = (body) => page.locator(`//img[@src="braces & Invisalign.webp"]/../p[contains(normalize-space(),"${body}")]`);
     this.lnkLargerMap = page.locator('//a[@aria-label="View larger map"]');
+
     this.container = page.locator('ul.navbar-nav');
     this.imgFb = page.locator('//img[@src="fb.png"]');
     this.imgYoutube = page.locator('//img[@src="yt.png"]');
@@ -37,8 +36,19 @@ class HomePage {
     const scope = root ?? page.locator('header, nav[role="navigation"], #navbarNav').first();
     this.container = scope.locator('ul.navbar-nav').first();
     this.aboutSection = page.locator('//section[@id="about"]');
+    // iframe itself (optional to keep)
+    this.mapIframe = page.frameLocator('//section[@id="location"]//iframe');
+
+    // element INSIDE iframe
+    this.divMap = this.mapIframe.locator('#mapDiv');
 
 
+
+  }
+
+  async verifyLOcationMapVisible() {
+    await expect(this.divMap).toBeVisible({ timeout: 7000 });
+  console.log('✅ Location map is visible in the Contact Us section');
   }
 
   async verifyEmailValidationAppears() {
