@@ -18,8 +18,11 @@ class HomePage {
     this.txtMessage = page.locator('//textarea[@id="message"]');
     this.btnSubmit = page.locator('//button[@type="submit"]');
     this.divInvalideMessageName = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Name is required")]');
-    this.divInvalideMessageName = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Email is required")]');
-    this.divInvalideMessageName = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Message is required")]');
+    this.divInvalideMessageEmail = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Email is required")]');
+    this.divInvalideMessageMessage = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Message is required")]');
+    this.divInvalideMessageEmailtype = page.locator('//div[@class="invalid-feedback" and contains(normalize-space(),"Enter a valid email address")]');
+
+
     this.headerTeethWhitening = (header) => page.locator(`//img[@src="whitening.webp"]/../h5[contains(normalize-space(),"${header}")]`);
     this.bodyTeethWhitening = (body) => page.locator(`//img[@src="whitening.webp"]/../p[contains(normalize-space(),"${body}")]`);
     this.headerDentalImplants = (header) => page.locator(`//img[@src="implants.webp"]/../h5[contains(normalize-space(),"${header}")]`);
@@ -36,8 +39,67 @@ class HomePage {
     this.aboutSection = page.locator('//section[@id="about"]');
 
 
+  }
+
+  async verifyEmailValidationAppears() {
+    await expect(this.divInvalideMessageEmailtype).toBeVisible({ timeout: 7000 });
+    console.log('email format validation visible for invalid email format');
+  }
+
+  async verifyAndAcceptAlert(expectedMessage) {
+    const dialog = await this.page.waitForEvent('dialog');
+
+    const actualMessage = dialog.message();
+    console.log('[INFO] Alert message:', actualMessage);
+
+    expect(
+      actualMessage.trim(),
+      `❌ Alert text mismatch. Expected: "${expectedMessage}", Got: "${actualMessage}"`
+    ).toBe(expectedMessage);
+
+    await dialog.accept(); // clicks OK
+    console.log('[INFO] Alert accepted (OK clicked)');
+  }
 
 
+
+  async inputDetatailsToContactUsForm({ name, email, message }) {
+    await expect(this.formContactUs).toBeVisible({ timeout: 7000 });
+    await this.txtName.fill(name);
+    await this.txtEmail.fill(email);
+    await this.txtMessage.fill(message);
+
+  }
+
+  async verifyValidationsContactUsForm({ name = true, email = true, message = true }) {
+    await expect(this.formContactUs).toBeVisible({ timeout: 7000 });
+    await this.page.waitForTimeout(1700); // wait for validations to appear
+    if (name == true) {
+      await expect(this.divInvalideMessageName).toBeVisible();
+      console.log('name validation visible');
+    } else {
+      console.log('Skipping name validation aas name field is not present');
+    }
+    if (email == true) {
+      await expect(this.divInvalideMessageEmail).toBeVisible();
+      console.log('email validation visible');
+    }
+    else {
+      console.log('Skipping email validation as email field is not present');
+    }
+
+    if (message == true) {
+      await expect(this.divInvalideMessageMessage).toBeVisible();
+      console.log('message validation visible');
+    }
+    else {
+      console.log('Skipping message validation as message field is not present');
+    }
+
+  }
+
+  async clickSubmitButtonInContactUs() {
+    await this.btnSubmit.click();
   }
 
   async navigate_To_Home_Page() {
