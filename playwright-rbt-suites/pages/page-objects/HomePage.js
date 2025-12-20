@@ -43,12 +43,18 @@ class HomePage {
     this.divMap = this.mapIframe.locator('#mapDiv');
 
 
+  }
 
+  
+
+  async Click_LogIn_Button() {
+    await expect(this.lnkLogIn).toBeVisible({ timeout: 7000 });
+    await this.lnkLogIn.click();
   }
 
   async verifyLOcationMapVisible() {
     await expect(this.divMap).toBeVisible({ timeout: 7000 });
-  console.log('✅ Location map is visible in the Contact Us section');
+    console.log('✅ Location map is visible in the Contact Us section');
   }
 
   async verifyEmailValidationAppears() {
@@ -257,6 +263,58 @@ class HomePage {
 
     console.log('[PASS] Braces & Invisalign service verified');
   }
+
+
+  async verifySocialMediaIconsNavigation() {
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      locator: this.imgFb,
+      expectedUrlPart: 'facebook.com'
+    },
+    {
+      name: 'Instagram',
+      locator: this.imgInstagram,
+      expectedUrlPart: 'instagram.com'
+    },
+    {
+      name: 'YouTube',
+      locator: this.imgYoutube,
+      expectedUrlPart: 'youtube.com'
+    }
+  ];
+
+  const originalUrl = this.page.url();
+
+  for (const link of socialLinks) {
+    console.log(`🔍 Verifying ${link.name} icon visibility`);
+    await expect(link.locator).toBeVisible();
+
+    console.log(`🖱️ Clicking ${link.name} icon`);
+    await link.locator.click();
+
+    // ✅ Correct URL wait
+    await this.page.waitForURL(
+      new RegExp(link.expectedUrlPart),
+      { timeout: 30000 }
+    );
+
+    const navigatedUrl = this.page.url();
+    console.log(`🌐 Navigated to: ${navigatedUrl}`);
+
+    // Verify URL
+    expect(navigatedUrl).toContain(link.expectedUrlPart);
+
+    // ⬅️ Return to original page
+    await this.page.goBack({ waitUntil: 'load' });
+    await this.page.waitForURL(originalUrl);
+
+    console.log(`↩️ Returned from ${link.name}`);
+  }
+
+  console.log('[INFO] All social media icons verified successfully');
+}
+
 
 
 

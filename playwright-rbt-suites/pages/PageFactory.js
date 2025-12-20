@@ -4,6 +4,7 @@ import {AdminDashboardPage} from './page-objects/AdminDashboardPage.js';
 import {OurTeamPage} from './page-objects/OurTeamPage.js';
 import {UpperPannelPage} from './page-objects/UpperPannelPage.js';
 import { BookingPage } from './page-objects/BookingPage.js';    
+import { CommonFunctions } from '../resources/CommonFunctions.js';
 
 
 class PageFactory {
@@ -30,6 +31,9 @@ class PageFactory {
 
     static getBookingPage(page) {
         return new BookingPage(page);
+    }
+    static getCommonFunctions(page) {
+        return new CommonFunctions(page);
     }
   } 
 

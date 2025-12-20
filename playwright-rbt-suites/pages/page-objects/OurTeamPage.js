@@ -7,10 +7,18 @@ class OurTeamPage {
     this.page = page;
     this.imgTeamMembers = (imgName) => this.page.locator(`//div[@class="profile-card"]//img[@src="${imgName}"]`);
     this.profileCards = page.locator(selector);
+    this.appointmentPolicySection =
+      this.page.locator(`//h4[normalize-space()='Appoinment Policy']/..`);
+
+    this.appointmentPolicyListItems =
+      this.appointmentPolicySection.locator('ol > li');
+
+
+
 
   }
 
-    async verifyDoctorsDetails(doctors = []) {
+  async verifyDoctorsDetails(doctors = []) {
     if (!Array.isArray(doctors) || doctors.length === 0) {
       console.log('[SKIP] No doctor data provided');
       return;
@@ -47,6 +55,39 @@ class OurTeamPage {
       console.log(`✅ Verified all details for ${name}`);
     }
   }
+
+  async verifyAppointmentPolicyFourParagraphs({ expectedParagraphs }) {
+    await this.appointmentPolicySection.waitFor({
+      state: 'visible',
+      timeout: 30000
+    });
+
+    const actualParagraphs =
+      await this.appointmentPolicyListItems.allTextContents();
+
+    console.log('📄 Appointment Policy Paragraphs:', actualParagraphs);
+
+    // 1️⃣ Verify list count
+    expect(
+      actualParagraphs.length,
+      `Expected 4 list items but found ${actualParagraphs.length}`
+    ).toBe(4);
+
+    // 2️⃣ Verify each paragraph
+    for (let i = 0; i < 4; i++) {
+      expect(
+        actualParagraphs[i].trim(),
+        `Mismatch in paragraph ${i + 1}`
+      ).toBe(expectedParagraphs[i].trim());
+
+      console.log(`✔ Verified paragraph ${i + 1}`);
+    }
+
+    console.log('[INFO] Appointment Policy 4 paragraphs verified successfully');
+  }
+
+
+
 }
 
 
