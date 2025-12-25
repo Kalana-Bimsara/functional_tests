@@ -4,7 +4,7 @@ const { test } = require('../../resources/dbFixture');
 import EnvConfig from '../../resources/ConfigEnvironment.json';
 
 
-test('Verify Add a Doctor', async ({ db, page }) => {
+test('Verify Add a Doctor', { annotations: [{ type: 'impact', description: 'high' }]},async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);
   const commonFunctions = PageFactory.getCommonFunctions(page);
   const loginPage = PageFactory.getLoginPage(page);
@@ -50,9 +50,10 @@ test('Verify Add a Doctor', async ({ db, page }) => {
   await adminDashboardPage.clickAddNewDoctorButton();
 
   const regNo = await commonFunctions.generateRegistrationNumber();
+  const name = await commonFunctions.generateRandomDoctorName();
 
   await adminDashboardPage.enterNewDoctorDetails({
-    name: 'Dr. Kalana Bimsara774',
+    name,
     specialization: 'Dentist',
     registrationNumber: regNo
   });
@@ -66,7 +67,7 @@ test('Verify Add a Doctor', async ({ db, page }) => {
   });
 
    await expect.poll(
-    async () => db.collection('doctors').findOne({ name: 'Dr. Kalana Bimsara774', registrationNumber: regNo }),
+    async () => db.collection('doctors').findOne({ name, registrationNumber: regNo }),
     { timeout: 10000, intervals: [1000, 2000, 3000] }
   ).not.toBeNull();
 

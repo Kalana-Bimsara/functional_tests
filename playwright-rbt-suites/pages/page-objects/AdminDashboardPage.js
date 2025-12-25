@@ -23,10 +23,32 @@ class AdminDashboardPage {
     this.txtDoctorName = page.locator('//input[@id="doctorName"]');
     this.txtDoctorSpecialization = page.locator('//input[@id="doctorSpecialty"]');
     this.txtDoctorRegistrationNumber = page.locator('//input[@id="doctorRegistration"]'); 
-
+    this.btnServiceName = page.locator('//input[@id="serviceName"]');
+    this.btnServicePrice = page.locator('//input[@id="servicePrice"]');
+    this.btnAddServiceInModal = page.locator('//button[@type="submit" and contains(text(),"Add Service")]');
+    this.btnCancelAddServiceModal = page.locator('//button[@type="button" and contains(text(),"Cancel")]');
 
   }
 
+  async enterDetailsAddNewService({ serviceName, servicePrice }) {    
+    await expect(this.btnServiceName).toBeVisible({ timeout: 7000 });
+    if(serviceName){
+      await this.btnServiceName.fill(serviceName);
+    }
+    if(servicePrice){
+      await this.btnServicePrice.fill(servicePrice);
+    }
+  }
+
+  async clickAddNewServiceButton() {
+    expect(this.btnAddServiceInModal).toBeVisible({ timeout: 7000 });
+    await this.btnAddServiceInModal.click();
+  }
+
+  async clickCancelAddServiceButton() {
+    expect(this.btnCancelAddServiceModal).toBeVisible({ timeout: 7000 });
+    await this.btnCancelAddServiceModal.click();
+  }
 
 
   async enterNewDoctorDetails({ name, specialization, registrationNumber }) {
