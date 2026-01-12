@@ -1,5 +1,5 @@
 const { expect, test } = require('@playwright/test');
-import { PageFactory } from '../../pages/PageFactory';
+import { PageFactory } from '../pages/PageFactory';
 
 test('Verify Our Services ', async ({ page }) => {
 

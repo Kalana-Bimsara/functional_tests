@@ -1,0 +1,108 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "Logo" [ref=e6]
+      - generic [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=e13]:
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: /#services
+          - listitem [ref=e15]:
+            - link "Prices" [ref=e16] [cursor=pointer]:
+              - /url: /price
+          - listitem [ref=e17]:
+            - link "Our Team" [ref=e18] [cursor=pointer]:
+              - /url: /ourteam
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /#contact
+        - link "Book Now" [ref=e21] [cursor=pointer]:
+          - /url: /booking
+        - link "Log In" [ref=e22] [cursor=pointer]:
+          - /url: /login
+  - generic [ref=e23]:
+    - paragraph [ref=e26]: At our smile dental surgery implants and teeth whitening centre, we take pride in having some of the most skilled and highly qualified dentists in Sri Lanka. Their expertise and commitment to providing the highest quality of care guarantees that each patient will receive exceptional and professional dental services.
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - img "Dr Lahiru Rajakaruna" [ref=e31]
+        - heading "Dr Lahiru Rajakaruna" [level=5] [ref=e32]
+        - paragraph [ref=e33]: BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)
+        - paragraph [ref=e34]:
+          - emphasis [ref=e35]:
+            - text: Director
+            - text: Smile Dental Hospitals
+        - paragraph [ref=e36]: "Sri Lanka Medical Council Registration Number: 2698"
+      - generic [ref=e38]:
+        - img "Dr Deepal Nanayakkara" [ref=e39]
+        - heading "Dr Deepali Nanayakkara" [level=5] [ref=e40]
+        - paragraph [ref=e41]: BDS (Peradeniya), MD Ortho (Colombo), M Orth RCS (UK)
+        - paragraph [ref=e42]:
+          - emphasis [ref=e43]: Consultant Orthodontist
+        - paragraph [ref=e44]: "Sri Lanka Medical Council Registration Number: 2453"
+      - generic [ref=e46]:
+        - img "Dr Malinda Senadhirathna" [ref=e47]
+        - heading "Dr Malinda Senadhirathna" [level=5] [ref=e48]
+        - paragraph [ref=e49]: BDS (Peradeniya), MD OMFS (Colombo)
+        - paragraph [ref=e50]:
+          - emphasis [ref=e51]: Consultant OMF Surgeon (Acting.)
+        - paragraph [ref=e52]: "Sri Lanka Medical Council Registration Number: 2735"
+      - generic [ref=e54]:
+        - img "Dr Dinali Gayasha" [ref=e55]
+        - heading "Dr Dinali Gayasha" [level=5] [ref=e56]
+        - paragraph [ref=e57]: BDS (Peradeniya)
+        - paragraph [ref=e58]:
+          - emphasis [ref=e59]: Dental Surgeon
+        - paragraph [ref=e60]: "Sri Lanka Medical Council Registration Number: 2968"
+  - generic [ref=e62]:
+    - heading "Appoinment Policy" [level=4] [ref=e63]
+    - list [ref=e64]:
+      - listitem [ref=e65]: "Scheduling: At our dental clinic, we place a high value on punctuality and efficiency. This is why we operate strictly by appointment, ensuring that each patient has a dedicated time slot just for them. By doing so, we are able to minimize wait times and ensure a seamless experience from start to finish. We understand the importance of your time and strive to provide you with a stress-free, timely, and comfortable dental visit."
+      - listitem [ref=e66]: "Confirmations: At our dental clinic, we are proud to offer the convenience of online booking. Once you have confirmed your appointment through our secure online system, there is no need for further verification. However, in the event of any changes or cancellations, our clinic may reach out to you via phone to ensure that we are able to accommodate your needs."
+      - listitem [ref=e67]: "Arrival Time: We kindly request that our valued patients arrive a few minutes prior to their scheduled appointment time. This reserved time slot is specifically set aside for you and we want to ensure that we make the most of it. Arriving a few minutes early also gives us the opportunity to prepare for your visit and address any questions or concerns you may have. We appreciate your cooperation and look forward to providing you with exceptional dental care."
+      - listitem [ref=e68]: "Payment: Patients are responsible for paying their portion of the bill at the time of their appointment, unless other arrangements have been made in advance. The clinic accepts various forms of payment, including cash, credit, and debit cards."
+  - contentinfo [ref=e69]:
+    - generic [ref=e70]:
+      - list [ref=e72]:
+        - listitem [ref=e73]:
+          - link "About Us" [ref=e74] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e75]:
+          - link "Home" [ref=e76] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e77]:
+          - link "Services" [ref=e78] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e79]:
+          - link "Prices" [ref=e80] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e81]:
+          - link "Our Team" [ref=e82] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e83]:
+          - link "Contact" [ref=e84] [cursor=pointer]:
+            - /url: /
+      - generic [ref=e85]:
+        - link "Facebook" [ref=e86] [cursor=pointer]:
+          - /url: https://www.facebook.com
+          - img "Facebook" [ref=e87]
+        - link "YouTube" [ref=e88] [cursor=pointer]:
+          - /url: https://www.youtube.com
+          - img "YouTube" [ref=e89]
+        - link "Instagram" [ref=e90] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - img "Instagram" [ref=e91]
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: © 2024 Smile Dental | All Rights Reserved
+        - paragraph [ref=e94]: Call 0777 38 65 90 for appointments
+```

@@ -1,7 +1,7 @@
 const { expect } = require('@playwright/test');
-import { LoginPage } from '../../pages/page-objects/LoginPage';
-import { PageFactory } from '../../pages/PageFactory';
-const { test } = require('../../resources/dbFixture');
+import { LoginPage } from '../pages/page-objects/LoginPage';
+import { PageFactory } from '../pages/PageFactory';
+const { test } = require('../resources/dbFixture');
 
 test('Verify invalid user registration - try to register with existing username', async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);

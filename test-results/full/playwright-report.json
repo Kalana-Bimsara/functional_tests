@@ -1,0 +1,1244 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\User\\Desktop\\functional_tests\\playwright.config.js",
+    "rootDir": "C:/Users/User/Desktop/functional_tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "failures-only",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/full/playwright-report.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/User/Desktop/functional_tests/test-results/full/artifacts",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/User/Desktop/functional_tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login-failure.test.js",
+      "file": "login-failure.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "login fails with invalid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 685,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.490Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51013fc867b6d9a83b82-de6848f3a01f5292e687",
+          "file": "login-failure.test.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "sample.test.js",
+      "file": "sample.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Sample Test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10155,
+                  "error": {
+                    "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
+                    "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                      "column": 21,
+                      "line": 29
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                        "column": 21,
+                        "line": 29
+                      },
+                      "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.714Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                    "column": 21,
+                    "line": 29
+                  }
+                },
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 4765,
+                  "error": {
+                    "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
+                    "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                      "column": 21,
+                      "line": 29
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                        "column": 21,
+                        "line": 29
+                      },
+                      "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-01-12T20:40:56.171Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
+                    "column": 21,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "794e161f9090ba4cb624-74633d6d8f0e9cd2b361",
+          "file": "sample.test.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-01.test.js",
+      "file": "SD-01.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify navigation Pannel",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2832,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.512Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1d47cc59cdb1fcd4f8fa-d27414b4e7eba582f7b9",
+          "file": "SD-01.test.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-02.test.js",
+      "file": "SD-02.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify welcome banner content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 14907,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.522Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "072467fcf545a4ab9a63-71b97fd9f701bb8dc34b",
+          "file": "SD-02.test.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-03.test.js",
+      "file": "SD-03.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify About Our Clinic container",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 6758,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[INFO] Verifying About section texts\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"About Our Clinic\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"At Dental Clinic, we always try our best to explain your treatment options and all the costs clearly. Our goal is to make sure every patient feels confident, well-informed, and actively part of their treatment plan.\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"We provide top-notch dental services with state-of-the-art technology to ensure your smile stays beautiful and healthy.\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Experienced Dentists\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Modern Equipment\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Personalized Care\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Comfortable Environment\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Emergency Dental Services\" → true\n"
+                    },
+                    {
+                      "text": "[VERIFY] \"Flexible Payment Plans\" → true\n"
+                    },
+                    {
+                      "text": "[INFO] About section verification completed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8f9aa189adfd194a40ab-986e3514d4663d37657b",
+          "file": "SD-03.test.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-04.test.js",
+      "file": "SD-04.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Our Services ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 6479,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[INFO] Verifying Teeth Whitening service\n"
+                    },
+                    {
+                      "text": "[PASS] Teeth Whitening service verified\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying Dental Implants service\n"
+                    },
+                    {
+                      "text": "[PASS] Dental Implants service verified\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying Braces & Invisalign service\n"
+                    },
+                    {
+                      "text": "[PASS] Braces & Invisalign service verified\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "755f7e2eacb4a38e81f3-3a134aba86b1915eb5b1",
+          "file": "SD-04.test.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-05.test.js",
+      "file": "SD-05.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Contact Us Form - Valid Data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 5928,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "[INFO] Alert message: message saved\n"
+                    },
+                    {
+                      "text": "[INFO] Alert accepted (OK clicked)\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.690Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "593b0a37c23fabe4480d-f9ff826feb7c73e7d6dc",
+          "file": "SD-05.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-06.test.js",
+      "file": "SD-06.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Contact Us Form - Invalid Data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 12150,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "name validation visible\n"
+                    },
+                    {
+                      "text": "email validation visible\n"
+                    },
+                    {
+                      "text": "message validation visible\n"
+                    },
+                    {
+                      "text": "name validation visible\n"
+                    },
+                    {
+                      "text": "Skipping email validation as email field is not present\n"
+                    },
+                    {
+                      "text": "Skipping message validation as message field is not present\n"
+                    },
+                    {
+                      "text": "Skipping name validation aas name field is not present\n"
+                    },
+                    {
+                      "text": "email validation visible\n"
+                    },
+                    {
+                      "text": "Skipping message validation as message field is not present\n"
+                    },
+                    {
+                      "text": "Skipping name validation aas name field is not present\n"
+                    },
+                    {
+                      "text": "Skipping email validation as email field is not present\n"
+                    },
+                    {
+                      "text": "message validation visible\n"
+                    },
+                    {
+                      "text": "email format validation visible for invalid email format\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:36.705Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d967cf323a33a424956-aedc25e05b80b984a634",
+          "file": "SD-06.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-07.test.js",
+      "file": "SD-07.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Our Location ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 13818,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "✅ Location map is visible in the Contact Us section\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:40.011Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e163a9e93e10ec6d25ae-9f681201d12f3e1d3584",
+          "file": "SD-07.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-08.test.js",
+      "file": "SD-08.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Team members  ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6817,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[INFO] Found 4 doctor cards\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying doctor: Dr Lahiru Rajakaruna\n"
+                    },
+                    {
+                      "text": "✅ Verified all details for Dr Lahiru Rajakaruna\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying doctor: Dr Deepali Nanayakkara\n"
+                    },
+                    {
+                      "text": "✅ Verified all details for Dr Deepali Nanayakkara\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying doctor: Dr Malinda Senadhirathna\n"
+                    },
+                    {
+                      "text": "✅ Verified all details for Dr Malinda Senadhirathna\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying doctor: Dr Dinali Gayasha\n"
+                    },
+                    {
+                      "text": "✅ Verified all details for Dr Dinali Gayasha\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:40.338Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fd911dcddc84a45639fb-798e27feb01c842ef98a",
+          "file": "SD-08.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-09.test.js",
+      "file": "SD-09.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Appoinment Policy content  ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 7293,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "📄 Appointment Policy Paragraphs: [\n  \u001b[32m'Scheduling: At our dental clinic, we place a high value on punctuality and efficiency. This is why we operate strictly by appointment, ensuring that each patient has a dedicated time slot just for them. By doing so, we are able to minimize wait times and ensure a seamless experience from start to finish. We understand the importance of your time and strive to provide you with a stress-free, timely, and comfortable dental visit.'\u001b[39m,\n  \u001b[32m'Confirmations: At our dental clinic, we are proud to offer the convenience of online booking. Once you have confirmed your appointment through our secure online system, there is no need for further verification. However, in the event of any changes or cancellations, our clinic may reach out to you via phone to ensure that we are able to accommodate your needs.'\u001b[39m,\n  \u001b[32m'Arrival Time: We kindly request that our valued patients arrive a few minutes prior to their scheduled appointment time. This reserved time slot is specifically set aside for you and we want to ensure that we make the most of it. Arriving a few minutes early also gives us the opportunity to prepare for your visit and address any questions or concerns you may have. We appreciate your cooperation and look forward to providing you with exceptional dental care.'\u001b[39m,\n  \u001b[32m'Payment: Patients are responsible for paying their portion of the bill at the time of their appointment, unless other arrangements have been made in advance. The clinic accepts various forms of payment, including cash, credit, and debit cards.'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "✔ Verified paragraph 1\n"
+                    },
+                    {
+                      "text": "✔ Verified paragraph 2\n"
+                    },
+                    {
+                      "text": "✔ Verified paragraph 3\n"
+                    },
+                    {
+                      "text": "✔ Verified paragraph 4\n"
+                    },
+                    {
+                      "text": "[INFO] Appointment Policy 4 paragraphs verified successfully\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:43.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "624ca43a8a4f6d3190dd-ea662d745c9b519e1c17",
+          "file": "SD-09.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-10.test.js",
+      "file": "SD-10.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Social media icons and navigation   ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 22152,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "🔍 Verifying Facebook icon visibility\n"
+                    },
+                    {
+                      "text": "🖱️ Clicking Facebook icon\n"
+                    },
+                    {
+                      "text": "🌐 Navigated to: https://www.facebook.com/\n"
+                    },
+                    {
+                      "text": "↩️ Returned from Facebook\n"
+                    },
+                    {
+                      "text": "🔍 Verifying Instagram icon visibility\n"
+                    },
+                    {
+                      "text": "🖱️ Clicking Instagram icon\n"
+                    },
+                    {
+                      "text": "🌐 Navigated to: https://www.instagram.com/\n"
+                    },
+                    {
+                      "text": "↩️ Returned from Instagram\n"
+                    },
+                    {
+                      "text": "🔍 Verifying YouTube icon visibility\n"
+                    },
+                    {
+                      "text": "🖱️ Clicking YouTube icon\n"
+                    },
+                    {
+                      "text": "🌐 Navigated to: https://www.youtube.com/\n"
+                    },
+                    {
+                      "text": "↩️ Returned from YouTube\n"
+                    },
+                    {
+                      "text": "[INFO] All social media icons verified successfully\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:46.225Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "255f94528913c9bda722-951266fd84fed49f878b",
+          "file": "SD-10.test.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-11.test.js",
+      "file": "SD-11.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Valid user registration    ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 5075,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_13_02_10_zpv\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:47.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ce2c2328578743a21fe-c923f2cf347a84dab664",
+          "file": "SD-11.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-12.test.js",
+      "file": "SD-12.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify invalid user registration - try to register with existing username",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4586,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Dialog type: alert\n"
+                    },
+                    {
+                      "text": "Dialog message: User already registered\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:47.175Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79c715a8f5bd78bfc652-771124b120ada6882f76",
+          "file": "SD-12.test.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-13.test.js",
+      "file": "SD-13.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Valid user Login    ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 10016,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_13_02_10_jqd\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Login successful, Logout button is visible\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:49.565Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ffe3573aaa7493b51968-8d3b30d3b9cbb5341399",
+          "file": "SD-13.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-14.test.js",
+      "file": "SD-14.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Admin Dashboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 10484,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_13_02_10_w0y\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:50.795Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb7533e60e6cd5038ff0-698efb52c1de71da29cb",
+          "file": "SD-14.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-15.test.js",
+      "file": "SD-15.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add a Doctor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7524,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_13_02_10_pqu\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
+                    },
+                    {
+                      "text": "Generated Registration Number: 20260113021057\n"
+                    },
+                    {
+                      "text": "Generated Doctor Name: Dr. Chamika Dinithi Kapuachchige\n"
+                    },
+                    {
+                      "text": "Dialog type: alert\n"
+                    },
+                    {
+                      "text": "Dialog message: Doctor registered\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T20:40:51.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62cf59a24f3c5f7734d6-12789634e990e8432a4a",
+          "file": "SD-15.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-12T20:40:35.267Z",
+    "duration": 33824.84299999999,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

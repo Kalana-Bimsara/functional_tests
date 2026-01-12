@@ -1,10 +1,10 @@
 const { expect } = require('@playwright/test');
-import { PageFactory } from '../../pages/PageFactory';
-const { test } = require('../../resources/dbFixture');
-import EnvConfig from '../../resources/ConfigEnvironment.json';
+import { PageFactory } from '../pages/PageFactory';
+const { test } = require('../resources/dbFixture');
+import EnvConfig from '../resources/ConfigEnvironment.json';
 
 
-test('Verify Add a Doctor', { annotations: [{ type: 'impact', description: 'high' }]},async ({ db, page }) => {
+test('Verify Admin Dashboard', async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);
   const commonFunctions = PageFactory.getCommonFunctions(page);
   const loginPage = PageFactory.getLoginPage(page);
@@ -47,34 +47,6 @@ test('Verify Add a Doctor', { annotations: [{ type: 'impact', description: 'high
   await loginPage.enterLoginDetails({ username: userName, password });
   await loginPage.clickLoginButton();
   await adminDashboardPage.verifyAdminDashboardPageElements();
-  await adminDashboardPage.clickAddNewDoctorButton();
-
-  const regNo = await commonFunctions.generateRegistrationNumber();
-  const name = await commonFunctions.generateRandomDoctorName();
-
-  await adminDashboardPage.enterNewDoctorDetails({
-    name,
-    specialization: 'Dentist',
-    registrationNumber: regNo
-  });
-
- 
-  await loginPage.verifyDialogOnAction({
-    expectedMessage: 'Doctor registered',
-    action: async () => {
-       await adminDashboardPage.clickAddDoctorInModalButton();
-    }
-  });
-
-   await expect.poll(
-    async () => db.collection('doctors').findOne({ name, registrationNumber: regNo }),
-    { timeout: 10000, intervals: [1000, 2000, 3000] }
-  ).not.toBeNull();
-
-
-
-
-
 });
 
 

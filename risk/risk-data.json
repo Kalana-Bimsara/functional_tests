@@ -1,0 +1,92 @@
+{
+  "SD-01.test.js": {
+    "id": 1,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 2832
+  },
+  "SD-02.test.js": {
+    "id": 2,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 14907
+  },
+  "SD-03.test.js": {
+    "id": 3,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 6758
+  },
+  "SD-04.test.js": {
+    "id": 4,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 6479
+  },
+  "SD-05.test.js": {
+    "id": 5,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 5928
+  },
+  "SD-06.test.js": {
+    "id": 6,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 12150
+  },
+  "SD-07.test.js": {
+    "id": 7,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 13818
+  },
+  "SD-08.test.js": {
+    "id": 8,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 6817
+  },
+  "SD-09.test.js": {
+    "id": 9,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 7293
+  },
+  "SD-10.test.js": {
+    "id": 10,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 22152
+  },
+  "SD-11.test.js": {
+    "id": 11,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 5075
+  },
+  "SD-12.test.js": {
+    "id": 12,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 4586
+  },
+  "SD-13.test.js": {
+    "id": 13,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 10016
+  },
+  "SD-14.test.js": {
+    "id": 14,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 10484
+  },
+  "SD-15.test.js": {
+    "id": 15,
+    "businessCriticality": 1,
+    "failureHistory": 1,
+    "avgDuration": 7524
+  }
+}

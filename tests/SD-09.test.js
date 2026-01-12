@@ -1,6 +1,6 @@
 const { expect } = require('@playwright/test');
-import { PageFactory } from '../../pages/PageFactory';
-const { test } = require('../../resources/dbFixture');
+import { PageFactory } from '../pages/PageFactory';
+const { test } = require('../resources/dbFixture');
 
 test('Verify Appoinment Policy content  ', async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);

@@ -1,10 +1,10 @@
 const { expect } = require('@playwright/test');
-import { PageFactory } from '../../pages/PageFactory';
-const { test } = require('../../resources/dbFixture');
-import EnvConfig from '../../resources/ConfigEnvironment.json';
+import { PageFactory } from '../pages/PageFactory';
+const { test } = require('../resources/dbFixture');
+import EnvConfig from '../resources/ConfigEnvironment.json';
 
 
-test('Verify Valid user registration    ', async ({ db, page }) => {
+test('Verify Valid user Login    ', async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);
 
   const commonFunctions = PageFactory.getCommonFunctions(page);
@@ -31,6 +31,10 @@ test('Verify Valid user registration    ', async ({ db, page }) => {
   }
 ).not.toBeNull();
 
+
+ await loginPage.enterLoginDetails({ username:userName, password });
+ await loginPage.clickLoginButton();
+ await loginPage.VerifyLogInSuccessByCheckingLogoutButton();
 
 });
 

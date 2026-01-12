@@ -1,7 +1,7 @@
 const { expect } = require('@playwright/test');
-import { PageFactory } from '../../pages/PageFactory';
-import EnvConfig from '../../resources/ConfigEnvironment.json';
-const { test } = require('../../resources/dbFixture');
+import { PageFactory } from '../pages/PageFactory';
+import EnvConfig from '../resources/ConfigEnvironment.json';
+const { test } = require('../resources/dbFixture');
 
 test('Sample Test', async ({ db, page }) => {
 
