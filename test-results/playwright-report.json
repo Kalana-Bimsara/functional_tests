@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 5
+      "actualWorkers": 1
     },
     "preserveOutput": "failures-only",
     "reporter": [
@@ -35,9 +35,9 @@
       {
         "outputDir": "C:/Users/User/Desktop/functional_tests/test-results/artifacts",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 5
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -46,31 +46,31 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       }
     ],
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 8,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "SD-01.test.js",
-      "file": "SD-01.test.js",
+      "title": "SD-17.test.js",
+      "file": "SD-17.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify navigation Pannel",
+          "title": "Verify Add a",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 0,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -80,169 +80,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4543,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T20:43:09.632Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1d47cc59cdb1fcd4f8fa-d27414b4e7eba582f7b9",
-          "file": "SD-01.test.js",
-          "line": 4,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "SD-04.test.js",
-      "file": "SD-04.test.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Our Services ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 4212,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[INFO] Verifying Teeth Whitening service\n"
-                    },
-                    {
-                      "text": "[PASS] Teeth Whitening service verified\n"
-                    },
-                    {
-                      "text": "[INFO] Verifying Dental Implants service\n"
-                    },
-                    {
-                      "text": "[PASS] Dental Implants service verified\n"
-                    },
-                    {
-                      "text": "[INFO] Verifying Braces & Invisalign service\n"
-                    },
-                    {
-                      "text": "[PASS] Braces & Invisalign service verified\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T20:43:09.636Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "755f7e2eacb4a38e81f3-3a134aba86b1915eb5b1",
-          "file": "SD-04.test.js",
-          "line": 4,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "SD-05.test.js",
-      "file": "SD-05.test.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Contact Us Form - Valid Data",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 5530,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "[INFO] Alert message: message saved\n"
-                    },
-                    {
-                      "text": "[INFO] Alert accepted (OK clicked)\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T20:43:09.800Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "593b0a37c23fabe4480d-f9ff826feb7c73e7d6dc",
-          "file": "SD-05.test.js",
-          "line": 5,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "SD-11.test.js",
-      "file": "SD-11.test.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify Valid user registration    ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 4894,
+                  "duration": 52285,
                   "errors": [],
                   "stdout": [
                     {
@@ -252,68 +90,13 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_13_02_13_6tc\n"
+                      "text": "✅ Login successful, Logout button is visible\n"
                     },
                     {
-                      "text": "✅ Registration success pop-up is visible\n"
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T20:43:09.816Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "4ce2c2328578743a21fe-c923f2cf347a84dab664",
-          "file": "SD-11.test.js",
-          "line": 7,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "SD-12.test.js",
-      "file": "SD-12.test.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify invalid user registration - try to register with existing username",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
-                  "status": "passed",
-                  "duration": 6135,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Dialog type: alert\n"
-                    },
-                    {
-                      "text": "Dialog message: User already registered\n"
+                      "text": "🧹 Cleanup: deleted 1 availabledate record(s)\n"
                     },
                     {
                       "text": "[DB] MongoDB connection closed\n"
@@ -321,7 +104,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-12T20:43:09.793Z",
+                  "startTime": "2026-01-15T13:34:33.118Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -329,8 +112,8 @@
               "status": "expected"
             }
           ],
-          "id": "79c715a8f5bd78bfc652-771124b120ada6882f76",
-          "file": "SD-12.test.js",
+          "id": "71c29a83402b7f1279f9-78b9a78482a9766858df",
+          "file": "SD-17.test.js",
           "line": 6,
           "column": 1
         }
@@ -339,9 +122,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-12T20:43:08.700Z",
-    "duration": 8452.102,
-    "expected": 5,
+    "startTime": "2026-01-15T13:34:30.160Z",
+    "duration": 55422.261,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

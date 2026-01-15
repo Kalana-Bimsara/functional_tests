@@ -5,28 +5,53 @@ class CheckoutPage {
 
   constructor(page) {
     this.page = page;
-    // 1) Locate the iframe
-    this.stripeFrame = page.frameLocator('iframe[title="Secure payment input frame"]');
+   
+  // ✅ locator for the iframe itself (Locator)
+ 
 
-    // 2) Inputs INSIDE the iframe
-    this.txtCardNumber = this.stripeFrame.getByLabel('Card number');
-    this.txtExpiry = this.stripeFrame.getByLabel('Expiration date');
-    this.txtCvc = this.stripeFrame.getByLabel('Security code');
-    this.ddlCountry = this.stripeFrame.getByLabel('Country');
+  // ✅ frameLocator for inside iframe
+  this.stripeFrame = page.frameLocator(
+    '#payment-element iframe[title="Secure payment input frame"]'
+  );
 
-    // 3) Button OUTSIDE the iframe
-    this.btnPayNow = page.getByRole('button', { name: 'Pay now' });
+  // Inputs INSIDE iframe
+  this.txtCardNumber = this.stripeFrame.locator('#Field-numberInput');
+  this.txtExpiry     = this.stripeFrame.locator('#Field-expiryInput');
+  this.txtCvc        = this.stripeFrame.locator('#Field-cvcInput');
+  this.ddlCountry    = this.stripeFrame.locator('#Field-countryInput');
+  this.txtEmail    = this.stripeFrame.locator('#Field-linkEmailInput');
+  this.txtPhone    = this.stripeFrame.locator('#Field-linkMobilePhoneInput');
+  this.txtFullName    = this.stripeFrame.locator('#Field-linkLegalNameInput');
+
+  // Button OUTSIDE iframe
+  this.btnPayNow = page.getByRole('button', { name: 'Pay now' });
 
   }
 
-   async fillCardDetails({ number, expiry, cvc, country = 'Sri Lanka' }) {
-    await expect(this.stripeFrame).toBeVisible({ timeout: 10000 });
+  async fillOptionalCardDetails({ email, phone, fullName }) {
+  await this.page.waitForTimeout(2000); // Wait for iframe to load properly
+  await this.txtEmail.type(email);
+  await this.txtPhone.type(phone);
+  await this.txtFullName.type(fullName);
+ 
+}
 
-    await this.txtCardNumber.fill(number);
-    await this.txtExpiry.fill(expiry);      // e.g. "12 / 34"
-    await this.txtCvc.fill(cvc);
-    await this.ddlCountry.selectOption(country);
-  }
+ async fillCardDetails({ number, expiry, cvc, country = 'Sri Lanka' }) {
+  await this.page.waitForTimeout(2000); // Wait for iframe to load properly
+  await this.txtCardNumber.type(number);
+  // Stripe expiry is MM / YY
+  await this.txtExpiry.pressSequentially(expiry.replace('/', ''));
+  await this.txtCvc.type(cvc);
+  // Country: label vs value
+  await this.ddlCountry.selectOption({ label: country });
+}
+
+
+  async verifyPaymentPageLoaded() {
+  await expect(this.txtCardNumber).toBeVisible({ timeout: 15000 });
+  console.log('✅ Payment iframe is visible');
+}
+
 
   async submitPayment() {
     await this.btnPayNow.click();

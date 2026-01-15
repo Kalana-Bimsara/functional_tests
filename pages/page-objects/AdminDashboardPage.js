@@ -22,20 +22,69 @@ class AdminDashboardPage {
     this.btnCloseAddDoctorModal = page.locator('(//button[@type="button" and contains(text(),"Close")])[2]');
     this.txtDoctorName = page.locator('//input[@id="doctorName"]');
     this.txtDoctorSpecialization = page.locator('//input[@id="doctorSpecialty"]');
-    this.txtDoctorRegistrationNumber = page.locator('//input[@id="doctorRegistration"]'); 
+    this.txtDoctorRegistrationNumber = page.locator('//input[@id="doctorRegistration"]');
     this.btnServiceName = page.locator('//input[@id="serviceName"]');
     this.btnServicePrice = page.locator('//input[@id="servicePrice"]');
     this.btnAddServiceInModal = page.locator('//button[@type="submit" and contains(text(),"Add Service")]');
     this.btnCancelAddServiceModal = page.locator('//button[@type="button" and contains(text(),"Cancel")]');
 
+    // Modal
+    this.modal = page.locator('#addDateModal');
+
+    // Doctor dropdown (ID-based)
+    this.selectDoctor = page.locator('#doctor');
+
+    // Date input (type="date")
+    this.inputDate = page.locator('#appointmentDate');
+
+    // Buttons
+    this.btnAddDate = page.getByRole('button', { name: 'Add Date' });
+    this.btnClose = page.getByRole('button', { name: 'Close' });
+
   }
 
-  async enterDetailsAddNewService({ serviceName, servicePrice }) {    
+
+
+
+
+
+  async addNewDate({ doctorName, date }) {
+    // Wait for modal to be visible
+    await expect(this.modal).toBeVisible({ timeout: 7000 });
+
+    // Select doctor (by visible text)
+    if (doctorName) {
+      await this.selectDoctor.selectOption({ label: doctorName });
+      await expect(this.selectDoctor.locator('option:checked'))
+        .toHaveText(doctorName);
+    }
+
+    // Enter date (YYYY-MM-DD)
+    if (date) {
+      await this.inputDate.fill(date);
+      await expect(this.inputDate).toHaveValue(date);
+    }
+
+   
+  }
+
+  async clickAddDateButton() {
+    expect(this.btnAddDate).toBeVisible({ timeout: 7000 });
+    await this.btnAddDate.click();
+  }
+
+
+  async clickAddNewDateButton() {
+    expect(this.btnAddNewDate).toBeVisible({ timeout: 7000 });
+    await this.btnAddNewDate.click();
+  }
+
+  async enterDetailsAddNewService({ serviceName, servicePrice }) {
     await expect(this.btnServiceName).toBeVisible({ timeout: 7000 });
-    if(serviceName){
+    if (serviceName) {
       await this.btnServiceName.fill(serviceName);
     }
-    if(servicePrice){
+    if (servicePrice) {
       await this.btnServicePrice.fill(servicePrice);
     }
   }
@@ -53,16 +102,16 @@ class AdminDashboardPage {
 
   async enterNewDoctorDetails({ name, specialization, registrationNumber }) {
     await expect(this.txtDoctorName).toBeVisible({ timeout: 7000 });
-    if(name){
+    if (name) {
       await this.txtDoctorName.fill(name);
     }
-    if(specialization){
+    if (specialization) {
       await this.txtDoctorSpecialization.fill(specialization);
     }
-    if(registrationNumber){
+    if (registrationNumber) {
       await this.txtDoctorRegistrationNumber.fill(registrationNumber);
     }
-  
+
   }
 
   async clickAddNewDoctorButton() {

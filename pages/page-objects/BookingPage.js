@@ -47,17 +47,32 @@ class BookingPage {
 
   async enterDetailsToBookAnAppointment({ patientName, mobileNumber, emailAddress, doctor, service, appointmentDate }) {
     await expect(this.modal).toBeVisible({ timeout: 7000 });
-    await this.textPatientName.fill(patientName);
-    await this.textMobileNumber.fill(mobileNumber);
-    await this.textEmailAddress.fill(emailAddress);
-    await this.selectDoctor.selectOption(doctor);
-    await this.selectService.selectOption(service);
-    await this.selectAppointmentDate.selectOption(appointmentDate);
+    if (patientName) {
+      await this.textPatientName.fill(patientName);
+    }
+    if (mobileNumber) {
+      await this.textMobileNumber.fill(mobileNumber);
+    }
+    if (emailAddress) {
+      await this.textEmailAddress.fill(emailAddress);
+    }
+    if (doctor) {
+      await this.selectDoctor.selectOption(doctor);
+    }
+    if (service) {
+      await this.selectService.selectOption(service);
+    }
+    if (appointmentDate) {
+      await this.selectAppointmentDate.selectOption(appointmentDate);
+    }
   }
 
   async clickBookAppointmentButton() {
     await this.btnBookAppointment.click();
+    
   }
+
+  
 
 }
 

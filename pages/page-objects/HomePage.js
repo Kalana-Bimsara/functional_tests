@@ -10,7 +10,7 @@ class HomePage {
     this.lnkBookonline = page.locator('//a[@href="/booking" and contains(normalize-space(),"Book Online")]');
     this.nav = page.locator('ul.navbar-nav.ms-auto');
     this.links = this.nav.locator('a.nav-link');
-    this.lnkBookNow = page.locator('//a[@href="/booking"]');
+    this.lnkBookNow = page.locator('//a[@href="/booking" and contains(normalize-space(),"Book Now")]');
     this.lnkLogIn = page.locator('//*[@id="navbarNav"]/a[2]');
     this.formContactUs = page.locator('//*[@id="contact"]//form');
     this.txtName = page.locator('//input[@id="name"]');
@@ -138,6 +138,7 @@ class HomePage {
     await this.page.waitForTimeout(2000);
     await expect(this.lnkBookNow).toBeVisible({ timeout: 7000 });
     await this.lnkBookNow.click();
+    await expect(this.page).toHaveURL('http://test.smiledentalhospitals.site/booking');
   }
 
   async verify_Navigation_panel(expected) {

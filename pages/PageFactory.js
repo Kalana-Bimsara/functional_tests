@@ -5,6 +5,7 @@ import {OurTeamPage} from './page-objects/OurTeamPage.js';
 import {UpperPannelPage} from './page-objects/UpperPannelPage.js';
 import { BookingPage } from './page-objects/BookingPage.js';    
 import { CommonFunctions } from '../resources/CommonFunctions.js';
+import { CheckoutPage } from './page-objects/CheckoutPage.js';
 
 
 class PageFactory {
@@ -34,6 +35,10 @@ class PageFactory {
     }
     static getCommonFunctions(page) {
         return new CommonFunctions(page);
+    }
+
+    static getCheckoutPage(page) {
+        return new CheckoutPage(page);
     }
   } 
 

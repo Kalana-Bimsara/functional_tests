@@ -34,7 +34,7 @@ class CommonFunctions {
   }
 
 
-   generateRandomDoctorName() {
+  generateRandomDoctorName() {
     const maxCombos =
       this.firstNames.length * this.middleNames.length * this.lastNames.length;
 
@@ -92,6 +92,20 @@ class CommonFunctions {
     console.log('Generated Registration Number:', registrationNumber);
     return registrationNumber;
   }
+
+  async getDatePlusDays(daysToAdd = 0) {
+    const add = Number(daysToAdd) || 0;
+
+    const d = new Date();
+    d.setDate(d.getDate() + add);
+
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+
+    return `${yyyy}-${mm}-${dd}`; // ✅ "2026-01-31" format
+  }
+
 
 
 
