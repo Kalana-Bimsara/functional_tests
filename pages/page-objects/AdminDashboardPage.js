@@ -43,10 +43,24 @@ class AdminDashboardPage {
     this.btnAddDate = page.getByRole('button', { name: 'Add Date' });
     this.btnClose = page.getByRole('button', { name: 'Close' });
 
-    this.EmptyDataValidatonMessageDoctorName= page.locator('//span[@class="text-danger" and contains(text(),"Please select a doctor")]');
-    this.EmptyDataValidatonMessageDate= page.locator('//span[@class="text-danger" and contains(text(),"Please select a date")]');
+    this.EmptyDataValidatonMessageDoctorName = page.locator('//span[@class="text-danger" and contains(text(),"Please select a doctor")]');
+    this.EmptyDataValidatonMessageDate = page.locator('//span[@class="text-danger" and contains(text(),"Please select a date")]');
+    this.EmptyDataValidatonMessageDoctorInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Doctor name is required")]');
+    this.EmptyDataValidatonMessageSpecializationInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Specialty is required")]');
+    this.EmptyDataValidatonMessageRegistrationNumberInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Registration number is required")]');
 
-   
+  }
+
+  async verifyValidationMesageEmptDoctorNameInAddingDoctor() {
+    expect(this.EmptyDataValidatonMessageDoctorInAddingDoctor).toBeVisible({ timeout: 7000 });
+  }
+
+  async verifyValidationMesageEmptSpecializationInAddingDoctor() {
+    expect(this.EmptyDataValidatonMessageSpecializationInAddingDoctor).toBeVisible({ timeout: 7000 });
+  }
+
+  async verifyValidationMesageEmptRegistrationNumberInAddingDoctor() {
+    expect(this.EmptyDataValidatonMessageRegistrationNumberInAddingDoctor).toBeVisible({ timeout: 7000 });
   }
 
   async clickCloseAddNewDateModalButtonAndVerify() {
@@ -54,6 +68,12 @@ class AdminDashboardPage {
     expect(this.btnCloseAddNewDateModal).toBeVisible({ timeout: 7000 });
     await this.btnCloseAddNewDateModal.click();
     expect(this.btnCloseAddNewDateModal).not.toBeVisible({ timeout: 7000 });
+  }
+
+  async clickCloseAddDoctorModalButtonAndVerify() {
+    expect(this.btnCloseAddDoctorModal).toBeVisible({ timeout: 7000 });
+    await this.btnCloseAddDoctorModal.click();
+    expect(this.btnCloseAddDoctorModal).not.toBeVisible({ timeout: 7000 });
   }
 
   async verifyValidatonMesageEmptDoctorName() {
@@ -88,7 +108,7 @@ class AdminDashboardPage {
       await expect(this.inputDate).toHaveValue(date);
     }
 
-   
+
   }
 
   async clickAddDateButton() {
@@ -130,18 +150,30 @@ class AdminDashboardPage {
 
 
   async enterNewDoctorDetails({ name, specialization, registrationNumber }) {
-    await expect(this.txtDoctorName).toBeVisible({ timeout: 7000 });
-    if (name) {
-      await this.txtDoctorName.fill(name);
-    }
-    if (specialization) {
-      await this.txtDoctorSpecialization.fill(specialization);
-    }
-    if (registrationNumber) {
-      await this.txtDoctorRegistrationNumber.fill(registrationNumber);
-    }
+  await expect(this.txtDoctorName).toBeVisible({ timeout: 7000 });
 
+  // Doctor Name
+  if (name !== undefined) {
+    await this.txtDoctorName.fill(String(name));   // allows '' too
+  } else {
+    await this.txtDoctorName.fill('');            // clear if not provided
   }
+
+  // Specialization
+  if (specialization !== undefined) {
+    await this.txtDoctorSpecialization.fill(String(specialization));
+  } else {
+    await this.txtDoctorSpecialization.fill('');
+  }
+
+  // Registration Number
+  if (registrationNumber !== undefined) {
+    await this.txtDoctorRegistrationNumber.fill(String(registrationNumber));
+  } else {
+    await this.txtDoctorRegistrationNumber.fill('');
+  }
+}
+
 
   async clickAddNewDoctorButton() {
     expect(this.btnAddNewDoctor).toBeVisible({ timeout: 7000 });
