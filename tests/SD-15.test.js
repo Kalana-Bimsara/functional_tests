@@ -3,79 +3,95 @@ import { PageFactory } from '../pages/PageFactory';
 const { test } = require('../resources/dbFixture');
 import EnvConfig from '../resources/ConfigEnvironment.json';
 
+test(
+  'Verify Add a Doctor',
+  { annotations: [{ type: 'impact', description: 'high' }] },
+  async ({ db, page }) => {
 
-test('Verify Add a Doctor', { annotations: [{ type: 'impact', description: 'high' }]},async ({ db, page }) => {
-  const homePage = PageFactory.getHomePage(page);
-  const commonFunctions = PageFactory.getCommonFunctions(page);
-  const loginPage = PageFactory.getLoginPage(page);
-  const adminDashboardPage = PageFactory.getAdminDashboardPage(page);
-  const password = EnvConfig.QA.PASSWORD;
+    const homePage = PageFactory.getHomePage(page);
+    const commonFunctions = PageFactory.getCommonFunctions(page);
+    const loginPage = PageFactory.getLoginPage(page);
+    const adminDashboardPage = PageFactory.getAdminDashboardPage(page);
+    const password = EnvConfig.QA.PASSWORD;
 
-  await homePage.navigate_To_Home_Page();
-  await homePage.verify_The_Welcome_Text({ text: 'Welcome to Smile Dental' });
-  await homePage.verify_Navigation_panel(['Home', 'About Us', 'Services', 'Prices', 'Our Team', 'Contact']);
-  await homePage.Click_LogIn_Button();
+    await homePage.navigate_To_Home_Page();
+    await homePage.verify_The_Welcome_Text({ text: 'Welcome to Smile Dental' });
+    await homePage.verify_Navigation_panel([
+      'Home', 'About Us', 'Services', 'Prices', 'Our Team', 'Contact'
+    ]);
+    await homePage.Click_LogIn_Button();
 
-  const userName = await commonFunctions.generateRandomUserName();
+    const userName = await commonFunctions.generateRandomUserName();
 
-  await loginPage.click_On_Register_Link();
-  await loginPage.enterLoginDetails({ username: userName, password });
-  await loginPage.clickRegisterButton();
-  await loginPage.verifyRegistrationSuccessPopUp();
-  await loginPage.clickPopUpMessageOKButton();
+    await loginPage.click_On_Register_Link();
+    await loginPage.enterLoginDetails({ username: userName, password });
+    await loginPage.clickRegisterButton();
+    await loginPage.verifyRegistrationSuccessPopUp();
+    await loginPage.clickPopUpMessageOKButton();
 
-  // ✅ Wait until user exists in DB
-  await expect.poll(
-    async () => db.collection('usermodels').findOne({ username: userName }),
-    { timeout: 10000, intervals: [1000, 2000, 3000] }
-  ).not.toBeNull();
+    // ✅ Wait until user exists in DB
+    await expect.poll(
+      async () => db.collection('usermodels').findOne({ username: userName }),
+      { timeout: 10000, intervals: [1000, 2000, 3000] }
+    ).not.toBeNull();
 
-  // ✅ Update user -> isAdmin = true
-  const updateResult = await db.collection('usermodels').updateOne(
-    { username: userName },
-    { $set: { isAdmin: true } }
-  );
+    // ✅ Promote user to admin
+    const updateResult = await db.collection('usermodels').updateOne(
+      { username: userName },
+      { $set: { isAdmin: true } }
+    );
 
-  expect(updateResult.matchedCount, 'User not found to update').toBe(1);
-  expect(updateResult.modifiedCount, 'User found but not updated').toBe(1);
+    expect(updateResult.matchedCount).toBe(1);
+    expect(updateResult.modifiedCount).toBe(1);
 
-  // ✅ Verify update
-  const updatedUser = await db.collection('usermodels').findOne({ username: userName });
-  expect(updatedUser.isAdmin).toBe(true);
+    const updatedUser = await db.collection('usermodels').findOne({ username: userName });
+    expect(updatedUser.isAdmin).toBe(true);
 
-  // ✅ Continue UI login
-  await loginPage.enterLoginDetails({ username: userName, password });
-  await loginPage.clickLoginButton();
-  await adminDashboardPage.verifyAdminDashboardPageElements();
-  await adminDashboardPage.clickAddNewDoctorButton();
+    // ✅ Login as admin
+    await loginPage.enterLoginDetails({ username: userName, password });
+    await loginPage.clickLoginButton();
+    await adminDashboardPage.verifyAdminDashboardPageElements();
+    await adminDashboardPage.clickAddNewDoctorButton();
 
-  const regNo = await commonFunctions.generateRegistrationNumber();
-  const name = await commonFunctions.generateRandomDoctorName();
+    const regNo = await commonFunctions.generateRegistrationNumber();
+    const name = await commonFunctions.generateRandomDoctorName();
 
-  await adminDashboardPage.enterNewDoctorDetails({
-    name,
-    specialization: 'Dentist',
-    registrationNumber: regNo
-  });
+    await adminDashboardPage.enterNewDoctorDetails({
+      name,
+      specialization: 'Dentist',
+      registrationNumber: regNo
+    });
 
- 
-  await loginPage.verifyDialogOnAction({
-    expectedMessage: 'Doctor registered',
-    action: async () => {
-       await adminDashboardPage.clickAddDoctorInModalButton();
-    }
-  });
+    await loginPage.verifyDialogOnAction({
+      expectedMessage: 'Doctor registered',
+      action: async () => {
+        await adminDashboardPage.clickAddDoctorInModalButton();
+      }
+    });
 
-   await expect.poll(
-    async () => db.collection('doctors').findOne({ name, registrationNumber: regNo }),
-    { timeout: 10000, intervals: [1000, 2000, 3000] }
-  ).not.toBeNull();
+    // ✅ Assert doctor exists in DB
+    const doctorRecord = await expect.poll(
+      async () => db.collection('doctors').findOne({ name, registrationNumber: regNo }),
+      { timeout: 10000, intervals: [1000, 2000, 3000] }
+    ).not.toBeNull();
 
+    // ---------- 🧹 DB CLEANUP (NEW) ----------
+    const deleteResult = await db.collection('doctors').deleteOne({
+      name,
+      registrationNumber: regNo
+    });
 
+    await page.waitForTimeout(2000); // wait for cleanup to complete
+    expect(deleteResult.deletedCount).toBe(1);
+    console.log('🧹 Cleanup: doctor record deleted');
 
+    // ✅ ASSERT doctor no longer exists
+    const remainingDoctor = await db.collection('doctors').findOne({
+      name,
+      registrationNumber: regNo
+    });
 
-
-});
-
-
-
+    expect(remainingDoctor).toBeNull();
+    console.log('✅ DB Assert: doctor record not present after cleanup');
+  }
+);

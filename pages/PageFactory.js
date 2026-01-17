@@ -6,6 +6,7 @@ import {UpperPannelPage} from './page-objects/UpperPannelPage.js';
 import { BookingPage } from './page-objects/BookingPage.js';    
 import { CommonFunctions } from '../resources/CommonFunctions.js';
 import { CheckoutPage } from './page-objects/CheckoutPage.js';
+import { PricePage } from './page-objects/PricePage.js';
 
 
 class PageFactory {
@@ -40,6 +41,10 @@ class PageFactory {
     static getCheckoutPage(page) {
         return new CheckoutPage(page);
     }
+
+    static getPricePage(page) {
+        return new PricePage(page);
+    }   
   } 
 
   export { PageFactory };

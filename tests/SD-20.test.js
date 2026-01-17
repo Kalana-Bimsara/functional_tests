@@ -3,7 +3,7 @@ import { PageFactory } from '../pages/PageFactory';
 const { test } = require('../resources/dbFixture');
 import EnvConfig from '../resources/ConfigEnvironment.json';
 
-test('Verify Admin can Add a New Date for a Doctor', async ({ db, page }) => {
+test('Verify Admin can not Add a New Date for a Doctor with invalid details', async ({ db, page }) => {
   const homePage = PageFactory.getHomePage(page);
   const bookingPage = PageFactory.getBookingPage(page);
   const checkoutPage = PageFactory.getCheckoutPage(page);
@@ -13,8 +13,9 @@ test('Verify Admin can Add a New Date for a Doctor', async ({ db, page }) => {
 
   const password = EnvConfig.QA.PASSWORD;
 
-  const doctorName = 'Dr. Thilina Madhawa Silva';
-  const date = await commonFunctions.getDatePlusDays(5);;
+  const doctorName = 'Kalana';
+  const date = await commonFunctions.getDateMinusDays(5);
+  console.log('date is: ', date);
 
   // 🔹 Fetch doctorId from DB
   const doctor = await db.collection('doctors').findOne({ name: doctorName });
@@ -24,6 +25,7 @@ test('Verify Admin can Add a New Date for a Doctor', async ({ db, page }) => {
 
   // IMPORTANT: doctor_id is stored as STRING in availabledates
   const doctorId = doctor._id.toString();
+
 
   // ---------- UI FLOW ----------
   await homePage.navigate_To_Home_Page();
@@ -47,25 +49,39 @@ test('Verify Admin can Add a New Date for a Doctor', async ({ db, page }) => {
   await adminPage.verifyAdminDashboardPageElements();
   await adminPage.clickAddNewDateButton();
 
+  await adminPage.clickAddDateButton();
+
+  await adminPage.verifyValidatonMesageEmptDoctorName();
+  await adminPage.verifyValidatonMesageEmptDate();
+  await adminPage.clickCloseAddNewDateModalButtonAndVerify();
+
+  // validtin without date
+  await adminPage.clickAddNewDateButton();
   await adminPage.addNewDate({
-    doctorName,
+    doctorName
+  });
+  await adminPage.clickAddDateButton();
+  await adminPage.verifyValidatonMesageEmptDate();
+
+  //validation message with invalid date
+  await adminPage.addNewDate({
     date,
   });
 
   await adminPage.clickAddDateButton();
+  await page.waitForTimeout(7000);
 
-  await page.waitForTimeout(7000); // wait for DB to update
+  // ---------- ✅ DB ASSERT: record NOT inserted ----------
+  const availableDates = db.collection('availabledates');
 
-   // ---------- 🧹 DB CLEANUP ----------
-const filter = {
-  doctor_id: doctorId,
-  date: new Date(date),
-};
+  // if your DB stores date as ISO midnight, this will match
+  const count = await availableDates.countDocuments({
+    doctor_id: doctorId,
+    date: new Date(date),
+  });
 
-const result = await db.collection('availabledates').deleteMany(filter);
-console.log(`🧹 Cleanup: deleted ${result.deletedCount} availabledate record(s)`);
+  expect(count).toBe(0);
+  console.log('✅ DB Assert: No availabledates record inserted for invalid details');
 
-const remainingCount = await db.collection('availabledates').countDocuments(filter);
-expect(remainingCount).toBe(0);
-console.log('✅ DB Assert: record not present in DB');
+
 });

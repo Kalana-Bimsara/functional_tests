@@ -46,7 +46,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -59,32 +59,54 @@
   },
   "suites": [
     {
-      "title": "SD-17.test.js",
-      "file": "SD-17.test.js",
+      "title": "SD-20.test.js",
+      "file": "SD-20.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Add a",
-          "ok": true,
+          "title": "Verify Admin can not Add a New Date for a Doctor with invalid details",
+          "ok": false,
           "tags": [],
           "tests": [
             {
-              "timeout": 0,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 53,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 52285,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 15750,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                      "column": 17,
+                      "line": 83
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                        "column": 17,
+                        "line": 83
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "date is:  2026-01-12\n"
                     },
                     {
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
@@ -96,24 +118,37 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "🧹 Cleanup: deleted 1 availabledate record(s)\n"
-                    },
-                    {
                       "text": "[DB] MongoDB connection closed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-15T13:34:33.118Z",
+                  "startTime": "2026-01-17T10:09:53.683Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                    "column": 17,
+                    "line": 83
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "71c29a83402b7f1279f9-78b9a78482a9766858df",
-          "file": "SD-17.test.js",
+          "id": "c7ec18b421c48f52cf25-c3d47460256680bd8712",
+          "file": "SD-20.test.js",
           "line": 6,
           "column": 1
         }
@@ -122,11 +157,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-15T13:34:30.160Z",
-    "duration": 55422.261,
-    "expected": 1,
+    "startTime": "2026-01-17T10:09:52.019Z",
+    "duration": 17538.3939999938,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

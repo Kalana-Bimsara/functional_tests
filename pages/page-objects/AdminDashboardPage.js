@@ -20,6 +20,8 @@ class AdminDashboardPage {
     this.adminDashboardtext = page.locator('//h4[contains(text(),"Admin Dashboard")]');
     this.btnAddDoctorInModal = page.locator('//button[@type="submit" and contains(text(),"Add Doctor")]');
     this.btnCloseAddDoctorModal = page.locator('(//button[@type="button" and contains(text(),"Close")])[2]');
+    this.btnCloseAddNewDateModal = page.locator('(//button[@type="button" and contains(text(),"Close")])[1]');
+
     this.txtDoctorName = page.locator('//input[@id="doctorName"]');
     this.txtDoctorSpecialization = page.locator('//input[@id="doctorSpecialty"]');
     this.txtDoctorRegistrationNumber = page.locator('//input[@id="doctorRegistration"]');
@@ -41,12 +43,33 @@ class AdminDashboardPage {
     this.btnAddDate = page.getByRole('button', { name: 'Add Date' });
     this.btnClose = page.getByRole('button', { name: 'Close' });
 
+    this.EmptyDataValidatonMessageDoctorName= page.locator('//span[@class="text-danger" and contains(text(),"Please select a doctor")]');
+    this.EmptyDataValidatonMessageDate= page.locator('//span[@class="text-danger" and contains(text(),"Please select a date")]');
+
+   
   }
 
+  async clickCloseAddNewDateModalButtonAndVerify() {
+    await this.page.waitForTimeout(1000);
+    expect(this.btnCloseAddNewDateModal).toBeVisible({ timeout: 7000 });
+    await this.btnCloseAddNewDateModal.click();
+    expect(this.btnCloseAddNewDateModal).not.toBeVisible({ timeout: 7000 });
+  }
 
+  async verifyValidatonMesageEmptDoctorName() {
+    expect(this.EmptyDataValidatonMessageDoctorName).toBeVisible({ timeout: 7000 });
+  }
 
+  async verifyValidatonMesageEmptDate() {
+    expect(this.EmptyDataValidatonMessageDate).toBeVisible({ timeout: 7000 });
+  }
 
+  async clickCloseAddDoctorModalButtonAndVerify() {
+    expect(this.btnCloseAddDoctorModal).toBeVisible({ timeout: 7000 });
+    await this.btnCloseAddDoctorModal.click();
+    expect(this.btnCloseAddDoctorModal).not.toBeVisible({ timeout: 7000 });
 
+  }
 
   async addNewDate({ doctorName, date }) {
     // Wait for modal to be visible
@@ -90,6 +113,12 @@ class AdminDashboardPage {
   }
 
   async clickAddNewServiceButton() {
+    expect(this.btnAddNewService).toBeVisible({ timeout: 7000 });
+    await this.btnAddNewService.click();
+  }
+
+
+  async clickAddNewServiceButtonInModal() {
     expect(this.btnAddServiceInModal).toBeVisible({ timeout: 7000 });
     await this.btnAddServiceInModal.click();
   }
