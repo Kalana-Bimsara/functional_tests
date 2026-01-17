@@ -48,7 +48,23 @@ class AdminDashboardPage {
     this.EmptyDataValidatonMessageDoctorInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Doctor name is required")]');
     this.EmptyDataValidatonMessageSpecializationInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Specialty is required")]');
     this.EmptyDataValidatonMessageRegistrationNumberInAddingDoctor = page.locator('//p[@class="text-danger" and contains(text(),"Registration number is required")]');
+    this.EmptyDataValidatonMessageServiceName = page.locator('//div[@class="invalid-feedback" and contains(text(),"Service name is required")]');
+    this.EmptyDataValidatonMessageServicePrice = page.locator('//div[@class="invalid-feedback" and contains(text(),"Service price is required")]');
+  }
 
+  async clickCancelAddServiceButtonAndVerify() {
+    expect(this.btnCancelAddServiceModal).toBeVisible({ timeout: 7000 });
+    await this.btnCancelAddServiceModal.click();
+    await this.page.waitForTimeout(2000);
+    expect(this.btnCancelAddServiceModal).not.toBeVisible({ timeout: 7000 });
+  }
+
+  async verifyValidationMesageEmptServiceName() {
+    expect(this.EmptyDataValidatonMessageServiceName).toBeVisible({ timeout: 7000 });
+  }
+
+  async verifyValidationMesageEmptServicePrice() {
+    expect(this.EmptyDataValidatonMessageServicePrice).toBeVisible({ timeout: 7000 });
   }
 
   async verifyValidationMesageEmptDoctorNameInAddingDoctor() {
@@ -124,13 +140,22 @@ class AdminDashboardPage {
 
   async enterDetailsAddNewService({ serviceName, servicePrice }) {
     await expect(this.btnServiceName).toBeVisible({ timeout: 7000 });
-    if (serviceName) {
-      await this.btnServiceName.fill(serviceName);
+
+    // Service Name
+    if (serviceName !== undefined) {
+      await this.btnServiceName.fill(String(serviceName)); // allows ''
+    } else {
+      await this.btnServiceName.fill(''); // clear if not provided
     }
-    if (servicePrice) {
-      await this.btnServicePrice.fill(servicePrice);
+
+    // Service Price
+    if (servicePrice !== undefined) {
+      await this.btnServicePrice.fill(String(servicePrice));
+    } else {
+      await this.btnServicePrice.fill('');
     }
   }
+
 
   async clickAddNewServiceButton() {
     expect(this.btnAddNewService).toBeVisible({ timeout: 7000 });
@@ -150,29 +175,29 @@ class AdminDashboardPage {
 
 
   async enterNewDoctorDetails({ name, specialization, registrationNumber }) {
-  await expect(this.txtDoctorName).toBeVisible({ timeout: 7000 });
+    await expect(this.txtDoctorName).toBeVisible({ timeout: 7000 });
 
-  // Doctor Name
-  if (name !== undefined) {
-    await this.txtDoctorName.fill(String(name));   // allows '' too
-  } else {
-    await this.txtDoctorName.fill('');            // clear if not provided
-  }
+    // Doctor Name
+    if (name !== undefined) {
+      await this.txtDoctorName.fill(String(name));   // allows '' too
+    } else {
+      await this.txtDoctorName.fill('');            // clear if not provided
+    }
 
-  // Specialization
-  if (specialization !== undefined) {
-    await this.txtDoctorSpecialization.fill(String(specialization));
-  } else {
-    await this.txtDoctorSpecialization.fill('');
-  }
+    // Specialization
+    if (specialization !== undefined) {
+      await this.txtDoctorSpecialization.fill(String(specialization));
+    } else {
+      await this.txtDoctorSpecialization.fill('');
+    }
 
-  // Registration Number
-  if (registrationNumber !== undefined) {
-    await this.txtDoctorRegistrationNumber.fill(String(registrationNumber));
-  } else {
-    await this.txtDoctorRegistrationNumber.fill('');
+    // Registration Number
+    if (registrationNumber !== undefined) {
+      await this.txtDoctorRegistrationNumber.fill(String(registrationNumber));
+    } else {
+      await this.txtDoctorRegistrationNumber.fill('');
+    }
   }
-}
 
 
   async clickAddNewDoctorButton() {

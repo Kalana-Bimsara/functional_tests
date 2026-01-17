@@ -59,13 +59,13 @@
   },
   "suites": [
     {
-      "title": "SD-21.test.js",
-      "file": "SD-21.test.js",
+      "title": "SD-22.test.js",
+      "file": "SD-22.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify admin can not Add a Doctor with invalid details",
+          "title": "Verify Admin can not Add a New Service with invalid data",
           "ok": true,
           "tags": [],
           "tests": [
@@ -77,10 +77,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 58,
+                  "workerIndex": 61,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8609,
+                  "duration": 7218,
                   "errors": [],
                   "stdout": [
                     {
@@ -90,25 +90,10 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_17_16_43_b25\n"
-                    },
-                    {
-                      "text": "✅ Registration success pop-up is visible\n"
+                      "text": "✅ Login successful, Logout button is visible\n"
                     },
                     {
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
-                    },
-                    {
-                      "text": "Generated Registration Number: 20260117164309\n"
-                    },
-                    {
-                      "text": "Generated Doctor Name: Dr. Kalana Kavindu Pathirana\n"
-                    },
-                    {
-                      "text": "🧹 Cleanup: deleted test user User_2026_01_17_16_43_b25\n"
-                    },
-                    {
-                      "text": "✅ DB Assert: test user removed successfully\n"
                     },
                     {
                       "text": "[DB] MongoDB connection closed\n"
@@ -116,7 +101,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-17T11:13:02.478Z",
+                  "startTime": "2026-01-17T14:44:19.480Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -124,8 +109,8 @@
               "status": "expected"
             }
           ],
-          "id": "e3003acc8d6ad1a99a15-d9fb53202521997922dd",
-          "file": "SD-21.test.js",
+          "id": "b96c0cce3812cc1a8728-5837661f0afc6331c045",
+          "file": "SD-22.test.js",
           "line": 6,
           "column": 1
         }
@@ -134,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-17T11:13:00.528Z",
-    "duration": 10667.129999995232,
+    "startTime": "2026-01-17T14:44:17.536Z",
+    "duration": 9233.893999993801,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
