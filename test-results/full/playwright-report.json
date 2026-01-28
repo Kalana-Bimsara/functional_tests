@@ -87,7 +87,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 4209,
+                  "duration": 4575,
                   "error": {
                     "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
                     "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
@@ -121,7 +121,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:37:59.795Z",
+                  "startTime": "2026-01-28T10:02:14.893Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -150,7 +150,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 4854,
+                  "duration": 4584,
                   "error": {
                     "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
                     "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
@@ -184,7 +184,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T08:38:05.622Z",
+                  "startTime": "2026-01-28T10:02:21.187Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -247,7 +247,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2908,
+                  "duration": 2239,
                   "errors": [],
                   "stdout": [
                     {
@@ -256,7 +256,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:37:59.685Z",
+                  "startTime": "2026-01-28T10:02:14.766Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -293,12 +293,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2507,
+                  "duration": 2635,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:02.780Z",
+                  "startTime": "2026-01-28T10:02:17.235Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -335,7 +335,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2243,
+                  "duration": 1964,
                   "errors": [],
                   "stdout": [
                     {
@@ -374,7 +374,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:05.301Z",
+                  "startTime": "2026-01-28T10:02:19.885Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -411,7 +411,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2200,
+                  "duration": 2734,
                   "errors": [],
                   "stdout": [
                     {
@@ -435,7 +435,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:07.557Z",
+                  "startTime": "2026-01-28T10:02:21.867Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -472,14 +472,14 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 9126,
+                  "duration": 9700,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_0wp\n"
+                      "text": "Generated random username: User_2026_01_28_15_32_6ns\n"
                     },
                     {
                       "text": "[INFO] Alert message: message saved\n"
@@ -499,7 +499,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:09.904Z",
+                  "startTime": "2026-01-28T10:02:24.805Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -536,7 +536,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12625,
+                  "duration": 12768,
                   "errors": [],
                   "stdout": [
                     {
@@ -587,7 +587,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:12.239Z",
+                  "startTime": "2026-01-28T10:02:27.551Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -624,7 +624,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 3044,
+                  "duration": 3076,
                   "errors": [],
                   "stdout": [
                     {
@@ -639,7 +639,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:19.044Z",
+                  "startTime": "2026-01-28T10:02:34.529Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -676,7 +676,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 3359,
+                  "duration": 3460,
                   "errors": [],
                   "stdout": [
                     {
@@ -718,7 +718,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:22.099Z",
+                  "startTime": "2026-01-28T10:02:37.619Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -755,7 +755,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3619,
+                  "duration": 4446,
                   "errors": [],
                   "stdout": [
                     {
@@ -788,7 +788,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:25.085Z",
+                  "startTime": "2026-01-28T10:02:40.567Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -825,7 +825,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 9288,
+                  "duration": 10680,
                   "errors": [],
                   "stdout": [
                     {
@@ -879,7 +879,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:25.473Z",
+                  "startTime": "2026-01-28T10:02:41.090Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -916,7 +916,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4532,
+                  "duration": 4543,
                   "errors": [],
                   "stdout": [
                     {
@@ -926,7 +926,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_3ly\n"
+                      "text": "Generated random username: User_2026_01_28_15_32_8ya\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -937,7 +937,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:28.726Z",
+                  "startTime": "2026-01-28T10:02:45.029Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -974,7 +974,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4592,
+                  "duration": 3995,
                   "errors": [],
                   "stdout": [
                     {
@@ -995,7 +995,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:33.278Z",
+                  "startTime": "2026-01-28T10:02:49.597Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1032,7 +1032,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4246,
+                  "duration": 4175,
                   "errors": [],
                   "stdout": [
                     {
@@ -1042,7 +1042,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_esr\n"
+                      "text": "Generated random username: User_2026_01_28_15_32_ykj\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1056,7 +1056,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:34.778Z",
+                  "startTime": "2026-01-28T10:02:51.785Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1093,7 +1093,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6029,
+                  "duration": 4339,
                   "errors": [],
                   "stdout": [
                     {
@@ -1103,7 +1103,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_9qp\n"
+                      "text": "Generated random username: User_2026_01_28_15_32_2zl\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1117,7 +1117,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:37.892Z",
+                  "startTime": "2026-01-28T10:02:53.618Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1154,7 +1154,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 8061,
+                  "duration": 9434,
                   "errors": [],
                   "stdout": [
                     {
@@ -1164,7 +1164,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_o3s\n"
+                      "text": "Generated random username: User_2026_01_28_15_32_29e\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1173,10 +1173,10 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260128140843\n"
+                      "text": "Generated Registration Number: 20260128153302\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Chathura Dilshan Amarasinghe\n"
+                      "text": "Generated Doctor Name: Dr. Supun Nadeeka Pathirana\n"
                     },
                     {
                       "text": "Dialog type: alert\n"
@@ -1196,7 +1196,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:39.038Z",
+                  "startTime": "2026-01-28T10:02:55.981Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1233,7 +1233,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 23108,
+                  "duration": 21930,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
@@ -1262,7 +1262,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_08_mbb\n"
+                      "text": "Generated random username: User_2026_01_28_15_33_9j8\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1276,7 +1276,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:43.943Z",
+                  "startTime": "2026-01-28T10:02:57.975Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1305,7 +1305,7 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 27052,
+                  "duration": 25461,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
@@ -1334,7 +1334,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_09_0qw\n"
+                      "text": "Generated random username: User_2026_01_28_15_33_1ya\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1348,7 +1348,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T08:39:08.293Z",
+                  "startTime": "2026-01-28T10:03:21.336Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1411,7 +1411,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11551,
+                  "duration": 11793,
                   "errors": [],
                   "stdout": [
                     {
@@ -1438,7 +1438,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:47.118Z",
+                  "startTime": "2026-01-28T10:03:05.433Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1475,7 +1475,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 14299,
+                  "duration": 12489,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3",
@@ -1515,7 +1515,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:38:58.683Z",
+                  "startTime": "2026-01-28T10:03:17.244Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1544,7 +1544,7 @@
                   "workerIndex": 5,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 15207,
+                  "duration": 14473,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3",
@@ -1584,7 +1584,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T08:39:14.599Z",
+                  "startTime": "2026-01-28T10:03:31.424Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1633,7 +1633,7 @@
       "specs": [
         {
           "title": "Verify Price Page content",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1646,9 +1646,28 @@
                 {
                   "workerIndex": 6,
                   "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3251,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 3568,
+                  "error": {
+                    "message": "Error: toContainText can be only used with Locator object",
+                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                      "column": 9,
+                      "line": 19
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                        "column": 9,
+                        "line": 19
+                      },
+                      "message": "Error: toContainText can be only used with Locator object\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[2m    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
@@ -1662,12 +1681,91 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:39:31.308Z",
+                  "startTime": "2026-01-28T10:03:47.556Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                    "column": 9,
+                    "line": 19
+                  }
+                },
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 4009,
+                  "error": {
+                    "message": "Error: toContainText can be only used with Locator object",
+                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                      "column": 9,
+                      "line": 19
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                        "column": 9,
+                        "line": 19
+                      },
+                      "message": "Error: toContainText can be only used with Locator object\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[2m    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-01-28T10:03:52.683Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                    "column": 9,
+                    "line": 19
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "f2450be28b6f3c6ad9b1-e7293dac5346438025bd",
@@ -1685,7 +1783,7 @@
       "specs": [
         {
           "title": "Verify Admin can not Add a New Date for a Doctor with invalid details",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1696,11 +1794,30 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 5246,
-                  "errors": [],
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15296,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                      "column": 17,
+                      "line": 83
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                        "column": 17,
+                        "line": 83
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n\n\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
@@ -1723,12 +1840,110 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:39:34.755Z",
+                  "startTime": "2026-01-28T10:03:48.510Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                    "column": 17,
+                    "line": 83
+                  }
+                },
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 16866,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                      "column": 17,
+                      "line": 83
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                        "column": 17,
+                        "line": 83
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n\n\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "date is:  2026-01-23\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "✅ Login successful, Logout button is visible\n"
+                    },
+                    {
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-01-28T10:04:05.362Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                    "column": 17,
+                    "line": 83
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "c7ec18b421c48f52cf25-c3d47460256680bd8712",
@@ -1757,10 +1972,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
-                  "parallelIndex": 0,
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6002,
+                  "duration": 6075,
                   "errors": [],
                   "stdout": [
                     {
@@ -1770,7 +1985,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_14_09_hev\n"
+                      "text": "Generated random username: User_2026_01_28_15_34_3ra\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1779,13 +1994,13 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260128140942\n"
+                      "text": "Generated Registration Number: 20260128153402\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Upeksha Anushka Amarasinghe\n"
+                      "text": "Generated Doctor Name: Dr. Sachini Bimsara Gamage\n"
                     },
                     {
-                      "text": "🧹 Cleanup: deleted test user User_2026_01_28_14_09_hev\n"
+                      "text": "🧹 Cleanup: deleted test user User_2026_01_28_15_34_3ra\n"
                     },
                     {
                       "text": "✅ DB Assert: test user removed successfully\n"
@@ -1796,7 +2011,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:39:37.453Z",
+                  "startTime": "2026-01-28T10:03:57.923Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1830,10 +2045,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 9,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6854,
+                  "duration": 6849,
                   "errors": [],
                   "stdout": [
                     {
@@ -1854,7 +2069,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:39:40.016Z",
+                  "startTime": "2026-01-28T10:04:04.198Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1872,11 +2087,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T08:37:58.825Z",
-    "duration": 108322.63500000001,
-    "expected": 20,
+    "startTime": "2026-01-28T10:02:13.896Z",
+    "duration": 129144.274,
+    "expected": 18,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 5,
     "flaky": 0
   }
 }

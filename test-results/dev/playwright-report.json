@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "failures-only",
     "reporter": [
@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "outputFolder": "test-results/full/html-report",
+          "outputFolder": "test-results/dev/html-report",
           "open": "never"
         }
       ]
@@ -42,9 +42,9 @@
       {
         "outputDir": "C:/Users/User/Desktop/functional_tests/test-results/dev/artifacts",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
@@ -59,20 +59,279 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "SD-19.test.js",
-      "file": "SD-19.test.js",
+      "title": "SD-11.test.js",
+      "file": "SD-11.test.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Price Page content",
+          "title": "Verify Valid user registration    ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4122,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_28_14_48_fp6\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-28T09:18:03.449Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ce2c2328578743a21fe-c923f2cf347a84dab664",
+          "file": "SD-11.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-13.test.js",
+      "file": "SD-13.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Valid user Login    ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5958,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_28_14_48_07a\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Login successful, Logout button is visible\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-28T09:18:03.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ffe3573aaa7493b51968-8d3b30d3b9cbb5341399",
+          "file": "SD-13.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-14.test.js",
+      "file": "SD-14.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Admin Dashboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6052,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_28_14_48_mft\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-28T09:18:07.846Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb7533e60e6cd5038ff0-698efb52c1de71da29cb",
+          "file": "SD-14.test.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-15.test.js",
+      "file": "SD-15.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add a Doctor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10268,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_28_14_48_ipe\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Admin Dashboard page elements are verified successfully\n"
+                    },
+                    {
+                      "text": "Generated Registration Number: 20260128144816\n"
+                    },
+                    {
+                      "text": "Generated Doctor Name: Dr. Saman Dinithi Liyanage\n"
+                    },
+                    {
+                      "text": "Dialog type: alert\n"
+                    },
+                    {
+                      "text": "Dialog message: Doctor registered\n"
+                    },
+                    {
+                      "text": "🧹 Cleanup: doctor record deleted\n"
+                    },
+                    {
+                      "text": "✅ DB Assert: doctor record not present after cleanup\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-28T09:18:09.669Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62cf59a24f3c5f7734d6-12789634e990e8432a4a",
+          "file": "SD-15.test.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "SD-16.test.js",
+      "file": "SD-16.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Customer can Book a an Doctor Appoinment Successfully    ",
           "ok": false,
           "tags": [],
           "tests": [
@@ -87,25 +346,25 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 3927,
+                  "duration": 23221,
                   "error": {
-                    "message": "Error: toContainText can be only used with Locator object",
-                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19",
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
-                      "column": 9,
-                      "line": 19
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                      "column": 36,
+                      "line": 51
                     },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
-                        "column": 9,
-                        "line": 19
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                        "column": 36,
+                        "line": 51
                       },
-                      "message": "Error: toContainText can be only used with Locator object\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[2m    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19\u001b[22m"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[2m    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22\u001b[22m"
                     }
                   ],
                   "stdout": [
@@ -116,33 +375,129 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
+                      "text": "Generated random username: User_2026_01_28_14_48_1pp\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Login successful, Logout button is visible\n"
+                    },
+                    {
                       "text": "[DB] MongoDB connection closed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T08:36:48.627Z",
+                  "startTime": "2026-01-28T09:18:13.919Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-19-Verify-Price-Page-content-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
-                    "column": 9,
-                    "line": 19
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                    "column": 36,
+                    "line": 51
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25818,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
+                    "location": {
+                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                      "column": 36,
+                      "line": 51
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                        "column": 36,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[2m    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_01_28_14_48_c9a\n"
+                    },
+                    {
+                      "text": "✅ Registration success pop-up is visible\n"
+                    },
+                    {
+                      "text": "✅ Login successful, Logout button is visible\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-01-28T09:18:38.142Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\dev\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
+                    "column": 36,
+                    "line": 51
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "f2450be28b6f3c6ad9b1-e7293dac5346438025bd",
-          "file": "SD-19.test.js",
-          "line": 6,
+          "id": "d991854a48353a3ae080-9eea90ba1cd938f942f8",
+          "file": "SD-16.test.js",
+          "line": 7,
           "column": 1
         }
       ]
@@ -150,9 +505,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T08:36:47.129Z",
-    "duration": 5697.347000000067,
-    "expected": 0,
+    "startTime": "2026-01-28T09:18:02.498Z",
+    "duration": 62258.038,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

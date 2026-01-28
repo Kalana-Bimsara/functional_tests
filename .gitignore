@@ -137,3 +137,8 @@ dist
 
 playwright-rbt-suites/.env
 
+# Node
+.env
+
+# Playwright outputs
+test-results/
