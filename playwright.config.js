@@ -1,8 +1,28 @@
 require('dotenv').config();
 const { defineConfig, devices } = require('@playwright/test');
 
-const reportFile = process.env.PW_REPORT_FILE || 'test-results/playwright-report.json';
-const outputDir = process.env.PW_OUTPUT_DIR || 'test-results/artifacts';
+// 🔒 Determine execution mode
+const mode = process.env.TEST_MODE || 'dev';
+
+// 📁 Decide output locations per mode
+const reportFileMap = {
+  full: 'test-results/full/playwright-report.json',
+  rbt: 'test-results/rbt/rbt-report.json',
+  dev: 'test-results/dev/playwright-report.json',
+};
+
+const outputDirMap = {
+  full: 'test-results/full/artifacts',
+  rbt: 'test-results/rbt/artifacts',
+  dev: 'test-results/dev/artifacts',
+};
+
+const reportFile = reportFileMap[mode];
+const outputDir = outputDirMap[mode];
+
+if (!reportFile || !outputDir) {
+  throw new Error(`Invalid TEST_MODE: ${mode}`);
+}
 
 module.exports = defineConfig({
   testDir: './tests',
@@ -19,8 +39,20 @@ module.exports = defineConfig({
   preserveOutput: 'failures-only',
 
   // ✅ JSON report saved to a file (no stdout redirect = no JSON corruption)
-  reporter: [['json', { outputFile: reportFile }], ['list']],
-
+// ✅ CI/CD + Research-safe reporters
+  reporter: [
+    ['list'], // console output (CI logs)
+    ['json', { outputFile: reportFile }], // machine-readable (metrics, APFD)
+    [
+      'html',
+      {
+        outputFolder: process.env.TEST_MODE === 'rbt'
+          ? 'test-results/rbt/html-report'
+          : 'test-results/full/html-report',
+        open: 'never', // 🚫 never open browser in CI
+      },
+    ],
+  ],
   use: {
     baseURL: 'https://the-internet.herokuapp.com',
     headless: false,
