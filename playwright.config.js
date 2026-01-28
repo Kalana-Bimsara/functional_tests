@@ -6,6 +6,8 @@ const outputDir = process.env.PW_OUTPUT_DIR || 'test-results/artifacts';
 
 module.exports = defineConfig({
   testDir: './tests',
+  workers: 2,          // 🔒 FIXED for BOTH suites
+  fullyParallel: false, // allowed but controlled
   timeout: 30 * 1000,
   expect: { timeout: 5000 },
   retries: 1,

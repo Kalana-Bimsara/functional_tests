@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "Logo" [ref=e6]
+      - generic [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=e13]:
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: /#services
+          - listitem [ref=e15]:
+            - link "Prices" [ref=e16] [cursor=pointer]:
+              - /url: /price
+          - listitem [ref=e17]:
+            - link "Our Team" [ref=e18] [cursor=pointer]:
+              - /url: /ourteam
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /#contact
+        - link "Book Now" [ref=e21] [cursor=pointer]:
+          - /url: /booking
+        - link "Log In" [ref=e22] [cursor=pointer]:
+          - /url: /login
+  - banner [ref=e23]:
+    - generic [ref=e25]:
+      - heading "Welcome to Smile Dental this is for testing env with full workflow- QA ENV - aws micro t4" [level=1] [ref=e26]
+      - paragraph [ref=e27]: Providing exceptional dental care for all ages
+      - link "Book Online" [ref=e28] [cursor=pointer]:
+        - /url: /booking
+      - paragraph [ref=e29]: or call 0777 38 65 90 for appointments
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - heading "About Our Clinic" [level=2] [ref=e34]
+      - paragraph [ref=e35]: At Dental Clinic, we always try our best to explain your treatment options and all the costs clearly. Our goal is to make sure every patient feels confident, well-informed, and actively part of their treatment plan.
+      - paragraph [ref=e36]: We provide top-notch dental services with state-of-the-art technology to ensure your smile stays beautiful and healthy.
+      - generic [ref=e37]:
+        - list [ref=e38]:
+          - listitem [ref=e39]: Experienced Dentists
+          - listitem [ref=e40]: Modern Equipment
+          - listitem [ref=e41]: Personalized Care
+        - list [ref=e42]:
+          - listitem [ref=e43]: Comfortable Environment
+          - listitem [ref=e44]: Emergency Dental Services
+          - listitem [ref=e45]: Flexible Payment Plans
+    - img "Dental Clinic" [ref=e47]
+  - generic [ref=e48]:
+    - heading "Our Services" [level=2] [ref=e50]
+    - generic [ref=e52]:
+      - generic [ref=e54]:
+        - img "Service 1" [ref=e55]
+        - heading "Teeth Whitening" [level=5] [ref=e56]
+        - paragraph [ref=e57]: Brighten your smile with our professional teeth whitening services. Our teeth whitening treatments use advanced materials and technology to make it easier than ever to get a brighter smile.
+      - generic [ref=e59]:
+        - img "Service 2" [ref=e60]
+        - heading "Dental Implants" [level=5] [ref=e61]
+        - paragraph [ref=e62]: Restore your smile with durable and natural-looking dental implants. Support one or more artificial teeth with a dental implant. The titanium screw replaces a failed tooth root
+      - generic [ref=e64]:
+        - img "Service 3" [ref=e65]
+        - heading "Braces & Invisalign" [level=5] [ref=e66]
+        - paragraph [ref=e67]: Braces are tools that fix crooked teeth or bite problems by using metal parts, wires, and bands.Invisalign is a clear aligner system that straightens teeth discreetly.
+  - generic [ref=e71]:
+    - heading "Contact Us" [level=2] [ref=e72]
+    - generic [ref=e73]:
+      - generic [ref=e74]: Name
+      - textbox "Name" [ref=e75]:
+        - /placeholder: Your Name
+    - generic [ref=e76]:
+      - generic [ref=e77]: Email
+      - textbox "Email" [ref=e78]:
+        - /placeholder: Your Email
+    - generic [ref=e79]:
+      - generic [ref=e80]: Message
+      - textbox "Message" [ref=e81]:
+        - /placeholder: Your Message
+    - button "Submit" [ref=e83] [cursor=pointer]
+  - generic [ref=e84]:
+    - heading "Our Location" [level=2] [ref=e85]
+    - paragraph [ref=e86]: 324-10 Havelock Rd, Colombo 00500
+    - iframe [ref=e88]:
+      
+  - contentinfo [ref=e89]:
+    - generic [ref=e90]:
+      - list [ref=e92]:
+        - listitem [ref=e93]:
+          - link "About Us" [ref=e94] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e95]:
+          - link "Home" [ref=e96] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e97]:
+          - link "Services" [ref=e98] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e99]:
+          - link "Prices" [ref=e100] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e101]:
+          - link "Our Team" [ref=e102] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e103]:
+          - link "Contact" [ref=e104] [cursor=pointer]:
+            - /url: /
+      - generic [ref=e105]:
+        - link "Facebook" [ref=e106] [cursor=pointer]:
+          - /url: https://www.facebook.com
+          - img "Facebook" [ref=e107]
+        - link "YouTube" [ref=e108] [cursor=pointer]:
+          - /url: https://www.youtube.com
+          - img "YouTube" [ref=e109]
+        - link "Instagram" [ref=e110] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - img "Instagram" [ref=e111]
+      - generic [ref=e112]:
+        - paragraph [ref=e113]: © 2024 Smile Dental | All Rights Reserved
+        - paragraph [ref=e114]: Call 0777 38 65 90 for appointments
+```
