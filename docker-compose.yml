@@ -56,7 +56,7 @@ services:
 
   risk-update:
     build: .
-    image: rbt-playwright-suites
+    image: rbt-playwright-suites-risk-update
     container_name: suites-risk-update
     environment:
       MONGODB_URI: ${MONGODB_URI}
