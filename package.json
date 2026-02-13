@@ -1,7 +1,26 @@
 {
+  "name": "functional_tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright tests with Full suite + Risk-Based Testing (RBT) + Docker",
+  "scripts": {
+    "install:browsers": "npx playwright install --with-deps",
+    "test": "npx playwright test -c playwright.config.js",
+    "test:full": "cross-env TEST_MODE=full PW_REPORT_FILE=test-results/full/playwright-report.json PW_OUTPUT_DIR=test-results/full/artifacts npx playwright test -c playwright.config.js",
+    "risk:show": "node risk/risk-engine.js",
+    "test:rbt": "cross-env RUN_PLAYWRIGHT=1 RBT_N=11 node risk/risk-engine.js",
+    "risk:update": "node risk/scripts/update-failure-history.js && node risk/scripts/update-execution-cost.js",
+    "test:ui": "npx playwright test -c playwright.config.js --ui",
+    "docker:build": "docker build -t functional-tests .",
+    "docker:test:all": "docker compose run --rm tests-full",
+    "docker:test:rbt": "docker compose run --rm tests-rbt"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "cross-env": "^10.1.0"
+  },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "mongodb": "^7.0.0",
-    "playwright": "^1.56.1"
+    "mongodb": "^7.0.0"
   }
 }
