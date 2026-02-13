@@ -24,7 +24,7 @@ version: "3.9"
 services:
   tests-full:
     build: .
-    image: rbt-playwright-suites
+    image: rbt-playwright-suites-full
     container_name: suites-full
     shm_size: "1gb"
     environment:
@@ -39,7 +39,7 @@ services:
 
   tests-rbt:
     build: .
-    image: rbt-playwright-suites
+    image: rbt-playwright-suites-rbt
     container_name: suites-rbt
     shm_size: "1gb"
     environment:
