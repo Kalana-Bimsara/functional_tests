@@ -1,6 +1,7 @@
 version: "3.9"
 
 services:
+
   base:
     build:
       context: .
@@ -10,11 +11,9 @@ services:
 
   tests-full:
     image: rbt-playwright-suites
-    container_name: suites-full
     environment:
       CI: "1"
       TEST_MODE: "full"
-      BASE_URL: ${BASE_URL:-https://the-internet.herokuapp.com}
       MONGODB_URI: ${MONGODB_URI}
       MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
     volumes:
@@ -25,12 +24,10 @@ services:
 
   tests-rbt:
     image: rbt-playwright-suites
-    container_name: suites-rbt
     environment:
       CI: "1"
       TEST_MODE: "rbt"
       RBT_N: ${RBT_N:-10}
-      BASE_URL: ${BASE_URL:-https://the-internet.herokuapp.com}
       MONGODB_URI: ${MONGODB_URI}
       MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
     volumes:
@@ -41,7 +38,6 @@ services:
 
   risk-update:
     image: rbt-playwright-suites
-    container_name: suites-risk-update
     environment:
       MONGODB_URI: ${MONGODB_URI}
       MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
@@ -49,29 +45,5 @@ services:
       - ./test-results:/app/test-results
       - ./risk:/app/risk
     command: ["npm", "run", "risk:update"]
-    depends_on:
-      - base
-
-  ci-all:
-    image: rbt-playwright-suites
-    container_name: suites-ci-all
-    shm_size: "1gb"
-    environment:
-      CI: "1"
-      RBT_N: ${RBT_N:-10}
-      BASE_URL: ${BASE_URL:-https://the-internet.herokuapp.com}
-      MONGODB_URI: ${MONGODB_URI}
-      MONGODB_DBNAME: ${MONGODB_DBNAME:-test}
-    volumes:
-      - ./test-results:/app/test-results
-    command: >
-      sh -c "
-      echo '=== 1) FULL SUITE ===' &&
-      TEST_MODE=full npm run test:full &&
-      echo '=== 2) RISK UPDATE ===' &&
-      npm run risk:update &&
-      echo '=== 3) RBT SUITE ===' &&
-      TEST_MODE=rbt npm run test:rbt
-      "
     depends_on:
       - base

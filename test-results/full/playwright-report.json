@@ -87,7 +87,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1943,
+                  "duration": 2379,
                   "errors": [],
                   "stdout": [
                     {
@@ -96,7 +96,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:30.333Z",
+                  "startTime": "2026-02-13T12:21:19.669Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -133,12 +133,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1876,
+                  "duration": 2720,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:30.341Z",
+                  "startTime": "2026-02-13T12:21:19.673Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -172,10 +172,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1770,
+                  "duration": 1850,
                   "errors": [],
                   "stdout": [
                     {
@@ -214,7 +214,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:32.377Z",
+                  "startTime": "2026-02-13T12:21:22.213Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -248,10 +248,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1733,
+                  "duration": 1813,
                   "errors": [],
                   "stdout": [
                     {
@@ -275,7 +275,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:32.443Z",
+                  "startTime": "2026-02-13T12:21:22.546Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -309,17 +309,17 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9005,
+                  "duration": 9229,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_13_wpb\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_b1n\n"
                     },
                     {
                       "text": "[INFO] Alert message: message saved\n"
@@ -339,7 +339,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:34.227Z",
+                  "startTime": "2026-02-13T12:21:24.150Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -373,10 +373,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11587,
+                  "duration": 11515,
                   "errors": [],
                   "stdout": [
                     {
@@ -427,7 +427,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:34.256Z",
+                  "startTime": "2026-02-13T12:21:24.443Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -461,10 +461,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2643,
+                  "duration": 2634,
                   "errors": [],
                   "stdout": [
                     {
@@ -479,7 +479,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:42.151Z",
+                  "startTime": "2026-02-13T12:21:32.516Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -513,10 +513,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 3286,
+                  "duration": 2969,
                   "error": {
                     "message": "Error: ❌ Doctor card not found for \"Dr Lahiru Rajakaruna\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
                     "stack": "Error: ❌ Doctor card not found for \"Dr Lahiru Rajakaruna\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at OurTeamPage.verifyDoctorsDetails (/app/pages/page-objects/OurTeamPage.js:45:9)\n    at /app/tests/SD-08.test.js:15:3",
@@ -556,7 +556,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:44.364Z",
+                  "startTime": "2026-02-13T12:21:35.102Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -583,9 +583,9 @@
                 },
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4299,
+                  "duration": 4382,
                   "errors": [],
                   "stdout": [
                     {
@@ -595,7 +595,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "[INFO] Found 0 doctor cards\n"
+                      "text": "[INFO] Found 4 doctor cards\n"
                     },
                     {
                       "text": "[INFO] Verifying doctor: Dr Lahiru Rajakaruna\n"
@@ -627,7 +627,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-02-13T06:13:48.238Z",
+                  "startTime": "2026-02-13T12:21:38.294Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -667,10 +667,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2899,
+                  "duration": 2854,
                   "errors": [],
                   "stdout": [
                     {
@@ -703,7 +703,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:44.412Z",
+                  "startTime": "2026-02-13T12:21:35.174Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -737,10 +737,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9566,
+                  "duration": 9779,
                   "errors": [],
                   "stdout": [
                     {
@@ -794,7 +794,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:47.327Z",
+                  "startTime": "2026-02-13T12:21:37.546Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -829,9 +829,9 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 3503,
+                  "duration": 4376,
                   "errors": [],
                   "stdout": [
                     {
@@ -841,7 +841,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_13_icf\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_8w7\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -852,7 +852,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:13:52.350Z",
+                  "startTime": "2026-02-13T12:21:42.521Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -886,65 +886,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30163,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/app/pages/page-objects/LoginPage.js",
-                        "column": 15,
-                        "line": 51
-                      },
-                      "message": "Error: page.waitForEvent: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for event \"dialog\"\n============================================================\n\n   at ../pages/page-objects/LoginPage.js:51\n\n  49 |   async verifyDialogOnAction({ action, expectedMessage, expectedType = 'alert' }) {\n  50 |   const [dialog] = await Promise.all([\n> 51 |     this.page.waitForEvent('dialog', { timeout: 30000 }),\n     |               ^\n  52 |     action()\n  53 |   ]);\n  54 |\n    at LoginPage.verifyDialogOnAction (/app/pages/page-objects/LoginPage.js:51:15)\n    at /app/tests/SD-12.test.js:20:19"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-13T06:13:55.373Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/error-context.md"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 5,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5081,
+                  "duration": 3165,
                   "errors": [],
                   "stdout": [
                     {
@@ -964,19 +909,13 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-02-13T06:14:23.808Z",
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:21:46.337Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium-retry1/trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "79c715a8f5bd78bfc652-771124b120ada6882f76",
@@ -1005,76 +944,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 9969,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-13.test.js:23:19",
-                    "location": {
-                      "file": "/app/pages/page-objects/LoginPage.js",
-                      "column": 59,
-                      "line": 41
-                    },
-                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/app/pages/page-objects/LoginPage.js",
-                        "column": 59,
-                        "line": 41
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-13.test.js:23:19"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Generated random username: User_2026_02_13_06_13_x8b\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-13T06:13:55.905Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/app/pages/page-objects/LoginPage.js",
-                    "column": 59,
-                    "line": 41
-                  }
-                },
-                {
-                  "workerIndex": 3,
+                  "workerIndex": 2,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6009,
+                  "duration": 4067,
                   "errors": [],
                   "stdout": [
                     {
@@ -1084,7 +957,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_14_dbd\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_7o6\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1097,19 +970,13 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-02-13T06:14:05.438Z",
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:21:46.417Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium-retry1/trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "ffe3573aaa7493b51968-8d3b30d3b9cbb5341399",
@@ -1138,76 +1005,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 9815,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-14.test.js:24:19",
-                    "location": {
-                      "file": "/app/pages/page-objects/LoginPage.js",
-                      "column": 59,
-                      "line": 41
-                    },
-                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/app/pages/page-objects/LoginPage.js",
-                        "column": 59,
-                        "line": 41
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-14.test.js:24:19"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Generated random username: User_2026_02_13_06_14_l1z\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-13T06:14:11.242Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/app/pages/page-objects/LoginPage.js",
-                    "column": 59,
-                    "line": 41
-                  }
-                },
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6523,
+                  "duration": 4216,
                   "errors": [],
                   "stdout": [
                     {
@@ -1217,7 +1018,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_14_m2c\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_rku\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1230,19 +1031,13 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-02-13T06:14:20.737Z",
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:21:55.479Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium-retry1/trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "fb7533e60e6cd5038ff0-698efb52c1de71da29cb",
@@ -1271,10 +1066,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 2,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6922,
+                  "duration": 7311,
                   "errors": [],
                   "stdout": [
                     {
@@ -1284,7 +1079,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_14_tyq\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_haz\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1293,10 +1088,10 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260213061430\n"
+                      "text": "Generated Registration Number: 20260213122154\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Supun Kavindu Silva\n"
+                      "text": "Generated Doctor Name: Dr. Thilina Pradeep Samarakoon\n"
                     },
                     {
                       "text": "Dialog type: alert\n"
@@ -1316,7 +1111,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:14:27.204Z",
+                  "startTime": "2026-02-13T12:21:50.177Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1350,25 +1145,28 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30240,
+                  "status": "failed",
+                  "duration": 9939,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-16.test.js:26:19",
+                    "location": {
+                      "file": "/app/pages/page-objects/LoginPage.js",
+                      "column": 59,
+                      "line": 41
+                    },
+                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/app/pages/page-objects/BookingPage.js",
-                        "column": 40,
-                        "line": 66
+                        "file": "/app/pages/page-objects/LoginPage.js",
+                        "column": 59,
+                        "line": 41
                       },
-                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//select[@id=\"appointmentDate\"]')\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"form-select\" id=\"appointmentDate\" name=\"appointmentDate\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    48 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/page-objects/BookingPage.js:66\n\n  64 |     }\n  65 |     if (appointmentDate) {\n> 66 |       await this.selectAppointmentDate.selectOption(appointmentDate);\n     |                                        ^\n  67 |     }\n  68 |   }\n  69 |\n    at BookingPage.enterDetailsToBookAnAppointment (/app/pages/page-objects/BookingPage.js:66:40)\n    at /app/tests/SD-16.test.js:53:3"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-16.test.js:26:19"
                     }
                   ],
                   "stdout": [
@@ -1379,13 +1177,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_14_fs2\n"
-                    },
-                    {
-                      "text": "✅ Registration success pop-up is visible\n"
-                    },
-                    {
-                      "text": "✅ Login successful, Logout button is visible\n"
+                      "text": "Generated random username: User_2026_02_13_12_21_xbl\n"
                     },
                     {
                       "text": "[DB] MongoDB connection closed\n"
@@ -1393,7 +1185,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:14:28.667Z",
+                  "startTime": "2026-02-13T12:21:53.251Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1411,13 +1203,18 @@
                       "contentType": "text/markdown",
                       "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium/error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/app/pages/page-objects/LoginPage.js",
+                    "column": 59,
+                    "line": 41
+                  }
                 },
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "timedOut",
-                  "duration": 30988,
+                  "duration": 31116,
                   "error": {
                     "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
                     "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
@@ -1432,7 +1229,7 @@
                         "column": 40,
                         "line": 66
                       },
-                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//select[@id=\"appointmentDate\"]')\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"form-select\" id=\"appointmentDate\" name=\"appointmentDate\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    44 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/page-objects/BookingPage.js:66\n\n  64 |     }\n  65 |     if (appointmentDate) {\n> 66 |       await this.selectAppointmentDate.selectOption(appointmentDate);\n     |                                        ^\n  67 |     }\n  68 |   }\n  69 |\n    at BookingPage.enterDetailsToBookAnAppointment (/app/pages/page-objects/BookingPage.js:66:40)\n    at /app/tests/SD-16.test.js:53:3"
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//select[@id=\"appointmentDate\"]')\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"form-select\" id=\"appointmentDate\" name=\"appointmentDate\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    43 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/page-objects/BookingPage.js:66\n\n  64 |     }\n  65 |     if (appointmentDate) {\n> 66 |       await this.selectAppointmentDate.selectOption(appointmentDate);\n     |                                        ^\n  67 |     }\n  68 |   }\n  69 |\n    at BookingPage.enterDetailsToBookAnAppointment (/app/pages/page-objects/BookingPage.js:66:40)\n    at /app/tests/SD-16.test.js:53:3"
                     }
                   ],
                   "stdout": [
@@ -1443,7 +1240,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_14_wz6\n"
+                      "text": "Generated random username: User_2026_02_13_12_22_e39\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1457,7 +1254,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-02-13T06:14:56.852Z",
+                  "startTime": "2026-02-13T12:22:02.831Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1512,10 +1309,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 2,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11170,
+                  "duration": 11970,
                   "errors": [],
                   "stdout": [
                     {
@@ -1542,7 +1339,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:14:33.638Z",
+                  "startTime": "2026-02-13T12:21:56.831Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1576,10 +1373,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 2,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 12823,
+                  "duration": 12784,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at /app/tests/SD-18.test.js:41:3",
@@ -1619,7 +1416,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:14:43.832Z",
+                  "startTime": "2026-02-13T12:22:07.825Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1645,10 +1442,10 @@
                   }
                 },
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 13830,
+                  "duration": 14236,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at /app/tests/SD-18.test.js:41:3",
@@ -1688,7 +1485,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-02-13T06:14:56.172Z",
+                  "startTime": "2026-02-13T12:22:20.372Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1748,10 +1545,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 8,
-                  "parallelIndex": 1,
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 2834,
+                  "duration": 3053,
                   "error": {
                     "message": "Error: toContainText can be only used with Locator object",
                     "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19",
@@ -1785,7 +1582,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:15:09.526Z",
+                  "startTime": "2026-02-13T12:22:32.372Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1806,10 +1603,10 @@
                   }
                 },
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 1,
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 3529,
+                  "duration": 4085,
                   "error": {
                     "message": "Error: toContainText can be only used with Locator object",
                     "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19",
@@ -1843,7 +1640,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-02-13T06:15:13.025Z",
+                  "startTime": "2026-02-13T12:22:36.337Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1898,13 +1695,13 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 10,
+                  "workerIndex": 6,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 14464,
+                  "duration": 14725,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m15\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m15\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
                     "location": {
                       "file": "/app/tests/SD-20.test.js",
                       "column": 17,
@@ -1919,7 +1716,7 @@
                         "column": 17,
                         "line": 83
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m15\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
                     }
                   ],
                   "stdout": [
@@ -1944,7 +1741,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:15:16.943Z",
+                  "startTime": "2026-02-13T12:22:34.792Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -1970,13 +1767,13 @@
                   }
                 },
                 {
-                  "workerIndex": 12,
+                  "workerIndex": 9,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 16139,
+                  "duration": 15288,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m16\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m16\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
                     "location": {
                       "file": "/app/tests/SD-20.test.js",
                       "column": 17,
@@ -1991,7 +1788,7 @@
                         "column": 17,
                         "line": 83
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m16\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
                     }
                   ],
                   "stdout": [
@@ -2016,7 +1813,7 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-02-13T06:15:30.580Z",
+                  "startTime": "2026-02-13T12:22:48.954Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2076,76 +1873,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 11,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 9936,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-21.test.js:29:21",
-                    "location": {
-                      "file": "/app/pages/page-objects/LoginPage.js",
-                      "column": 59,
-                      "line": 41
-                    },
-                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/app/pages/page-objects/LoginPage.js",
-                        "column": 59,
-                        "line": 41
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-21.test.js:29:21"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Generated random username: User_2026_02_13_06_15_h5q\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-13T06:15:26.127Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/app/pages/page-objects/LoginPage.js",
-                    "column": 59,
-                    "line": 41
-                  }
-                },
-                {
-                  "workerIndex": 13,
+                  "workerIndex": 8,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9224,
+                  "duration": 5587,
                   "errors": [],
                   "stdout": [
                     {
@@ -2155,7 +1886,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_02_13_06_15_mhw\n"
+                      "text": "Generated random username: User_2026_02_13_12_22_w3u\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -2164,13 +1895,13 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260213061540\n"
+                      "text": "Generated Registration Number: 20260213122244\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Thilina Sahan Samarakoon\n"
+                      "text": "Generated Doctor Name: Dr. Nadeesha Iroshan Senanayake\n"
                     },
                     {
-                      "text": "🧹 Cleanup: deleted test user User_2026_02_13_06_15_mhw\n"
+                      "text": "🧹 Cleanup: deleted test user User_2026_02_13_12_22_w3u\n"
                     },
                     {
                       "text": "✅ DB Assert: test user removed successfully\n"
@@ -2180,19 +1911,13 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-02-13T06:15:35.764Z",
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:22:40.877Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium-retry1/trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
           "id": "e3003acc8d6ad1a99a15-d9fb53202521997922dd",
@@ -2221,10 +1946,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 13,
+                  "workerIndex": 8,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5929,
+                  "duration": 6178,
                   "errors": [],
                   "stdout": [
                     {
@@ -2245,7 +1970,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-13T06:15:44.610Z",
+                  "startTime": "2026-02-13T12:22:45.786Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2263,11 +1988,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-13T06:13:29.403Z",
-    "duration": 155421.987,
-    "expected": 13,
+    "startTime": "2026-02-13T12:21:18.405Z",
+    "duration": 115905.763,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 4,
-    "flaky": 5
+    "flaky": 1
   }
 }
