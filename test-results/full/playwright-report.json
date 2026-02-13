@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\User\\Desktop\\functional_tests\\playwright.config.js",
-    "rootDir": "C:/Users/User/Desktop/functional_tests/tests",
+    "configFile": "/app/playwright.config.js",
+    "rootDir": "/app/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -40,7 +40,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/User/Desktop/functional_tests/test-results/full/artifacts",
+        "outputDir": "/app/test-results/full/artifacts",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
@@ -48,7 +48,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/User/Desktop/functional_tests/tests",
+        "testDir": "/app/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -65,166 +65,6 @@
     "webServer": null
   },
   "suites": [
-    {
-      "title": "sample.test.js",
-      "file": "sample.test.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Sample Test",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 4575,
-                  "error": {
-                    "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
-                    "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
-                    "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                      "column": 21,
-                      "line": 29
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                        "column": 21,
-                        "line": 29
-                      },
-                      "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:02:14.893Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                    "column": 21,
-                    "line": 29
-                  }
-                },
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 4584,
-                  "error": {
-                    "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function",
-                    "stack": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21",
-                    "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                      "column": 21,
-                      "line": 29
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                        "column": 21,
-                        "line": 29
-                      },
-                      "message": "TypeError: OurTeamPage.verifyDoctorContactdetails is not a function\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mverifyFooterVisible([\u001b[32m'Home'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'About Us'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Services'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Prices'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Our Team'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Contact'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m upperPannelPage\u001b[33m.\u001b[39mnavigateToOurTeamPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mOurTeamPage\u001b[39m\u001b[33m.\u001b[39mverifyDoctorContactdetails([\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[32m'Dr Lahiru Rajakaruna'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[32m'BDS (Peradeniya), MSc (Colombo), MD HI (Colombo), MAAID (USA)'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[32m'Director'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js:29:21\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
-                    },
-                    {
-                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "[DB] MongoDB connection closed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-01-28T10:02:21.187Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\sample-Sample-Test-chromium-retry1\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\sample.test.js",
-                    "column": 21,
-                    "line": 29
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "794e161f9090ba4cb624-74633d6d8f0e9cd2b361",
-          "file": "sample.test.js",
-          "line": 6,
-          "column": 1
-        }
-      ]
-    },
     {
       "title": "SD-01.test.js",
       "file": "SD-01.test.js",
@@ -244,10 +84,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2239,
+                  "duration": 1943,
                   "errors": [],
                   "stdout": [
                     {
@@ -256,7 +96,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:14.766Z",
+                  "startTime": "2026-02-13T06:13:30.333Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -293,12 +133,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2635,
+                  "duration": 1876,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:17.235Z",
+                  "startTime": "2026-02-13T06:13:30.341Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -335,7 +175,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1964,
+                  "duration": 1770,
                   "errors": [],
                   "stdout": [
                     {
@@ -374,7 +214,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:19.885Z",
+                  "startTime": "2026-02-13T06:13:32.377Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -408,10 +248,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2734,
+                  "duration": 1733,
                   "errors": [],
                   "stdout": [
                     {
@@ -435,7 +275,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:21.867Z",
+                  "startTime": "2026-02-13T06:13:32.443Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -472,14 +312,14 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 9700,
+                  "duration": 9005,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_32_6ns\n"
+                      "text": "Generated random username: User_2026_02_13_06_13_wpb\n"
                     },
                     {
                       "text": "[INFO] Alert message: message saved\n"
@@ -499,7 +339,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:24.805Z",
+                  "startTime": "2026-02-13T06:13:34.227Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -533,10 +373,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12768,
+                  "duration": 11587,
                   "errors": [],
                   "stdout": [
                     {
@@ -587,7 +427,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:27.551Z",
+                  "startTime": "2026-02-13T06:13:34.256Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -624,7 +464,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 3076,
+                  "duration": 2643,
                   "errors": [],
                   "stdout": [
                     {
@@ -639,7 +479,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:34.529Z",
+                  "startTime": "2026-02-13T06:13:42.151Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -673,10 +513,79 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3286,
+                  "error": {
+                    "message": "Error: ❌ Doctor card not found for \"Dr Lahiru Rajakaruna\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: ❌ Doctor card not found for \"Dr Lahiru Rajakaruna\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at OurTeamPage.verifyDoctorsDetails (/app/pages/page-objects/OurTeamPage.js:45:9)\n    at /app/tests/SD-08.test.js:15:3",
+                    "location": {
+                      "file": "/app/pages/page-objects/OurTeamPage.js",
+                      "column": 9,
+                      "line": 45
+                    },
+                    "snippet": "   at ../pages/page-objects/OurTeamPage.js:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m         count\u001b[33m,\u001b[39m\n \u001b[90m 44 |\u001b[39m         \u001b[32m`❌ Doctor card not found for \"${name}\"`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m       \u001b[90m// Verify all details inside the matched card\u001b[39m\n \u001b[90m 48 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m text \u001b[36mof\u001b[39m details) {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/app/pages/page-objects/OurTeamPage.js",
+                        "column": 9,
+                        "line": 45
+                      },
+                      "message": "Error: ❌ Doctor card not found for \"Dr Lahiru Rajakaruna\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n   at ../pages/page-objects/OurTeamPage.js:45\n\n  43 |         count,\n  44 |         `❌ Doctor card not found for \"${name}\"`\n> 45 |       ).toBeGreaterThan(0);\n     |         ^\n  46 |\n  47 |       // Verify all details inside the matched card\n  48 |       for (const text of details) {\n    at OurTeamPage.verifyDoctorsDetails (/app/pages/page-objects/OurTeamPage.js:45:9)\n    at /app/tests/SD-08.test.js:15:3"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[INFO] Found 0 doctor cards\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying doctor: Dr Lahiru Rajakaruna\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T06:13:44.364Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/app/test-results/full/artifacts/SD-08-Verify-Team-members--chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/app/test-results/full/artifacts/SD-08-Verify-Team-members--chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/app/test-results/full/artifacts/SD-08-Verify-Team-members--chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/app/pages/page-objects/OurTeamPage.js",
+                    "column": 9,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3460,
+                  "duration": 4299,
                   "errors": [],
                   "stdout": [
                     {
@@ -686,7 +595,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "[INFO] Found 4 doctor cards\n"
+                      "text": "[INFO] Found 0 doctor cards\n"
                     },
                     {
                       "text": "[INFO] Verifying doctor: Dr Lahiru Rajakaruna\n"
@@ -717,13 +626,19 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:02:37.619Z",
+                  "retry": 1,
+                  "startTime": "2026-02-13T06:13:48.238Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/app/test-results/full/artifacts/SD-08-Verify-Team-members--chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "fd911dcddc84a45639fb-798e27feb01c842ef98a",
@@ -752,10 +667,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4446,
+                  "duration": 2899,
                   "errors": [],
                   "stdout": [
                     {
@@ -788,7 +703,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:40.567Z",
+                  "startTime": "2026-02-13T06:13:44.412Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -825,7 +740,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 10680,
+                  "duration": 9566,
                   "errors": [],
                   "stdout": [
                     {
@@ -879,7 +794,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:41.090Z",
+                  "startTime": "2026-02-13T06:13:47.327Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -913,10 +828,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4543,
+                  "duration": 3503,
                   "errors": [],
                   "stdout": [
                     {
@@ -926,7 +841,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_32_8ya\n"
+                      "text": "Generated random username: User_2026_02_13_06_13_icf\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -937,7 +852,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:45.029Z",
+                  "startTime": "2026-02-13T06:13:52.350Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -971,10 +886,65 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30163,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/app/pages/page-objects/LoginPage.js",
+                        "column": 15,
+                        "line": 51
+                      },
+                      "message": "Error: page.waitForEvent: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for event \"dialog\"\n============================================================\n\n   at ../pages/page-objects/LoginPage.js:51\n\n  49 |   async verifyDialogOnAction({ action, expectedMessage, expectedType = 'alert' }) {\n  50 |   const [dialog] = await Promise.all([\n> 51 |     this.page.waitForEvent('dialog', { timeout: 30000 }),\n     |               ^\n  52 |     action()\n  53 |   ]);\n  54 |\n    at LoginPage.verifyDialogOnAction (/app/pages/page-objects/LoginPage.js:51:15)\n    at /app/tests/SD-12.test.js:20:19"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T06:13:55.373Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3995,
+                  "duration": 5081,
                   "errors": [],
                   "stdout": [
                     {
@@ -994,13 +964,19 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:02:49.597Z",
+                  "retry": 1,
+                  "startTime": "2026-02-13T06:14:23.808Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/app/test-results/full/artifacts/SD-12-Verify-invalid-user--3ff99-ster-with-existing-username-chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "79c715a8f5bd78bfc652-771124b120ada6882f76",
@@ -1031,8 +1007,74 @@
                 {
                   "workerIndex": 1,
                   "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 9969,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-13.test.js:23:19",
+                    "location": {
+                      "file": "/app/pages/page-objects/LoginPage.js",
+                      "column": 59,
+                      "line": 41
+                    },
+                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/app/pages/page-objects/LoginPage.js",
+                        "column": 59,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-13.test.js:23:19"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_02_13_06_13_x8b\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T06:13:55.905Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/app/pages/page-objects/LoginPage.js",
+                    "column": 59,
+                    "line": 41
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4175,
+                  "duration": 6009,
                   "errors": [],
                   "stdout": [
                     {
@@ -1042,7 +1084,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_32_ykj\n"
+                      "text": "Generated random username: User_2026_02_13_06_14_dbd\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1055,13 +1097,19 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:02:51.785Z",
+                  "retry": 1,
+                  "startTime": "2026-02-13T06:14:05.438Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/app/test-results/full/artifacts/SD-13-Verify-Valid-user-Login--chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "ffe3573aaa7493b51968-8d3b30d3b9cbb5341399",
@@ -1091,9 +1139,75 @@
               "results": [
                 {
                   "workerIndex": 3,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 9815,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-14.test.js:24:19",
+                    "location": {
+                      "file": "/app/pages/page-objects/LoginPage.js",
+                      "column": 59,
+                      "line": 41
+                    },
+                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/app/pages/page-objects/LoginPage.js",
+                        "column": 59,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-14.test.js:24:19"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_02_13_06_14_l1z\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T06:14:11.242Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/app/pages/page-objects/LoginPage.js",
+                    "column": 59,
+                    "line": 41
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4339,
+                  "duration": 6523,
                   "errors": [],
                   "stdout": [
                     {
@@ -1103,7 +1217,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_32_2zl\n"
+                      "text": "Generated random username: User_2026_02_13_06_14_m2c\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1116,13 +1230,19 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:02:53.618Z",
+                  "retry": 1,
+                  "startTime": "2026-02-13T06:14:20.737Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/app/test-results/full/artifacts/SD-14-Verify-Admin-Dashboard-chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "fb7533e60e6cd5038ff0-698efb52c1de71da29cb",
@@ -1151,10 +1271,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 9434,
+                  "duration": 6922,
                   "errors": [],
                   "stdout": [
                     {
@@ -1164,7 +1284,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_32_29e\n"
+                      "text": "Generated random username: User_2026_02_13_06_14_tyq\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1173,10 +1293,10 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260128153302\n"
+                      "text": "Generated Registration Number: 20260213061430\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Supun Nadeeka Pathirana\n"
+                      "text": "Generated Doctor Name: Dr. Supun Kavindu Silva\n"
                     },
                     {
                       "text": "Dialog type: alert\n"
@@ -1196,7 +1316,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:55.981Z",
+                  "startTime": "2026-02-13T06:14:27.204Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1230,28 +1350,25 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 5,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 21930,
+                  "status": "timedOut",
+                  "duration": 30240,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
-                    "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                      "column": 36,
-                      "line": 51
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                        "column": 36,
-                        "line": 51
+                        "file": "/app/pages/page-objects/BookingPage.js",
+                        "column": 40,
+                        "line": 66
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[2m    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22\u001b[22m"
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//select[@id=\"appointmentDate\"]')\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"form-select\" id=\"appointmentDate\" name=\"appointmentDate\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    48 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/page-objects/BookingPage.js:66\n\n  64 |     }\n  65 |     if (appointmentDate) {\n> 66 |       await this.selectAppointmentDate.selectOption(appointmentDate);\n     |                                        ^\n  67 |     }\n  68 |   }\n  69 |\n    at BookingPage.enterDetailsToBookAnAppointment (/app/pages/page-objects/BookingPage.js:66:40)\n    at /app/tests/SD-16.test.js:53:3"
                     }
                   ],
                   "stdout": [
@@ -1262,7 +1379,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_33_9j8\n"
+                      "text": "Generated random username: User_2026_02_13_06_14_fs2\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1276,54 +1393,46 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:02:57.975Z",
+                  "startTime": "2026-02-13T06:14:28.667Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium/error-context.md"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                    "column": 36,
-                    "line": 51
-                  }
+                  ]
                 },
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 7,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 25461,
+                  "status": "timedOut",
+                  "duration": 30988,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22",
-                    "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                      "column": 36,
-                      "line": 51
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                        "column": 36,
-                        "line": 51
+                        "file": "/app/pages/page-objects/BookingPage.js",
+                        "column": 40,
+                        "line": 66
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#payment-element iframe[title=\"Secure payment input frame\"]').contentFrame().locator('#Field-numberInput')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\CheckoutPage.js:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[36masync\u001b[39m verifyPaymentPageLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtxtCardNumber)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Payment iframe is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m }\n \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[2m    at CheckoutPage.verifyPaymentPageLoaded (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js:51:36)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-16.test.js:67:22\u001b[22m"
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//select[@id=\"appointmentDate\"]')\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"form-select\" id=\"appointmentDate\" name=\"appointmentDate\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    44 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/page-objects/BookingPage.js:66\n\n  64 |     }\n  65 |     if (appointmentDate) {\n> 66 |       await this.selectAppointmentDate.selectOption(appointmentDate);\n     |                                        ^\n  67 |     }\n  68 |   }\n  69 |\n    at BookingPage.enterDetailsToBookAnAppointment (/app/pages/page-objects/BookingPage.js:66:40)\n    at /app/tests/SD-16.test.js:53:3"
                     }
                   ],
                   "stdout": [
@@ -1334,7 +1443,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_33_1ya\n"
+                      "text": "Generated random username: User_2026_02_13_06_14_wz6\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1348,35 +1457,30 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T10:03:21.336Z",
+                  "startTime": "2026-02-13T06:14:56.852Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1/error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1\\trace.zip"
+                      "path": "/app/test-results/full/artifacts/SD-16-Verify-Customer-can--0fa95-or-Appoinment-Successfully--chromium-retry1/trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\CheckoutPage.js",
-                    "column": 36,
-                    "line": 51
-                  }
+                  ]
                 }
               ],
               "status": "unexpected"
@@ -1408,10 +1512,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11793,
+                  "duration": 11170,
                   "errors": [],
                   "stdout": [
                     {
@@ -1438,7 +1542,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:03:05.433Z",
+                  "startTime": "2026-02-13T06:14:33.638Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1472,15 +1576,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 12489,
+                  "duration": 12823,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at /app/tests/SD-18.test.js:41:3",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                      "file": "/app/tests/SD-18.test.js",
                       "column": 3,
                       "line": 41
                     },
@@ -1489,11 +1593,11 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                        "file": "/app/tests/SD-18.test.js",
                         "column": 3,
                         "line": 41
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[90m// ✅ DB ASSERT\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\n \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m db\u001b[33m.\u001b[39mcollection(\u001b[32m'services'\u001b[39m)\u001b[33m.\u001b[39mfindOne({ name\u001b[33m:\u001b[39m serviceName\u001b[33m,\u001b[39m price\u001b[33m:\u001b[39m servicePrice })\u001b[33m,\u001b[39m\n \u001b[90m 43 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m\u001b[33m,\u001b[39m intervals\u001b[33m:\u001b[39m [\u001b[35m500\u001b[39m\u001b[33m,\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2000\u001b[39m] }\n \u001b[90m 44 |\u001b[39m   )\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3\u001b[22m"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  39 |\n  40 |   // ✅ DB ASSERT\n> 41 |   await expect.poll(\n     |   ^\n  42 |     async () => db.collection('services').findOne({ name: serviceName, price: servicePrice }),\n  43 |     { timeout: 10000, intervals: [500, 1000, 2000] }\n  44 |   ).not.toBeNull();\n    at /app/tests/SD-18.test.js:41:3"
                     }
                   ],
                   "stdout": [
@@ -1515,41 +1619,41 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:03:17.244Z",
+                  "startTime": "2026-02-13T06:14:43.832Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                    "file": "/app/tests/SD-18.test.js",
                     "column": 3,
                     "line": 41
                   }
                 },
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 6,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 14473,
+                  "duration": 13830,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at /app/tests/SD-18.test.js:41:3",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                      "file": "/app/tests/SD-18.test.js",
                       "column": 3,
                       "line": 41
                     },
@@ -1558,11 +1662,11 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                        "file": "/app/tests/SD-18.test.js",
                         "column": 3,
                         "line": 41
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[90m// ✅ DB ASSERT\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\n \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m db\u001b[33m.\u001b[39mcollection(\u001b[32m'services'\u001b[39m)\u001b[33m.\u001b[39mfindOne({ name\u001b[33m:\u001b[39m serviceName\u001b[33m,\u001b[39m price\u001b[33m:\u001b[39m servicePrice })\u001b[33m,\u001b[39m\n \u001b[90m 43 |\u001b[39m     { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m\u001b[33m,\u001b[39m intervals\u001b[33m:\u001b[39m [\u001b[35m500\u001b[39m\u001b[33m,\u001b[39m \u001b[35m1000\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2000\u001b[39m] }\n \u001b[90m 44 |\u001b[39m   )\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js:41:3\u001b[22m"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  39 |\n  40 |   // ✅ DB ASSERT\n> 41 |   await expect.poll(\n     |   ^\n  42 |     async () => db.collection('services').findOne({ name: serviceName, price: servicePrice }),\n  43 |     { timeout: 10000, intervals: [500, 1000, 2000] }\n  44 |   ).not.toBeNull();\n    at /app/tests/SD-18.test.js:41:3"
                     }
                   ],
                   "stdout": [
@@ -1584,32 +1688,32 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T10:03:31.424Z",
+                  "startTime": "2026-02-13T06:14:56.172Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1/error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1\\trace.zip"
+                      "path": "/app/test-results/full/artifacts/SD-18-Verify-Admin-can-Add-a-New-Service-chromium-retry1/trace.zip"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-18.test.js",
+                    "file": "/app/tests/SD-18.test.js",
                     "column": 3,
                     "line": 41
                   }
@@ -1644,28 +1748,28 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 8,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 3568,
+                  "duration": 2834,
                   "error": {
                     "message": "Error: toContainText can be only used with Locator object",
-                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19",
+                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                      "file": "/app/pages/page-objects/PricePage.js",
                       "column": 9,
                       "line": 19
                     },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
+                    "snippet": "   at ../pages/page-objects/PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                        "file": "/app/pages/page-objects/PricePage.js",
                         "column": 9,
                         "line": 19
                       },
-                      "message": "Error: toContainText can be only used with Locator object\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[2m    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19\u001b[22m"
+                      "message": "Error: toContainText can be only used with Locator object\n\n   at ../pages/page-objects/PricePage.js:19\n\n  17 |         this.page,\n  18 |         `Expected to find \"${text}\" on the Price Page`\n> 19 |       ).toContainText(text);\n     |         ^\n  20 |     }\n  21 |\n  22 |   }\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19"
                     }
                   ],
                   "stdout": [
@@ -1681,49 +1785,49 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:03:47.556Z",
+                  "startTime": "2026-02-13T06:15:09.526Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-19-Verify-Price-Page-content-chromium/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-19-Verify-Price-Page-content-chromium/video.webm"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                    "file": "/app/pages/page-objects/PricePage.js",
                     "column": 9,
                     "line": 19
                   }
                 },
                 {
-                  "workerIndex": 8,
+                  "workerIndex": 9,
                   "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 4009,
+                  "duration": 3529,
                   "error": {
                     "message": "Error: toContainText can be only used with Locator object",
-                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19",
+                    "stack": "Error: toContainText can be only used with Locator object\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                      "file": "/app/pages/page-objects/PricePage.js",
                       "column": 9,
                       "line": 19
                     },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
+                    "snippet": "   at ../pages/page-objects/PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                        "file": "/app/pages/page-objects/PricePage.js",
                         "column": 9,
                         "line": 19
                       },
-                      "message": "Error: toContainText can be only used with Locator object\n\n\u001b[90m   at \u001b[39m..\\pages\\page-objects\\PricePage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[32m`Expected to find \"${text}\" on the Price Page`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       )\u001b[33m.\u001b[39mtoContainText(text)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\u001b[0m\n\u001b[2m    at PricePage.verifyPRicePageContents (C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js:19:9)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-19.test.js:27:19\u001b[22m"
+                      "message": "Error: toContainText can be only used with Locator object\n\n   at ../pages/page-objects/PricePage.js:19\n\n  17 |         this.page,\n  18 |         `Expected to find \"${text}\" on the Price Page`\n> 19 |       ).toContainText(text);\n     |         ^\n  20 |     }\n  21 |\n  22 |   }\n    at PricePage.verifyPRicePageContents (/app/pages/page-objects/PricePage.js:19:9)\n    at /app/tests/SD-19.test.js:27:19"
                     }
                   ],
                   "stdout": [
@@ -1739,27 +1843,27 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T10:03:52.683Z",
+                  "startTime": "2026-02-13T06:15:13.025Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-19-Verify-Price-Page-content-chromium-retry1/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-19-Verify-Price-Page-content-chromium-retry1/video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-19-Verify-Price-Page-content-chromium-retry1\\trace.zip"
+                      "path": "/app/test-results/full/artifacts/SD-19-Verify-Price-Page-content-chromium-retry1/trace.zip"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\pages\\page-objects\\PricePage.js",
+                    "file": "/app/pages/page-objects/PricePage.js",
                     "column": 9,
                     "line": 19
                   }
@@ -1794,15 +1898,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
-                  "parallelIndex": 0,
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 15296,
+                  "duration": 14464,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17",
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                      "file": "/app/tests/SD-20.test.js",
                       "column": 17,
                       "line": 83
                     },
@@ -1811,11 +1915,11 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                        "file": "/app/tests/SD-20.test.js",
                         "column": 17,
                         "line": 83
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n\n\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17\u001b[22m"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
                     }
                   ],
                   "stdout": [
@@ -1823,7 +1927,7 @@
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
                     },
                     {
-                      "text": "date is:  2026-01-23\n"
+                      "text": "date is:  2026-02-08\n"
                     },
                     {
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
@@ -1840,41 +1944,41 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:03:48.510Z",
+                  "startTime": "2026-02-13T06:15:16.943Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                    "file": "/app/tests/SD-20.test.js",
                     "column": 17,
                     "line": 83
                   }
                 },
                 {
-                  "workerIndex": 10,
-                  "parallelIndex": 0,
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
                   "status": "failed",
-                  "duration": 16866,
+                  "duration": 16139,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17",
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n    at /app/tests/SD-20.test.js:83:17",
                     "location": {
-                      "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                      "file": "/app/tests/SD-20.test.js",
                       "column": 17,
                       "line": 83
                     },
@@ -1883,11 +1987,11 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                        "file": "/app/tests/SD-20.test.js",
                         "column": 17,
                         "line": 83
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n\n\u001b[0m \u001b[90m 81 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m   expect(count)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ DB Assert: No availabledates record inserted for invalid details'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js:83:17\u001b[22m"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n\n  81 |   });\n  82 |\n> 83 |   expect(count).toBe(0);\n     |                 ^\n  84 |   console.log('✅ DB Assert: No availabledates record inserted for invalid details');\n  85 |\n  86 |\n    at /app/tests/SD-20.test.js:83:17"
                     }
                   ],
                   "stdout": [
@@ -1895,7 +1999,7 @@
                       "text": "[DB] Connected to MongoDB successfully (db: test)\n"
                     },
                     {
-                      "text": "date is:  2026-01-23\n"
+                      "text": "date is:  2026-02-08\n"
                     },
                     {
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
@@ -1912,32 +2016,32 @@
                   ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-01-28T10:04:05.362Z",
+                  "startTime": "2026-02-13T06:15:30.580Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\test-failed-1.png"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\video.webm"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1/video.webm"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\error-context.md"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1/error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Desktop\\functional_tests\\test-results\\full\\artifacts\\SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1\\trace.zip"
+                      "path": "/app/test-results/full/artifacts/SD-20-Verify-Admin-can-not-b9b7d-Doctor-with-invalid-details-chromium-retry1/trace.zip"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\User\\Desktop\\functional_tests\\tests\\SD-20.test.js",
+                    "file": "/app/tests/SD-20.test.js",
                     "column": 17,
                     "line": 83
                   }
@@ -1972,10 +2076,76 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 1,
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9936,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-21.test.js:29:21",
+                    "location": {
+                      "file": "/app/pages/page-objects/LoginPage.js",
+                      "column": 59,
+                      "line": 41
+                    },
+                    "snippet": "   at ../pages/page-objects/LoginPage.js:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m verifyRegistrationSuccessPopUp() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdivPopUpMessageRegistrationSuccess)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m7000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Registration success pop-up is visible'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m   }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/app/pages/page-objects/LoginPage.js",
+                        "column": 59,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h4[contains(text(),\"Registration Successful 🎉\")]')\u001b[22m\n\n\n   at ../pages/page-objects/LoginPage.js:41\n\n  39 |\n  40 |   async verifyRegistrationSuccessPopUp() {\n> 41 |     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });\n     |                                                           ^\n  42 |     console.log('✅ Registration success pop-up is visible');\n  43 |   }\n  44 |\n    at LoginPage.verifyRegistrationSuccessPopUp (/app/pages/page-objects/LoginPage.js:41:59)\n    at /app/tests/SD-21.test.js:29:21"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[DB] Connected to MongoDB successfully (db: test)\n"
+                    },
+                    {
+                      "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Generated random username: User_2026_02_13_06_15_h5q\n"
+                    },
+                    {
+                      "text": "[DB] MongoDB connection closed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T06:15:26.127Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/app/pages/page-objects/LoginPage.js",
+                    "column": 59,
+                    "line": 41
+                  }
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6075,
+                  "duration": 9224,
                   "errors": [],
                   "stdout": [
                     {
@@ -1985,7 +2155,7 @@
                       "text": "Visible nav items: [ \u001b[32m'Home'\u001b[39m, \u001b[32m'About Us'\u001b[39m, \u001b[32m'Services'\u001b[39m, \u001b[32m'Prices'\u001b[39m, \u001b[32m'Our Team'\u001b[39m, \u001b[32m'Contact'\u001b[39m ]\n"
                     },
                     {
-                      "text": "Generated random username: User_2026_01_28_15_34_3ra\n"
+                      "text": "Generated random username: User_2026_02_13_06_15_mhw\n"
                     },
                     {
                       "text": "✅ Registration success pop-up is visible\n"
@@ -1994,13 +2164,13 @@
                       "text": "✅ Admin Dashboard page elements are verified successfully\n"
                     },
                     {
-                      "text": "Generated Registration Number: 20260128153402\n"
+                      "text": "Generated Registration Number: 20260213061540\n"
                     },
                     {
-                      "text": "Generated Doctor Name: Dr. Sachini Bimsara Gamage\n"
+                      "text": "Generated Doctor Name: Dr. Thilina Sahan Samarakoon\n"
                     },
                     {
-                      "text": "🧹 Cleanup: deleted test user User_2026_01_28_15_34_3ra\n"
+                      "text": "🧹 Cleanup: deleted test user User_2026_02_13_06_15_mhw\n"
                     },
                     {
                       "text": "✅ DB Assert: test user removed successfully\n"
@@ -2010,13 +2180,19 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T10:03:57.923Z",
+                  "retry": 1,
+                  "startTime": "2026-02-13T06:15:35.764Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/app/test-results/full/artifacts/SD-21-Verify-admin-can-not-Add-a-Doctor-with-invalid-details-chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "e3003acc8d6ad1a99a15-d9fb53202521997922dd",
@@ -2045,10 +2221,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 1,
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6849,
+                  "duration": 5929,
                   "errors": [],
                   "stdout": [
                     {
@@ -2069,7 +2245,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T10:04:04.198Z",
+                  "startTime": "2026-02-13T06:15:44.610Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2087,11 +2263,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T10:02:13.896Z",
-    "duration": 129144.274,
-    "expected": 18,
+    "startTime": "2026-02-13T06:13:29.403Z",
+    "duration": 155421.987,
+    "expected": 13,
     "skipped": 0,
-    "unexpected": 5,
-    "flaky": 0
+    "unexpected": 4,
+    "flaky": 5
   }
 }

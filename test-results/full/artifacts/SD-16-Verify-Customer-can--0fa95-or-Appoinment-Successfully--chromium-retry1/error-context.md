@@ -1,293 +1,202 @@
 # Page snapshot
 
 ```yaml
-- generic [ref=e4]:
-  - iframe [ref=e7]:
-    - generic [ref=f19e8]:
-      - generic [ref=f19e9]:
-        - button "Card" [expanded] [ref=f19e10]:
-          - generic [ref=f19e20]: Card
-        - generic [ref=f19e24]:
-          - generic [ref=f19e25]:
-            - button "Secure, fast checkout with Link" [ref=f19e31] [cursor=pointer]:
-              - img [ref=f19e32]
-              - generic [ref=f19e34]: Secure, fast checkout with Link
-            - generic [ref=f19e36]:
-              - generic [ref=f19e37]:
-                - generic [ref=f19e39]:
-                  - generic [ref=f19e40]: Card number
-                  - generic [ref=f19e42]:
-                    - textbox "Card number" [ref=f19e44]:
-                      - /placeholder: 1234 1234 1234 1234
-                    - generic:
-                      - option "Select card brand (optional)" [disabled] [selected]
-                    - generic:
-                      - generic:
-                        - generic:
-                          - paragraph: Supported cards include Visa, Mastercard, and American Express.
-                          - generic:
-                            - img
-                            - img
-                - generic [ref=f19e46]:
-                  - generic [ref=f19e47]:
-                    - text: Expiration date
-                    - generic [ref=f19e48]: MM / YY
-                  - textbox "Expiration date MM / YY" [ref=f19e52]:
-                    - /placeholder: MM / YY
-                - generic [ref=f19e54]:
-                  - generic [ref=f19e55]: Security code
-                  - generic [ref=f19e57]:
-                    - textbox "Security code" [ref=f19e59]:
-                      - /placeholder: CVC
-                    - generic:
-                      - generic: 3-digit code on back of card
-                      - generic:
-                        - img
-              - generic [ref=f19e64]:
-                - generic [ref=f19e65]: Country
-                - combobox "Country" [ref=f19e68] [cursor=pointer]:
-                  - option "Select" [disabled]
-                  - option "Afghanistan"
-                  - option "Åland Islands"
-                  - option "Albania"
-                  - option "Algeria"
-                  - option "Andorra"
-                  - option "Angola"
-                  - option "Anguilla"
-                  - option "Antarctica"
-                  - option "Antigua & Barbuda"
-                  - option "Argentina"
-                  - option "Armenia"
-                  - option "Aruba"
-                  - option "Ascension Island"
-                  - option "Australia"
-                  - option "Austria"
-                  - option "Azerbaijan"
-                  - option "Bahamas"
-                  - option "Bahrain"
-                  - option "Bangladesh"
-                  - option "Barbados"
-                  - option "Belarus"
-                  - option "Belgium"
-                  - option "Belize"
-                  - option "Benin"
-                  - option "Bermuda"
-                  - option "Bhutan"
-                  - option "Bolivia"
-                  - option "Bosnia & Herzegovina"
-                  - option "Botswana"
-                  - option "Bouvet Island"
-                  - option "Brazil"
-                  - option "British Indian Ocean Territory"
-                  - option "British Virgin Islands"
-                  - option "Brunei"
-                  - option "Bulgaria"
-                  - option "Burkina Faso"
-                  - option "Burundi"
-                  - option "Cambodia"
-                  - option "Cameroon"
-                  - option "Canada"
-                  - option "Cape Verde"
-                  - option "Caribbean Netherlands"
-                  - option "Cayman Islands"
-                  - option "Central African Republic"
-                  - option "Chad"
-                  - option "Chile"
-                  - option "China"
-                  - option "Colombia"
-                  - option "Comoros"
-                  - option "Congo - Brazzaville"
-                  - option "Congo - Kinshasa"
-                  - option "Cook Islands"
-                  - option "Costa Rica"
-                  - option "Côte d’Ivoire"
-                  - option "Croatia"
-                  - option "Curaçao"
-                  - option "Cyprus"
-                  - option "Czechia"
-                  - option "Denmark"
-                  - option "Djibouti"
-                  - option "Dominica"
-                  - option "Dominican Republic"
-                  - option "Ecuador"
-                  - option "Egypt"
-                  - option "El Salvador"
-                  - option "Equatorial Guinea"
-                  - option "Eritrea"
-                  - option "Estonia"
-                  - option "Eswatini"
-                  - option "Ethiopia"
-                  - option "Falkland Islands"
-                  - option "Faroe Islands"
-                  - option "Fiji"
-                  - option "Finland"
-                  - option "France"
-                  - option "French Guiana"
-                  - option "French Polynesia"
-                  - option "French Southern Territories"
-                  - option "Gabon"
-                  - option "Gambia"
-                  - option "Georgia"
-                  - option "Germany"
-                  - option "Ghana"
-                  - option "Gibraltar"
-                  - option "Greece"
-                  - option "Greenland"
-                  - option "Grenada"
-                  - option "Guadeloupe"
-                  - option "Guam"
-                  - option "Guatemala"
-                  - option "Guernsey"
-                  - option "Guinea"
-                  - option "Guinea-Bissau"
-                  - option "Guyana"
-                  - option "Haiti"
-                  - option "Honduras"
-                  - option "Hong Kong SAR China"
-                  - option "Hungary"
-                  - option "Iceland"
-                  - option "India"
-                  - option "Indonesia"
-                  - option "Iraq"
-                  - option "Ireland"
-                  - option "Isle of Man"
-                  - option "Israel"
-                  - option "Italy"
-                  - option "Jamaica"
-                  - option "Japan"
-                  - option "Jersey"
-                  - option "Jordan"
-                  - option "Kazakhstan"
-                  - option "Kenya"
-                  - option "Kiribati"
-                  - option "Kosovo"
-                  - option "Kuwait"
-                  - option "Kyrgyzstan"
-                  - option "Laos"
-                  - option "Latvia"
-                  - option "Lebanon"
-                  - option "Lesotho"
-                  - option "Liberia"
-                  - option "Libya"
-                  - option "Liechtenstein"
-                  - option "Lithuania"
-                  - option "Luxembourg"
-                  - option "Macao SAR China"
-                  - option "Madagascar"
-                  - option "Malawi"
-                  - option "Malaysia"
-                  - option "Maldives"
-                  - option "Mali"
-                  - option "Malta"
-                  - option "Martinique"
-                  - option "Mauritania"
-                  - option "Mauritius"
-                  - option "Mayotte"
-                  - option "Mexico"
-                  - option "Moldova"
-                  - option "Monaco"
-                  - option "Mongolia"
-                  - option "Montenegro"
-                  - option "Montserrat"
-                  - option "Morocco"
-                  - option "Mozambique"
-                  - option "Myanmar (Burma)"
-                  - option "Namibia"
-                  - option "Nauru"
-                  - option "Nepal"
-                  - option "Netherlands"
-                  - option "New Caledonia"
-                  - option "New Zealand"
-                  - option "Nicaragua"
-                  - option "Niger"
-                  - option "Nigeria"
-                  - option "Niue"
-                  - option "North Macedonia"
-                  - option "Norway"
-                  - option "Oman"
-                  - option "Pakistan"
-                  - option "Palestinian Territories"
-                  - option "Panama"
-                  - option "Papua New Guinea"
-                  - option "Paraguay"
-                  - option "Peru"
-                  - option "Philippines"
-                  - option "Pitcairn Islands"
-                  - option "Poland"
-                  - option "Portugal"
-                  - option "Puerto Rico"
-                  - option "Qatar"
-                  - option "Réunion"
-                  - option "Romania"
-                  - option "Russia"
-                  - option "Rwanda"
-                  - option "Samoa"
-                  - option "San Marino"
-                  - option "São Tomé & Príncipe"
-                  - option "Saudi Arabia"
-                  - option "Senegal"
-                  - option "Serbia"
-                  - option "Seychelles"
-                  - option "Sierra Leone"
-                  - option "Singapore"
-                  - option "Sint Maarten"
-                  - option "Slovakia"
-                  - option "Slovenia"
-                  - option "Solomon Islands"
-                  - option "Somalia"
-                  - option "South Africa"
-                  - option "South Georgia & South Sandwich Islands"
-                  - option "South Korea"
-                  - option "South Sudan"
-                  - option "Spain"
-                  - option "Sri Lanka" [selected]
-                  - option "St. Barthélemy"
-                  - option "St. Helena"
-                  - option "St. Kitts & Nevis"
-                  - option "St. Lucia"
-                  - option "St. Martin"
-                  - option "St. Pierre & Miquelon"
-                  - option "St. Vincent & Grenadines"
-                  - option "Sudan"
-                  - option "Suriname"
-                  - option "Svalbard & Jan Mayen"
-                  - option "Sweden"
-                  - option "Switzerland"
-                  - option "Taiwan"
-                  - option "Tajikistan"
-                  - option "Tanzania"
-                  - option "Thailand"
-                  - option "Timor-Leste"
-                  - option "Togo"
-                  - option "Tokelau"
-                  - option "Tonga"
-                  - option "Trinidad & Tobago"
-                  - option "Tristan da Cunha"
-                  - option "Tunisia"
-                  - option "Türkiye"
-                  - option "Turkmenistan"
-                  - option "Turks & Caicos Islands"
-                  - option "Tuvalu"
-                  - option "Uganda"
-                  - option "Ukraine"
-                  - option "United Arab Emirates"
-                  - option "United Kingdom"
-                  - option "United States"
-                  - option "Uruguay"
-                  - option "Uzbekistan"
-                  - option "Vanuatu"
-                  - option "Vatican City"
-                  - option "Venezuela"
-                  - option "Vietnam"
-                  - option "Wallis & Futuna"
-                  - option "Western Sahara"
-                  - option "Yemen"
-                  - option "Zambia"
-                  - option "Zimbabwe"
-          - button
-      - button "Cash App Pay" [ref=f19e70] [cursor=pointer]:
-        - generic [ref=f19e79]: Cash App Pay
-      - button "Amazon Pay" [ref=f19e81] [cursor=pointer]:
-        - generic [ref=f19e90]: Amazon Pay
-  - button "Pay now" [ref=e8] [cursor=pointer]
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "Logo" [ref=e6]
+      - generic [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=e13]:
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: /#services
+          - listitem [ref=e15]:
+            - link "Prices" [ref=e16] [cursor=pointer]:
+              - /url: /price
+          - listitem [ref=e17]:
+            - link "Our Team" [ref=e18] [cursor=pointer]:
+              - /url: /ourteam
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /#contact
+        - link "Book Now" [ref=e21] [cursor=pointer]:
+          - /url: /booking
+        - button "Log Out" [ref=e22] [cursor=pointer]
+  - generic [ref=e24]:
+    - heading "Services" [level=3] [ref=e25]
+    - table [ref=e26]:
+      - rowgroup [ref=e27]:
+        - row "Name Price" [ref=e28]:
+          - columnheader "Name" [ref=e29]
+          - columnheader "Price" [ref=e30]
+      - rowgroup [ref=e31]:
+        - row "beheth denawa 5000" [ref=e32]:
+          - cell "beheth denawa" [ref=e33]
+          - cell "5000" [ref=e34]
+        - row "ecg 7000" [ref=e35]:
+          - cell "ecg" [ref=e36]
+          - cell "7000" [ref=e37]
+  - generic [ref=e39]:
+    - heading "availability" [level=3] [ref=e40]
+    - table [ref=e41]:
+      - rowgroup [ref=e42]:
+        - row "Date Doctor Booking Count" [ref=e43]:
+          - columnheader "Date" [ref=e44]
+          - columnheader "Doctor" [ref=e45]
+          - columnheader "Booking Count" [ref=e46]
+      - rowgroup
+  - generic [ref=e47]:
+    - generic [ref=e49]:
+      - heading "Book an Appointment" [level=5] [ref=e50]
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: Patient Name
+          - textbox "Patient Name" [ref=e55]:
+            - /placeholder: Enter your name
+            - text: John Doe
+        - generic [ref=e56]:
+          - generic [ref=e57]: Mobile Number
+          - textbox "Mobile Number" [ref=e58]:
+            - /placeholder: Enter your mobile number
+            - text: "1234567890"
+        - generic [ref=e59]:
+          - generic [ref=e60]: Email Address
+          - textbox "Email Address" [active] [ref=e61]:
+            - /placeholder: Enter your email
+            - text: kalana@yopmail.com
+        - generic [ref=e62]:
+          - generic [ref=e63]: Doctor
+          - combobox "Doctor" [ref=e64]:
+            - option "Select the Doctor"
+            - option "sfdsdf" [selected]
+            - option "Malinga"
+            - option "Kalana"
+            - option "Dr. Kalana Bimsara"
+            - option "Dr. Kalana Bimsarat"
+            - option "Dr. Kalana Bimsara77"
+            - option "Dr. Kalana Bimsara777"
+            - option "Dr. Kalana Bimsara774"
+            - option "mahazona"
+            - option "Dr. John Nethmi Samarakoon"
+            - option "Dr. Supun Nadeeka Edirisinghe"
+            - option "DR. Roshan"
+            - option "Dr. Nimal Tharushi Alwis"
+            - option "Dr. Upeksha Lakshan Kapuachchige"
+            - option "Dr. Chamika Gimhani Pathirana"
+            - option "Dr. Madushan Lasith Jayasinghe"
+            - option "Dr. Shehan Harith Samarakoon"
+            - option "Dr. Ishara Yasiru Bandara"
+            - option "Dr. Ishara Anushka Silva"
+            - option "Dr. Upeksha Tharanga Fernando"
+            - option "Dr. Ishara Tharanga Amarasinghe"
+            - option "Dr. Sachini Lakshan Perera"
+            - option "Dr. Hiruni Madhawa Kumara"
+            - option "Dr. Nimal Madhawa Samarakoon"
+            - option "Dr. Sandun Gimhani Silva"
+            - option "Dr. Chamika Dinithi Kapuachchige"
+            - option "Dr. Thilina Madhawa Silva"
+            - option "random Name"
+            - option "DR. Tissa Jananayaka"
+            - option "Dr. Sachini Iroshan Peiris"
+        - generic [ref=e65]:
+          - generic [ref=e66]: service
+          - combobox "service" [ref=e67]:
+            - option "Select the service"
+            - option "beheth denawa" [selected]
+            - option "ecg"
+          - paragraph [ref=e69]: "Price: $5000"
+        - generic [ref=e70]:
+          - generic [ref=e71]: Select a Date
+          - combobox "Select a Date" [ref=e72]:
+            - option "Select the date" [selected]
+        - generic [ref=e73]:
+          - button "Book Appointment" [ref=e74] [cursor=pointer]
+          - button "Close" [ref=e75] [cursor=pointer]
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - img "Clinic Logo" [ref=e80]
+          - heading "Smile Dental" [level=4] [ref=e81]
+        - paragraph [ref=e82]: Open Times
+        - table [ref=e83]:
+          - rowgroup [ref=e84]:
+            - row "Monday 4:30 PM - 10 PM" [ref=e85]:
+              - cell "Monday" [ref=e86]
+              - cell "4:30 PM - 10 PM" [ref=e87]
+            - row "Tuesday 4:30 PM - 10 PM" [ref=e88]:
+              - cell "Tuesday" [ref=e89]
+              - cell "4:30 PM - 10 PM" [ref=e90]
+            - row "Wednesday 4:30 PM - 10 PM" [ref=e91]:
+              - cell "Wednesday" [ref=e92]
+              - cell "4:30 PM - 10 PM" [ref=e93]
+            - row "Thursday 4:30 PM - 10 PM" [ref=e94]:
+              - cell "Thursday" [ref=e95]
+              - cell "4:30 PM - 10 PM" [ref=e96]
+            - row "Friday 4:30 PM - 10 PM" [ref=e97]:
+              - cell "Friday" [ref=e98]
+              - cell "4:30 PM - 10 PM" [ref=e99]
+            - row "Saturday Closed" [ref=e100]:
+              - cell "Saturday" [ref=e101]
+              - cell "Closed" [ref=e102]
+            - row "Sunday 8:30 AM - 3 PM" [ref=e103]:
+              - cell "Sunday" [ref=e104]
+              - cell "8:30 AM - 3 PM" [ref=e105]
+            - row "Holidays Closed" [ref=e106]:
+              - cell "Holidays" [ref=e107]
+              - cell "Closed" [ref=e108]
+        - paragraph [ref=e109]: 324-10 Havelock Rd, Colombo 00500
+        - heading "Contact Us" [level=6] [ref=e110]
+        - paragraph [ref=e111]: Call 0777 38 65 90 for appointments
+      - generic [ref=e112]:
+        - link "Facebook" [ref=e113] [cursor=pointer]:
+          - /url: https://www.facebook.com
+          - img "Facebook" [ref=e114]
+        - link "YouTube" [ref=e115] [cursor=pointer]:
+          - /url: https://www.youtube.com
+          - img "YouTube" [ref=e116]
+        - link "Instagram" [ref=e117] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - img "Instagram" [ref=e118]
+  - contentinfo [ref=e119]:
+    - generic [ref=e120]:
+      - list [ref=e122]:
+        - listitem [ref=e123]:
+          - link "About Us" [ref=e124] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e125]:
+          - link "Home" [ref=e126] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e127]:
+          - link "Services" [ref=e128] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e129]:
+          - link "Prices" [ref=e130] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e131]:
+          - link "Our Team" [ref=e132] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e133]:
+          - link "Contact" [ref=e134] [cursor=pointer]:
+            - /url: /
+      - generic [ref=e135]:
+        - link "Facebook" [ref=e136] [cursor=pointer]:
+          - /url: https://www.facebook.com
+          - img "Facebook" [ref=e137]
+        - link "YouTube" [ref=e138] [cursor=pointer]:
+          - /url: https://www.youtube.com
+          - img "YouTube" [ref=e139]
+        - link "Instagram" [ref=e140] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - img "Instagram" [ref=e141]
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: © 2024 Smile Dental | All Rights Reserved
+        - paragraph [ref=e144]: Call 0777 38 65 90 for appointments
 ```

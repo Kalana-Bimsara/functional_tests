@@ -8,7 +8,7 @@
     "test": "npx playwright test -c playwright.config.js",
     "test:full": "cross-env TEST_MODE=full PW_REPORT_FILE=test-results/full/playwright-report.json PW_OUTPUT_DIR=test-results/full/artifacts npx playwright test -c playwright.config.js",
     "risk:show": "node risk/risk-engine.js",
-    "test:rbt": "cross-env RUN_PLAYWRIGHT=1 RBT_N=5 node risk/risk-engine.js",
+    "test:rbt": "cross-env RUN_PLAYWRIGHT=1 RBT_N=11 node risk/risk-engine.js",
     "risk:update": "node risk/scripts/update-failure-history.js && node risk/scripts/update-execution-cost.js",
     "test:ui": "npx playwright test -c playwright.config.js --ui",
     "docker:build": "docker build -t functional-tests .",
