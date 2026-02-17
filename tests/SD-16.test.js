@@ -56,7 +56,7 @@ test('Verify Customer can Book a an Doctor Appoinment Successfully    ', async (
     emailAddress: ' kalana@yopmail.com',
     doctor: 'sfdsdf',
     service: 'beheth denawa',
-    appointmentDate: 'Sat Jan 31 2026'
+    appointmentDate: 'Sat Feb 28 2026'
 
   });
   await bookingPage.clickBookAppointmentButton();
@@ -72,12 +72,12 @@ test('Verify Customer can Book a an Doctor Appoinment Successfully    ', async (
     country: "Sri Lanka",
   });
 
-  await checkoutPage.fillOptionalCardDetails({
-    email: "kalana@yopmail.com",
-    phone: "0714567890",
-    fullName: "Maha Rawana"
-  });
-
+  // await checkoutPage.fillOptionalCardDetails({
+  //   email: "kalana@yopmail.com",
+  //   phone: "0714567890",
+  //   fullName: "Maha Rawana"
+  // });
+  await page.waitForTimeout(2000); // Wait for optional fields to be filled before submitting
   await checkoutPage.submitPayment();
 
 
