@@ -38,7 +38,7 @@ class LoginPage {
   }
 
   async verifyRegistrationSuccessPopUp() {
-    await this.page.waitForTimeout(2000); // small wait for pop-up to appear
+    await this.page.waitForTimeout(4000); // small wait for pop-up to appear
     await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });
     console.log('✅ Registration success pop-up is visible');
   }
