@@ -24,14 +24,11 @@ test('Verify Price Page content', async ({ db, page }) => {
   ]);
 
   await upperPannelPage.navigateToPricesPage();
-  await pricePage.verifyPRicePageContents([
-    'Our Prices',
-    'We offer competitive pricing for all our dental services without compromising on quality care.',
-    'General Dentistry',
-    'Cosmetic Dentistry',
-    'Orthodontics',
-    'Pediatric Dentistry',
-    'Oral Surgery',
+  await pricePage.verifyPricePageContents([
+    { service: 'Appointment Charges/ Channeling Fee', price: 'Free' },
+    { service: 'Dental Implant – with Porcelain Crown', price: 'Rs 150,000/-' },
+    { service: 'Braces – Both Arches', price: 'Rs 250,000/-' }
   ]);
-  
+
+
 });

@@ -5,7 +5,7 @@ class UpperPannelPage {
 
   constructor(page) {
     this.page = page;
-    this.lnkPrices = page.locator('//a[@href="/price"]');
+    this.lnkPrices = page.locator('//a[@href="/prices"]');
     this.lnkOurTeam = page.locator('//a[@href="/ourteam"]');
   }
 

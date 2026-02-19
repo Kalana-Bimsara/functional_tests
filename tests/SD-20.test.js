@@ -13,7 +13,7 @@ test('Verify Admin can not Add a New Date for a Doctor with invalid details', as
 
   const password = EnvConfig.QA.PASSWORD;
 
-  const doctorName = 'Kalana';
+  const doctorName = 'sfdsdf';
   const date = await commonFunctions.getDateMinusDays(5);
   console.log('date is: ', date);
 
