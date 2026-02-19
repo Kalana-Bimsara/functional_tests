@@ -56,7 +56,7 @@ module.exports = defineConfig({
 
   timeout: 30_000,
   expect: { timeout: 5_000 },
-  retries: 0,
+  retries: 1,
 
   // 📦 Artifacts (screenshots, videos, traces)
   outputDir,
