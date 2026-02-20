@@ -31,8 +31,8 @@ test('Verify Admin can Add a New Service', async ({ db, page }) => {
   await adminPage.verifyAdminDashboardPageElements();
   await adminPage.clickAddNewServiceButton();
 
-  const serviceName = 'teeth whitening';
-  const servicePrice = '7000';
+  const serviceName = 'teeth';
+  const servicePrice = '7050';
 
   await adminPage.enterDetailsAddNewService({ serviceName, servicePrice });
   await adminPage.clickAddNewServiceButtonInModal();

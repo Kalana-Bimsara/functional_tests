@@ -56,7 +56,7 @@ test('Verify Customer can Book a an Doctor Appoinment Successfully    ', async (
     emailAddress: ' kalana@yopmail.com',
     doctor: 'sfdsdf',
     service: 'beheth denawa',
-    appointmentDate: 'Sat Feb 28 2026'
+    appointmentDate: 'Sat Feb 21 2026'
 
   });
   await bookingPage.clickBookAppointmentButton();
