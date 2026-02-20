@@ -138,7 +138,7 @@ class HomePage {
     await this.page.waitForTimeout(2000);
     await expect(this.lnkBookNow).toBeVisible({ timeout: 7000 });
     await this.lnkBookNow.click();
-    await expect(this.page).toHaveURL('http://test.smiledentalhospitals.site/booking');
+    await expect(this.page).toHaveURL('https://test.smiledentalhospitals.site/booking');
   }
 
   async verify_Navigation_panel(expected) {
