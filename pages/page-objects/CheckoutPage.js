@@ -18,6 +18,7 @@ class CheckoutPage {
     this.txtEmail = this.stripeFrame.locator('#Field-linkEmailInput');
     this.txtPhone = this.stripeFrame.locator('#Field-linkMobilePhoneInput');
     this.txtFullName = this.stripeFrame.locator('#Field-linkLegalNameInput');
+    this.selectCountry = this.stripeFrame.locator('//select[@id="payment-countryInput"]');
 
     // Robust XPath (id + text validation)
     this.btnPayNow = page.locator("//button[@id='submit' and .//span[text()='Pay now']]");
@@ -38,10 +39,14 @@ class CheckoutPage {
     // Stripe expiry is MM / YY
     await this.txtExpiry.pressSequentially(expiry.replace('/', ''));
     await this.txtCvc.type(cvc);
-    // Country: label vs value
-    // await this.countryInput.click();
-    // await this.countryInput.fill(country);
-    // await this.countryInput.press('Enter');
+    // Wait until Stripe renders country field
+  await this.selectCountry.waitFor({ state: 'visible' });
+
+  await this.selectCountry.selectOption({ label: country });
+
+  // Optional: confirm correct value selected
+  const selected = await this.selectCountry.inputValue();
+  console.log("Selected country value:", selected);
   }
 
 
