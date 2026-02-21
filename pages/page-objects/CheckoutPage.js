@@ -19,8 +19,8 @@ class CheckoutPage {
     this.txtPhone = this.stripeFrame.locator('#Field-linkMobilePhoneInput');
     this.txtFullName = this.stripeFrame.locator('#Field-linkLegalNameInput');
 
-    // Button OUTSIDE iframe
-    this.btnPayNow = page.getByRole('button', { name: 'Pay now' });
+    // Robust XPath (id + text validation)
+    this.btnPayNow = page.locator("//button[@id='submit' and .//span[text()='Pay now']]");
 
   }
 
@@ -57,10 +57,21 @@ class CheckoutPage {
   }
 
 
-  async submitPayment() {
-    await this.page.waitForTimeout(4000); // small wait before clicking Pay Now
-    await this.btnPayNow.click();
-  }
+async submitPayment() {
+
+  // Wait until button is ready
+  await expect(this.btnPayNow).toBeVisible({ timeout: 20000 });
+  await expect(this.btnPayNow).toBeEnabled({ timeout: 20000 });
+
+  await this.btnPayNow.scrollIntoViewIfNeeded();
+
+  // Click and wait for navigation at same time
+  await Promise.all([
+    this.page.waitForURL(/\/complete/, { timeout: 20000 }),
+    this.btnPayNow.click()
+  ]);
+
+}
 
 
 

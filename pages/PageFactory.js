@@ -7,6 +7,7 @@ import { BookingPage } from './page-objects/BookingPage.js';
 import { CommonFunctions } from '../resources/CommonFunctions.js';
 import { CheckoutPage } from './page-objects/CheckoutPage.js';
 import { PricePage } from './page-objects/PricePage.js';
+import { PaymentSuccessPage } from './page-objects/PaymentSuccessPage.js';
 
 
 class PageFactory {
@@ -45,6 +46,10 @@ class PageFactory {
     static getPricePage(page) {
         return new PricePage(page);
     }   
+
+    static getPaymentSuccessPage(page) {
+        return new PaymentSuccessPage(page);
+    }
   } 
 
   export { PageFactory };

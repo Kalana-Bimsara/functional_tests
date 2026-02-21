@@ -29,6 +29,7 @@ class AdminDashboardPage {
     this.btnServicePrice = page.locator('//input[@id="servicePrice"]');
     this.btnAddServiceInModal = page.locator('//button[@type="submit" and contains(text(),"Add Service")]');
     this.btnCancelAddServiceModal = page.locator('//button[@type="button" and contains(text(),"Cancel")]');
+    this.btnAdminDashboard = page.locator('//a[@href="/dashboard" and contains(text(),"Admin Dashboard")]');
 
     // Modal
     this.modal = page.locator('#addDateModal');
@@ -221,8 +222,28 @@ class AdminDashboardPage {
     await expect(this.btnAddNewDate).toBeVisible({ timeout: 7000 });
     await expect(this.btnAddNewDoctor).toBeVisible({ timeout: 7000 });
     await expect(this.btnAddNewService).toBeVisible({ timeout: 7000 });
+    await expect(this.btnAdminDashboard).toBeVisible({ timeout: 7000 });
+
     console.log('✅ Admin Dashboard page elements are verified successfully');
   }
+
+
+  async verifyAdminPrivilegesNotVisibleForNormalUser() {
+
+    await expect(this.adminDashboardtext).not.toBeVisible({ timeout: 5000 });
+    await expect(this.sectionAppoinments).not.toBeVisible({ timeout: 5000 });
+    await expect(this.sectionDoctorsAvailability).not.toBeVisible({ timeout: 5000 });
+    await expect(this.sectionDoctors).not.toBeVisible({ timeout: 5000 });
+    await expect(this.sectionpriceList).not.toBeVisible({ timeout: 5000 });
+    await expect(this.sectionContactUs).not.toBeVisible({ timeout: 5000 });
+    await expect(this.btnAddNewDate).not.toBeVisible({ timeout: 5000 });
+    await expect(this.btnAddNewDoctor).not.toBeVisible({ timeout: 5000 });
+    await expect(this.btnAddNewService).not.toBeVisible({ timeout: 5000 });
+    await expect(this.btnAdminDashboard).not.toBeVisible({ timeout: 5000 });
+
+    console.log('✅ Admin privileges are NOT visible for normal user');
+  }
+
 
 }
 
