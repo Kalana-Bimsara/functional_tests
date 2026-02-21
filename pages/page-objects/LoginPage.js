@@ -22,8 +22,9 @@ class LoginPage {
     await this.lnkRegister.click();
   }
 
-  async enterLoginDetails({username, password}) {
-    await expect(this.txtUsername).toBeVisible({timeout: 7000});
+  async enterLoginDetails({ username, password }) {
+    await expect(this.txtUsername).toBeVisible({ timeout: 7000 });
+    await this.page.waitForTimeout(2000); // small wait to ensure fields are ready
     await this.txtUsername.fill(username);
     await this.txtPassword.fill(password);
   }
@@ -32,7 +33,7 @@ class LoginPage {
     await this.btnLogin.click();
   }
 
-   async clickRegisterButton() {
+  async clickRegisterButton() {
     expect(this.btnRegister).toBeVisible({ timeout: 7000 });
     await this.btnRegister.click();
   }
@@ -44,38 +45,39 @@ class LoginPage {
   // }
 
   async verifyRegistrationSuccessPopUp() {
-  const successMessage = this.page.locator('text=Registration Successful');
+    await this.page.waitForTimeout(2000); // small wait for pop-up to appear
+    const successMessage = this.page.locator('text=Registration Successful');
 
-  await expect(successMessage).toBeVisible({ timeout: 15000 });
+    await expect(successMessage).toBeVisible({ timeout: 15000 });
 
-  console.log('✅ Registration success pop-up is visible');
-}
+    console.log('✅ Registration success pop-up is visible');
+  }
 
   async clickPopUpMessageOKButton() {
     await this.btnPopUpMessageOK.click();
   }
 
   async verifyDialogOnAction({ action, expectedMessage, expectedType = 'alert' }) {
-  const [dialog] = await Promise.all([
-    this.page.waitForEvent('dialog', { timeout: 30000 }),
-    action()
-  ]);
+    const [dialog] = await Promise.all([
+      this.page.waitForEvent('dialog', { timeout: 30000 }),
+      action()
+    ]);
 
-  console.log('Dialog type:', dialog.type());
-  console.log('Dialog message:', dialog.message());
+    console.log('Dialog type:', dialog.type());
+    console.log('Dialog message:', dialog.message());
 
-  expect(dialog.type()).toBe(expectedType);
-  expect(dialog.message()).toContain(expectedMessage);
+    expect(dialog.type()).toBe(expectedType);
+    expect(dialog.message()).toContain(expectedMessage);
 
-  await dialog.accept();
-}
+    await dialog.accept();
+  }
 
-async clickLogoutButton() {
+  async clickLogoutButton() {
     await expect(this.btnLogout).toBeVisible({ timeout: 7000 });
     await this.btnLogout.click();
   }
 
-async VerifyLogInSuccessByCheckingLogoutButton() {
+  async VerifyLogInSuccessByCheckingLogoutButton() {
     await expect(this.btnLogout).toBeVisible({ timeout: 7000 });
     console.log('✅ Login successful, Logout button is visible');
   }

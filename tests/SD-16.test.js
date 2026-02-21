@@ -16,7 +16,7 @@ test('Verify Customer can Book a Doctor Appointment Successfully', async ({ db, 
   const password = EnvConfig.QA.PASSWORD;
 
   // Generate dynamic data
-  const userName = `user_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
+  const userName = await commonFunctions.generateRandomUserName();
   console.log('Generated username:', userName);
   const bookingEmail = `booking_${Date.now()}@yopmail.com`;
   console.log('Generated booking email:', bookingEmail);
