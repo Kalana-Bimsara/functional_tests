@@ -85,6 +85,8 @@ test('Verify Customer can Book a Doctor Appointment Successfully', async ({ db, 
     country: "Sri Lanka",
   });
 
+
+  await page.waitForTimeout(2000); // Wait for 2 seconds to ensure all details are processed before clicking Pay Now
   await checkoutPage.submitPayment();
 
   // ------------------- PAYMENT SUCCESS -------------------
