@@ -37,11 +37,19 @@ class LoginPage {
     await this.btnRegister.click();
   }
 
+  // async verifyRegistrationSuccessPopUp() {
+  //   await this.page.waitForTimeout(4000); // small wait for pop-up to appear
+  //   await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });
+  //   console.log('✅ Registration success pop-up is visible');
+  // }
+
   async verifyRegistrationSuccessPopUp() {
-    await this.page.waitForTimeout(4000); // small wait for pop-up to appear
-    await expect(this.divPopUpMessageRegistrationSuccess).toBeVisible({ timeout: 7000 });
-    console.log('✅ Registration success pop-up is visible');
-  }
+  const successMessage = this.page.locator('text=Registration Successful');
+
+  await expect(successMessage).toBeVisible({ timeout: 15000 });
+
+  console.log('✅ Registration success pop-up is visible');
+}
 
   async clickPopUpMessageOKButton() {
     await this.btnPopUpMessageOK.click();

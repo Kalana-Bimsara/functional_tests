@@ -16,7 +16,8 @@ test('Verify Customer can Book a Doctor Appointment Successfully', async ({ db, 
   const password = EnvConfig.QA.PASSWORD;
 
   // Generate dynamic data
-  const userName = await commonFunctions.generateRandomUserName();
+  const userName = `user_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
+  console.log('Generated username:', userName);
   const bookingEmail = `booking_${Date.now()}@yopmail.com`;
   console.log('Generated booking email:', bookingEmail);
 
@@ -86,7 +87,7 @@ test('Verify Customer can Book a Doctor Appointment Successfully', async ({ db, 
   });
 
 
-  await page.waitForTimeout(2000); // Wait for 2 seconds to ensure all details are processed before clicking Pay Now
+  // await page.waitForTimeout(2000); // Wait for 2 seconds to ensure all details are processed before clicking Pay Now
   await checkoutPage.submitPayment();
 
   // ------------------- PAYMENT SUCCESS -------------------
