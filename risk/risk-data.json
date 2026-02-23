@@ -3,154 +3,154 @@
     "id": 1,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 4449,
+    "avgDuration": 4545,
     "justification": "Validates static navigation labels only; failure does not impact system functionality or business workflows."
   },
   "SD-02.test.js": {
     "id": 2,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 4095,
+    "avgDuration": 4358,
     "justification": "Verifies welcome banner text; purely informational with no operational or transactional impact."
   },
   "SD-03.test.js": {
     "id": 3,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 4598,
+    "avgDuration": 4476,
     "justification": "Checks informational 'About Our Clinic' content; does not affect user actions or backend processes."
   },
   "SD-04.test.js": {
     "id": 4,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 4460,
+    "avgDuration": 4306,
     "justification": "Validates service description content only; failure does not block booking or revenue generation."
   },
   "SD-05.test.js": {
     "id": 5,
     "businessCriticality": 3,
     "failureHistory": 1,
-    "avgDuration": 13121,
+    "avgDuration": 12716,
     "justification": "Submits contact form data and verifies database persistence; supports customer communication but not core transactions."
   },
   "SD-06.test.js": {
     "id": 6,
     "businessCriticality": 2,
     "failureHistory": 1,
-    "avgDuration": 14619,
+    "avgDuration": 15012,
     "justification": "Validates contact form input errors; improves user experience but does not affect system availability."
   },
   "SD-07.test.js": {
     "id": 7,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 5122,
+    "avgDuration": 6063,
     "justification": "Checks location map visibility; informational feature with no dependency on business workflows."
   },
   "SD-08.test.js": {
     "id": 8,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 5792,
+    "avgDuration": 6136,
     "justification": "Verifies team member profile content; failure does not impact booking, authentication, or operations."
   },
   "SD-09.test.js": {
     "id": 9,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 5465,
+    "avgDuration": 5986,
     "justification": "Validates appointment policy text; informational content without functional dependency."
   },
   "SD-10.test.js": {
     "id": 10,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 9616,
+    "avgDuration": 10589,
     "justification": "Checks social media icon navigation; external links only, no system or business impact."
   },
   "SD-11.test.js": {
     "id": 11,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 10352,
+    "avgDuration": 10544,
     "justification": "Validates user registration with database persistence; prerequisite for authentication, booking, and payment workflows."
   },
   "SD-12.test.js": {
     "id": 12,
     "businessCriticality": 4,
     "failureHistory": 1,
-    "avgDuration": 7968,
+    "avgDuration": 8703,
     "justification": "Prevents duplicate user registration; protects data integrity without blocking existing users or revenue flows."
   },
   "SD-13.test.js": {
     "id": 13,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 12129,
+    "avgDuration": 12767,
     "justification": "Validates successful user authentication; failure blocks access to booking, payment, and protected features."
   },
   "SD-14.test.js": {
     "id": 14,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 12617,
+    "avgDuration": 13357,
     "justification": "Verifies admin dashboard access and role enforcement; essential for system configuration and operations."
   },
   "SD-15.test.js": {
     "id": 15,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 16227,
+    "avgDuration": 17190,
     "justification": "Admin adds a doctor with database persistence; doctors are required for appointment booking."
   },
   "SD-16.test.js": {
     "id": 16,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 56099,
+    "avgDuration": 22329,
     "justification": "End-to-end booking and payment workflow; directly impacts revenue generation."
   },
   "SD-17.test.js": {
     "id": 17,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 16792,
+    "avgDuration": 17473,
     "justification": "Admin adds doctor availability dates; required for enabling customer bookings."
   },
   "SD-18.test.js": {
     "id": 18,
     "businessCriticality": 5,
     "failureHistory": 1,
-    "avgDuration": 12163,
+    "avgDuration": 12229,
     "justification": "Admin creates new services with database persistence; services define what customers can book."
   },
   "SD-19.test.js": {
     "id": 19,
     "businessCriticality": 1,
     "failureHistory": 1,
-    "avgDuration": 5250,
+    "avgDuration": 6343,
     "justification": "Verifies price page informational content; does not enforce pricing or transactions."
   },
   "SD-20.test.js": {
     "id": 20,
     "businessCriticality": 4,
     "failureHistory": 1,
-    "avgDuration": 19098,
+    "avgDuration": 19551,
     "justification": "Prevents invalid doctor availability from being stored; protects scheduling integrity."
   },
   "SD-21.test.js": {
     "id": 21,
     "businessCriticality": 4,
     "failureHistory": 1,
-    "avgDuration": 14410,
+    "avgDuration": 15089,
     "justification": "Validates admin-side doctor input validation; prevents invalid operational data without directly generating revenue."
   },
   "SD-22.test.js": {
     "id": 22,
     "businessCriticality": 4,
     "failureHistory": 1,
-    "avgDuration": 10647,
+    "avgDuration": 11240,
     "justification": "Ensures invalid service data cannot be added by admin; protects booking and pricing consistency."
   }
 }
