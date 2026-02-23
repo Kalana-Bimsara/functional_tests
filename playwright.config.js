@@ -51,7 +51,7 @@ module.exports = defineConfig({
   testDir: './tests',
 
   // 🔒 FAIR & FIXED for research comparison
-  workers: 2,
+  workers: 1,
   fullyParallel: false,
 
   timeout: 30_000,
