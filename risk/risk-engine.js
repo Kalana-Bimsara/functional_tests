@@ -117,4 +117,4 @@ if (hasFailure) {
   process.exit(1);   // ← THIS STOPS PIPELINE
 }
 
-console.log('\n[RBT] ✅ Strict-order run complete. Merged report:', finalReport);
+console.log('\n[RBT] ✅ Strict-order run complete. Merged report:', finalReport);// You can also generate an HTML report from this JSON if needed.
