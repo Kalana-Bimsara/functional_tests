@@ -65,7 +65,8 @@ module.exports = defineConfig({
   // 📊 REPORTERS (CI + Research safe)
   reporter: [
     ['list'],                                  // console (CI logs)
-    ['json', { outputFile: reportFile }],      // metrics / APFD
+    ['json', { outputFile: process.env.PW_JSON_OUTPUT_FILE || reportFile }],
+     // metrics / APFD
     ['html', { outputFolder: htmlDir, open: 'never' }], // human-readable
   ],
 

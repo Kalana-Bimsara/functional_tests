@@ -1,6 +1,9 @@
 // risk/risk-engine.js
 require('dotenv').config();
 const { execSync } = require('child_process');
+const path = require('path');     // ✅ ADD THIS
+const fs = require('fs');         // ✅ ADD THIS
+
 const riskData = require('./risk-data.json');
 
 function calculateRisk(d) {
@@ -44,16 +47,68 @@ if (process.env.RUN_PLAYWRIGHT !== '1') {
  *  - prevents FULL overwrite
  * =====================================================
  */
-const cmd = [
-  'cross-env',
-  'TEST_MODE=rbt',
-  'npx',
-  'playwright',
-  'test',
-  ...selectedTests,
-  '-c',
-  'playwright.config.js',
-].join(' ');
+// ---------- STRICT ORDER EXECUTION ----------
+console.log('\n[RBT] Running prioritized suite in STRICT order (one file per run):\n');
+selectedTests.forEach((t, i) => console.log(`${i + 1}. ${t}`));
 
-console.log('\n[RBT] Executing Playwright with command:\n', cmd, '\n');
-execSync(cmd, { stdio: 'inherit' });
+const runsDir = path.posix.join('test-results', 'rbt', 'runs');
+fs.mkdirSync(runsDir, { recursive: true });
+
+const merged = {
+  config: null,
+  suites: [],
+  errors: [],
+  stats: { startTime: new Date().toISOString(), duration: 0, expected: 0, skipped: 0, unexpected: 0, flaky: 0 },
+};
+
+const startAll = Date.now();
+
+for (let i = 0; i < selectedTests.length; i++) {
+  const testFile = selectedTests[i];
+  const runJson = path.posix.join(runsDir, `run-${String(i + 1).padStart(2, '0')}.json`);
+
+  const cmd = [
+    'cross-env',
+    'TEST_MODE=rbt',
+    'PW_JSON_OUTPUT_FILE=' + runJson,
+    'npx',
+    'playwright',
+    'test',
+    testFile,
+    '-c',
+    'playwright.config.js',
+    '--workers=1',
+  ].join(' ');
+
+  try {
+    execSync(cmd, { stdio: 'inherit' });
+  } catch (err) {
+    console.log(`[RBT] ❌ Test failed but continuing: ${testFile}`);
+  }
+
+  if (!fs.existsSync(runJson)) {
+    console.log(`[RBT] ⚠ JSON report missing for: ${testFile}`);
+    continue;
+  }
+
+  const run = JSON.parse(fs.readFileSync(runJson, 'utf8'));
+
+  if (!merged.config) merged.config = run.config;
+  merged.suites.push(...(run.suites ?? []));
+  merged.errors.push(...(run.errors ?? []));
+
+  const s = run.stats ?? {};
+  merged.stats.duration += (s.duration ?? 0);
+  merged.stats.expected += (s.expected ?? 0);
+  merged.stats.skipped += (s.skipped ?? 0);
+  merged.stats.unexpected += (s.unexpected ?? 0);
+  merged.stats.flaky += (s.flaky ?? 0);
+}
+
+merged.stats.duration = Date.now() - startAll;
+
+const finalReport = path.posix.join('test-results', 'rbt', 'rbt-report.json');
+
+fs.writeFileSync(finalReport, JSON.stringify(merged, null, 2), 'utf8');
+
+console.log('\n[RBT] ✅ Strict-order run complete. Merged report:', finalReport);
