@@ -81,10 +81,11 @@ for (let i = 0; i < selectedTests.length; i++) {
   ].join(' ');
 
   try {
-    execSync(cmd, { stdio: 'inherit' });
-  } catch (err) {
-    console.log(`[RBT] ❌ Test failed but continuing: ${testFile}`);
-  }
+  execSync(cmd, { stdio: 'inherit' });
+} catch (err) {
+  console.log(`[RBT] ❌ Test failed but continuing: ${testFile}`);
+  hasFailure = true;   // ← ADD THIS
+}
 
   if (!fs.existsSync(runJson)) {
     console.log(`[RBT] ⚠ JSON report missing for: ${testFile}`);
@@ -110,5 +111,10 @@ merged.stats.duration = Date.now() - startAll;
 const finalReport = path.posix.join('test-results', 'rbt', 'rbt-report.json');
 
 fs.writeFileSync(finalReport, JSON.stringify(merged, null, 2), 'utf8');
+if (hasFailure) {
+  console.log('\n[RBT] ❌ Failures detected in prioritized suite.');
+  console.log('[RBT] ❌ Exiting with code 1 to stop pipeline.');
+  process.exit(1);   // ← THIS STOPS PIPELINE
+}
 
 console.log('\n[RBT] ✅ Strict-order run complete. Merged report:', finalReport);
