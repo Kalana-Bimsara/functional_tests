@@ -62,6 +62,7 @@ const merged = {
 };
 
 const startAll = Date.now();
+let hasFailure = false;
 
 for (let i = 0; i < selectedTests.length; i++) {
   const testFile = selectedTests[i];
