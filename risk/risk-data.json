@@ -114,7 +114,7 @@
   "SD-17.test.js": {
     "id": 17,
     "businessCriticality": 5,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 62202,
     "justification": "Admin adds doctor availability dates; required for enabling customer bookings."
   },
