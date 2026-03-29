@@ -67,7 +67,7 @@ test('Verify Customer can Book a Doctor Appointment Successfully', async ({ db, 
     emailAddress: bookingEmail,   // dynamic email
     doctor: 'sfdsdf',
     service: 'beheth denawa',
-    appointmentDate: 'Sat Mar 07 2026'
+    appointmentDate: 'Wed Apr 01 2026'
   });
   await bookingPage.clickBookAppointmentButton();
   await bookingPage.enterDetailsToBookAnAppointment({
