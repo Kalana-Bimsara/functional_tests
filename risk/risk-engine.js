@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 const path = require('path');     // ✅ ADD THIS
 const fs = require('fs');         // ✅ ADD THIS
 
-const IS_LEAD_TIME = true;  // true = 2 workers, false = 1 worker (APFD)
+const IS_LEAD_TIME = false;  // true = 2 workers, false = 1 worker (APFD)
 
 const riskData = require('./risk-data.json');
 
