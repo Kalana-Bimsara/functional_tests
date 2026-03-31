@@ -66,24 +66,47 @@ const merged = {
 const startAll = Date.now();
 let hasFailure = false;
 
-const cmd = [
-  'cross-env',
-  'TEST_MODE=rbt',
-  'PW_JSON_OUTPUT_FILE=' + path.posix.join('test-results', 'rbt', 'rbt-report.json'),
-  'npx',
-  'playwright',
-  'test',
-  ...selectedTests,   // ✅ ALL tests together
-  '-c',
-  'playwright.config.js',
-  ...(IS_LEAD_TIME ? [] : ['--workers=1']),
-].join(' ');
+for (let i = 0; i < selectedTests.length; i++) {
+  const testFile = selectedTests[i];
+  const runJson = path.posix.join(runsDir, `run-${String(i + 1).padStart(2, '0')}.json`);
 
-try {
+  const cmd = [
+    'cross-env',
+    'TEST_MODE=rbt',
+    'PW_JSON_OUTPUT_FILE=' + runJson,
+    'npx',
+    'playwright',
+    'test',
+    testFile,
+    '-c',
+    'playwright.config.js',
+    '--workers=1',
+  ].join(' ');
+
+  try {
   execSync(cmd, { stdio: 'inherit' });
 } catch (err) {
-  console.log('[RBT] ❌ Failures detected');
-  process.exit(1);
+  console.log(`[RBT] ❌ Test failed but continuing: ${testFile}`);
+  hasFailure = true;   // ← ADD THIS
+}
+
+  if (!fs.existsSync(runJson)) {
+    console.log(`[RBT] ⚠ JSON report missing for: ${testFile}`);
+    continue;
+  }
+
+  const run = JSON.parse(fs.readFileSync(runJson, 'utf8'));
+
+  if (!merged.config) merged.config = run.config;
+  merged.suites.push(...(run.suites ?? []));
+  merged.errors.push(...(run.errors ?? []));
+
+  const s = run.stats ?? {};
+  merged.stats.duration += (s.duration ?? 0);
+  merged.stats.expected += (s.expected ?? 0);
+  merged.stats.skipped += (s.skipped ?? 0);
+  merged.stats.unexpected += (s.unexpected ?? 0);
+  merged.stats.flaky += (s.flaky ?? 0);
 }
 
 merged.stats.duration = Date.now() - startAll;
