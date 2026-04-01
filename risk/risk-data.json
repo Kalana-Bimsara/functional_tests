@@ -93,14 +93,14 @@
   "SD-14.test.js": {
     "id": 14,
     "businessCriticality": 5,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 41089,
     "justification": "Verifies admin dashboard access and role enforcement; essential for system configuration and operations."
   },
   "SD-15.test.js": {
     "id": 15,
     "businessCriticality": 5,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 41357,
     "justification": "Admin adds a doctor with database persistence; doctors are required for appointment booking."
   },
@@ -114,14 +114,14 @@
   "SD-17.test.js": {
     "id": 17,
     "businessCriticality": 5,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 32080,
     "justification": "Admin adds doctor availability dates; required for enabling customer bookings."
   },
   "SD-18.test.js": {
     "id": 18,
     "businessCriticality": 5,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 31924,
     "justification": "Admin creates new services with database persistence; services define what customers can book."
   },
@@ -135,21 +135,21 @@
   "SD-20.test.js": {
     "id": 20,
     "businessCriticality": 4,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 32123,
     "justification": "Prevents invalid doctor availability from being stored; protects scheduling integrity."
   },
   "SD-21.test.js": {
     "id": 21,
     "businessCriticality": 4,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 41614,
     "justification": "Validates admin-side doctor input validation; prevents invalid operational data without directly generating revenue."
   },
   "SD-22.test.js": {
     "id": 22,
     "businessCriticality": 4,
-    "failureHistory": 2,
+    "failureHistory": 1,
     "avgDuration": 31971,
     "justification": "Ensures invalid service data cannot be added by admin; protects booking and pricing consistency."
   }
